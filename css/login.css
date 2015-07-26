@@ -1,0 +1,382 @@
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial,Helvetica,sans-serif;
+    background-color: White;
+    background-image: url(../images/bg.png);
+    background-repeat: repeat-x;
+    background-position: left top;
+    color: Black;
+}
+
+div.container {
+    text-align: left;
+    margin: 10% auto 0 auto;
+    width: 480px;
+    margin-bottom: 150px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    padding: 0 0 0 20px;
+    color: #262626;
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+div.form-block {
+    margin-top: .5em;
+    padding: 20px 20px 25px 10px;
+    border-radius: 1em;
+    background-color: #3879c9;
+    border: 1px solid #3a7ac9;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: -moz-linear-gradient(0% 100% 90deg,#1964c1,#538cd0);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#538cd0), to(#1964c1));
+    background: -ms-linear-gradient(top, #538cd0 0%,#1964c1 100%);
+    background: linear-gradient(top, #538cd0 0%,#1964c1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#538cd0', endColorstr='#1964c1',GradientType=0 );
+    -moz-box-shadow: 0 12px 13px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 12px 13px rgba(0,0,0,.25);
+    box-shadow: 0 12px 13px rgba(0,0,0,.25);
+}
+
+a.forgot, a.forgot:visited {
+    display: block;
+    color: #0072C6;
+    text-decoration: none;
+    margin: 20px 0 0 20px;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+a.forgot:hover {
+    text-decoration: underline;
+}
+
+div.action {
+    margin: 10px 0 0 0;
+    height: 35px;
+}
+
+a.return {
+    display: block;
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+div.remember {
+    padding-top: 10px;
+    float: left;
+}
+
+    div.remember input {
+        float: left;
+        margin: 1px 6px 0 130px;
+        padding: 0;
+    }
+
+    div.remember label {
+        float: left;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        color: #BBD1ED;
+        font-size: 13px;
+    }
+
+div.row {
+    display: block;
+    height: 35px;
+    padding: 0 0 0 10px;
+    margin-top: 15px;
+}
+
+    div.row:first-child {
+        margin-top: 8px;
+    }
+
+    div.row span {
+        float: left;
+        display: block;
+        font-size: 16px;
+        font-weight: normal;
+        color: White;
+        width: 120px;
+        text-align: left;
+        padding: 8px 0 0 0;
+    }
+
+    div.row > input {
+        float: left;
+        margin: 0;
+        padding: 7px 5px;
+        width: 300px;
+        border: solid 1px #3368A8;
+        -moz-box-shadow: inset 0 1px 2px -1px rgba(0,0,0,.5);
+        -webkit-box-shadow: inset 0 1px 2px -1px rgba(0,0,0,.5);
+        box-shadow: inset 0 1px 2px -1px rgba(0,0,0,.5);
+        font-size: 16px;
+        background-color: #FFFFFF;
+    }
+
+input[type=submit] {
+    float: left;
+    cursor: pointer;
+    border: 1px solid #00459a;
+    margin-right: 5px;
+    padding: .4em 2em;
+    font-weight: bold;
+    font-size: 15px;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 1px 0 0 rgba(255, 255, 255, 0.15) inset, 0 1px 0 #5A90D3;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 1px 0 0 rgba(255, 255, 255, 0.15) inset, 0 1px 0 #5A90D3;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 1px 0 0 rgba(255, 255, 255, 0.15) inset, 0 1px 0 #5A90D3;
+    color: #fff !important;
+    text-shadow: 0 1px 0 #9f5517;
+    background: #ec8026;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ef9331), to(#e9701d));
+    background: -moz-linear-gradient(0% 100% 90deg,#e9701d,#ef9331);
+    background: -ms-linear-gradient(0% 100% 90deg,#e9701d,#ef9331);
+    background: -o-linear-gradient(#ef9331,#e9701d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef9331', endColorstr='#e9701d');
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+input.login, input.home {
+    float: right;
+}
+
+input.submit {
+    float: left;
+}
+
+div.copyright {
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+    color: #666;
+}
+
+    div.copyright span, div.copyright a {
+        display: block;
+        float: left;
+    }
+
+    div.copyright span {
+        padding-top: 10px;
+        margin-right: 5px;
+    }
+
+    div.copyright a, div.copyright a:visited {
+        width: 100px;
+        height: 28px;
+        background-image: url(../images/dealpos.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+
+        div.copyright a:hover {
+            color: #105CB6;
+            text-decoration: underline;
+        }
+
+div.error {
+    border: 1px solid #DD3C10;
+    margin-bottom: 10px;
+    padding: 8px 8px 8px 32px;
+    background: url("../images/icon/alert.png") no-repeat scroll 8px center #fef1ec;
+    border: 1px solid #cd0a0a;
+    color: #cd0a0a;
+    border-radius:5px;
+}
+    div.error strong {
+        color:#000;
+    }
+
+div.success {
+    background-color: #ffffe1;
+    background-image: url("../images/icon/success.png");
+    background-position: 8px center;
+    background-repeat: no-repeat;
+    border: 1px solid #CACACA;
+    margin-bottom: 10px;
+    padding: 8px 8px 8px 32px;
+}
+
+div.warning {
+    background: url("../images/newui/ui-bg-warning.png") repeat-x scroll 50% 50% #fbf9ee;
+    border: 1px solid #fcefa1;
+    border-radius: 5px;
+    color: #363636;
+    display: block;
+    padding: 15px 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+    div.warning i {
+        background: url("../images/newui/icon-warning.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+        display: inline-block;
+        height: 13px;
+        margin-right: 5px;
+        width: 13px;
+    }
+
+    div.warning span {
+        color: #363636;
+        line-height: 18px;
+        text-align: center;
+    }
+/* For modern browsers */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom: 1;
+}
+
+@media screen and (max-width:1000px) {
+    div.copyright {
+        top: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div.row span {
+        display: none;
+    }
+
+    div.container {
+        text-align: left;
+        width: 320px;
+        margin-top: 25%;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #262626;
+        font-weight: bold;
+    }
+
+    div.row {
+        padding: 0;
+    }
+
+        div.row input.inputbox {
+            clear: both;
+            display: block;
+            float: left;
+            font-size: 16px;
+            padding: 9px 5px 9px 10px;
+            width: 95%;
+            border: none;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            transition: all 0.2s linear;
+            border: 1px solid #e6e6e6;
+        }
+
+    div.form-block {
+        border: none;
+        box-shadow: none;
+        background: none;
+        margin-top: 0px;
+        padding: 10px 10px 10px;
+    }
+
+    a.forgot, a.forgot:visited {
+        clear: both;
+        margin: 20px 0 0 0 !important;
+        text-align: center;
+        margin: 0;
+        color: #0072C6;
+        font-size: 11px;
+    }
+
+    div.remember {
+        padding-top: 16px;
+        float: left;
+        clear: both;
+    }
+
+        div.remember input {
+            margin: 1px 6px 0 20px;
+        }
+
+        div.remember label {
+            float: left;
+            color: #333;
+            font-size: 11px;
+        }
+
+    input[type=submit] {
+        border: none;
+        margin: 8px 10px 0 0;
+        box-shadow: none;
+        background: #ec8026;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #c7c7c7;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        color: #c7c7c7;
+    }
+
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: #c7c7c7;
+    }
+
+    :-ms-input-placeholder {
+        color: #c7c7c7;
+    }
+
+    div.copyright span {
+        padding-top: 10px;
+        margin-right: 5px;
+        font-size: 10px;
+    }
+
+    div.copyright a, div.copyright a:visited {
+        background-image: url(../images/dealpos.png);
+    }
+
+    div.copyright {
+        position: static;
+        display: block;
+        clear: both;
+        float: none;
+        margin: 0px 0 0 75px;
+        padding-top: 50px;
+    }
+}

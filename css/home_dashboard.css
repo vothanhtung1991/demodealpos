@@ -1,0 +1,392 @@
+﻿
+div.salesperformance {
+    max-width: 1000px;
+    width: 100%;
+    display: inline-block;
+}
+
+    div.salesperformance a {
+        text-decoration: none;
+    }
+
+div.page_action a.clock {
+    background-image: none !important;
+    background-color: white !important;
+    border: none !important;
+    float: none !important;
+    padding-left: 0px !important;
+    line-height: 18px !important;
+}
+
+    div.page_action a.clock i {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-image: url(Images/Cashier/icons_2014.png);
+        background-repeat: no-repeat;
+        line-height: 0;
+        vertical-align: top;
+        text-indent: 999em;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 0 3px 0 0;
+        background-position: -22px -18px;
+    }
+
+    div.page_action a.clock span {
+        margin: 0 1px 0 2px;
+    }
+
+    div.page_action a.clock small {
+        font-style: italic;
+    }
+
+div.weekly_sales {
+    float: left;
+    width: calc(100% - 190px);
+    border: 1px solid #DDDDDD;
+    position: relative;
+    min-height: 317px;
+    box-sizing: border-box;
+}
+
+div.strippedbackground {
+    background: repeating-linear-gradient( 45deg, #FFFFFF, #FFFFFF 10px, #F3F3F3 10px, #F3F3F3 20px );
+    height: 260px;
+}
+
+    div.strippedbackground div.content {
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
+        display: block;
+    }
+
+div.content span:first-child {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-image: url(Images/NewUI/private.png);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+div.content span:nth-child(2) {
+    font-family: 'Roboto Slab', serif;
+    color: #cccccc;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+
+div.row-data {
+}
+
+div.twopanel {
+    height: auto;
+    overflow: auto;
+    clear: both;
+}
+
+    div.twopanel div.panel {
+        width: 49.5%;
+        margin-right: 1%;
+        box-sizing: border-box;
+    }
+
+        div.twopanel div.panel:last-child {
+            margin-right: 0px;
+        }
+
+    div.twopanel h2 {
+        font-weight: normal;
+        padding-left: 15px;
+        margin: 15px 0 5px 0;
+        color: #464646;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    div.twopanel a div.row {
+        height: 70px;
+        border: 1px solid #DDDDDD;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+
+        div.twopanel a div.row:last-child {
+            border-top: 0px;
+        }
+
+        div.twopanel a div.row h3 {
+            font-family: 'Roboto Slab', serif;
+            color: #464646;
+            margin: 0 0 5px 0;
+            display: block;
+        }
+
+    div.twopanel a div.row-data span:last-child {
+        color: #66a822!important;
+        font-size: 19px;
+        float: right;
+        padding-right: 10px;
+    }
+
+    div.twopanel a div.row-data span:first-of-type {
+        float: left!important;
+        color: #7CB5EC;
+        font-size: 19px;
+        text-transform: capitalize;
+        clear: both;
+    }
+
+div.panel a.treatment {
+    height: auto;
+    width: 100%;
+    margin-right: 0px;
+    display: inline-block;
+    padding: 0px;
+    border: 0px;
+}
+
+div.panel a {
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    padding: 10px 15px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+div.twopanel a:last-child {
+    border-top: 0px;
+}
+
+div.twopanel a h3 {
+    color: #464646;
+    margin: 0 0 5px 0;
+}
+
+    div.twopanel a h3 span {
+        float: left;
+    }
+
+    div.twopanel a h3 small {
+        float: right;
+        color: #464646;
+        line-height: 19px;
+        margin: 0 0 5px 0;
+        padding-right: 11px;
+    }
+
+div.twopanel a div.row span:first-of-type {
+    float: left!important;
+    color: #66a822!important;
+    font-size: 19px;
+    text-transform: capitalize;
+    clear: both;
+}
+
+
+div.span2 {
+    width: 50%;
+    border-right: 0;
+    border-top: 0!important;
+    padding-right: 0!important;
+    display: inline-block;
+    float: left;
+}
+
+    div.span2:last-child {
+        border-left: 0!important;
+        padding-right: 2px!important;
+    }
+
+div.salesChart {
+    padding: 0 10px;
+    margin: 0px;
+}
+
+div.today_sales {
+    width: 18%;
+    min-width: 180px;
+    padding-right: 0px;
+    float: right;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #DDDDDD;
+    min-height: 317px;
+    box-sizing: border-box;
+}
+
+    div.today_sales:first-child {
+        float: left;
+    }
+
+    div.today_sales > div {
+        position: relative;
+        border-bottom: 1px solid #DDDDDD;
+        box-sizing: border-box;
+        height: 65px;
+    }
+
+
+        div.today_sales > div:last-child {
+            border-bottom: 0px solid #DDDDDD;
+        }
+
+
+    div.today_sales a small {
+        font-size: 10px;
+        color: #464646;
+    }
+
+
+div.salesperformance_topview {
+    min-height: 317px;
+    max-width: 1000px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+rect {
+    fill: transparent !important;
+}
+
+div.salesperformance_topview h2 {
+    margin: 0px;
+    font-weight: 300;
+    padding: 0.83em 15px;
+    border-bottom: 1px solid #ddd;
+    background: #e6e6e6 url(Images/NewUI/topview_gradient.png) repeat-x 50% 50%;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,.15),0 0 3px rgba(0,0,0,.1);
+    -moz-box-shadow: inset 0 0 0 1px rgba(255,255,255,.15),0 0 3px rgba(0,0,0,.1);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.15),0 0 3px rgba(0,0,0,.1);
+    font-family: 'Roboto Slab', serif;
+    color: #464646;
+}
+
+
+div.today_sales h3 {
+    margin: 0 0 6px 0;
+    padding: 0;
+    font-weight: normal;
+    color: #464646;
+    font-family: 'Roboto Slab', serif;
+}
+
+div.today_sales a {
+    text-decoration: none;
+    padding: 0.83em 0 0.83em 15px;
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+    div.today_sales a > span {
+        color: #66a822;
+        font-size: 16px;
+    }
+
+div.panel h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+div.panel {
+    height: auto;
+    float: left;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 480px) {
+    nav {
+        left: -140px;
+    }
+
+    header > div.account > i {
+        background-image: url(Images/Icon/top-icon.png);
+        background-position: 0px -70px;
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        z-index: 10;
+        padding: 3px 10px 2px 0;
+        cursor: pointer;
+    }
+
+    #txtSearch, div.status_bar > section:first-of-type {
+        display: none;
+    }
+
+    #txtSearch {
+        display: none !important;
+    }
+
+    div.status_bar {
+        padding: 0 !important;
+        width: 96px;
+        right: 0px !important;
+    }
+
+    header div.page_action {
+        right: 0px !important;
+    }
+
+    div.weekly_sales {
+        width: auto !important;
+        float: none !important;
+        margin: 0 auto 10px auto;
+    }
+
+    nav {
+        position: fixed !important;
+    }
+
+    div.highcharts-container {
+        width: auto !important;
+    }
+
+    header h1 {
+        margin: 0 !important;
+    }
+
+    div.today_sales {
+        width: auto !important;
+        float: none !important;
+        margin: 0 auto;
+        min-height: 0 !important;
+    }
+
+    div.twopanel {
+        width: auto !important;
+        margin: 10px auto 0 auto;
+    }
+
+        div.twopanel > div.panel {
+            width: auto !important;
+            margin-bottom: 20px !important;
+            float: none !important;
+        }
+
+        div.twopanel a:first-child {
+            border-bottom: 1px solid #dddddd !important;
+        }
+
+    div.content_scroll {
+        padding: 101px 8px 0 8px !important;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    nav {
+        left: 0;
+    }
+}

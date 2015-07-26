@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="ctl00_ctl00_html" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>
+	Demo DealPOS POS | Dashboard
+</title>
+    <link href="css/css_002.css" rel="stylesheet" type="text/css"/>
+    <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <script src="css/jquery-1.js" type="text/javascript"></script>
+    
+    <link href="css/core_002.css" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery.css" rel="stylesheet" type="text/css"/>
+    
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="css/jquery.js"></script>
+    <script src="css/jquery_002.js" type="text/javascript"></script>
+    <script type="text/javascript" src="css/core.js"></script>
+    <script src="css/jquery_003.js" type="text/javascript"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/core.css" rel="stylesheet" type="text/css">
+    <link href="css/home_dashboard.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-app.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-1.css" rel="stylesheet" type="text/css">
+    <script src="css/highcharts.js" type="text/javascript"></script>
+    <script src="css/LineHome.js" type="text/javascript"></script>
+    <script src="css/jquery-ui-1.js" type="text/javascript"></script>
+    <script src="css/dialog.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="ctl00_ctl00_divContainer" class="container">
+    <div id="header">
+        <div class="navbar">
+            <div class="navbar-inner">
+              <div class="container-fluid">
+                <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
+                <div class="nav-no-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="icon16 icomoon-icon-cog"></span> Settings
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="menu">
+                                    <ul>
+                                        <li>                                                    
+                                            <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
+                                        </li>
+                                        <li>                                                    
+                                            <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="menu">
+                                    <ul class="messages">    
+                                        <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
+                                        <li>
+                                           <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
+                                            <span class="msg">I have question about new function ...</span>
+                                        </li>
+                                        <li>
+                                           <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
+                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
+                                            <span class="msg">I need to meet you urgent please call me ...</span>
+                                        </li>
+                                        <li>
+                                            <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
+                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
+                                            <span class="msg">I send you my suggestion, please look and ...</span>
+                                        </li>
+                                        <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                  
+                    <ul class="nav pull-right usernav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="menu">
+                                    <ul class="notif">
+                                        <li class="header"><strong>Notifications</strong> (3) items</li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                <span class="event">1 User is registred</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
+                                                <span class="event">Jony add 1 comment</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
+                                                <span class="event">admin Julia added post with a long description</span>
+                                            </a>
+                                        </li>
+                                        <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+                                <img src="images/avatar.jpg" alt="" class="image" /> 
+                                <span class="txt">admin@supr.com</span>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
+                    </ul>
+                </div><!-- /.nav-collapse -->
+              </div>
+            </div><!-- /navbar-inner -->
+          </div><!-- /navbar --> 
+    </div><!-- End #header -->
+    <nav class="mCustomScrollbar _mCS_1">
+        <div class="mCustomScrollBox mCS-dark" id="mCSB_1" style="position:relative; height:100%; overflow:hidden; max-width:100%;">
+            <div class="mCSB_container mCS_no_scrollbar" style="position:relative; top:0;">
+                <ul>
+                    <li class="selected"><a class="dashboard" href="http://demo.dealpos.com/Authenticated/Default.aspx"><i></i><span>Dashboard</span></a></li></ul><strong>Point of Sale</strong><ul><li><a class="products" href="http://demo.dealpos.com/Authenticated/Catalog/Master/Product.aspx"><i></i><span>Products</span></a></li><li><a class="sell" href="http://demo.dealpos.com/Authenticated/Sell/POS.aspx"><i></i><span>Sell</span></a></li><li><a class="reports" href="http://demo.dealpos.com/Authenticated/Report/Sales/Detail.aspx"><i></i><span>Reports</span></a></li></ul><strong>Database</strong><ul><li><a class="contacts" href="http://demo.dealpos.com/Authenticated/Contacts/Contact/Contact/Customers.aspx"><i></i><span>Contacts</span></a></li><li><a class="orders" href="http://demo.dealpos.com/Authenticated/Transaction/Customer/Invoice.aspx"><i></i><span>Orders</span></a></li><li><a class="payment" href="http://demo.dealpos.com/Authenticated/Payment/Sales/Daily.aspx"><i></i><span>Payment</span></a></li><li><a class="debt" href="http://demo.dealpos.com/Authenticated/Debt/Receiveable/Balance.aspx"><i></i><span>Debt</span></a></li></ul><strong>Warehouse</strong><ul><li><a class="inventory" href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Category.aspx"><i></i><span>Inventory</span></a></li><li><a class="adjustment" href="http://demo.dealpos.com/Authenticated/Audit/Adjustment/List.aspx"><i></i><span>Adjustment</span></a></li><li><a class="buy" href="http://demo.dealpos.com/Authenticated/Buy/Cashier/Form.aspx"><i></i><span>Buy</span></a></li><li><a class="delivery" href="http://demo.dealpos.com/Authenticated/Delivery/Archive/Transfer/List.aspx"><i></i><span>Delivery</span></a></li></ul><strong>Add-ons</strong><ul><li><a class="accounting" href="http://demo.dealpos.com/Authenticated/Accounting/Account/Code/List.aspx"><i></i><span>Accounting</span></a></li>
+                    </ul>
+            </div>
+            <div class="mCSB_scrollTools" style="position: absolute; display: none;">
+                <div class="mCSB_draggerContainer">
+                    <div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;">
+                        <div class="mCSB_dragger_bar" style="position:relative;"></div>
+                    </div>
+                    <div class="mCSB_draggerRail"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content_scroll">
+        
+        <div class="tabContent">
+            
+
+    <div class="salesperformance">
+
+        <div class="salesperformance_topview">
+            <div id="ctl00_ctl00_content_content_divWeeklySales" class="weekly_sales">
+                <a href="http://demo.dealpos.com/Authenticated/Chart/Sales/Amount/Daily.aspx" title="View weekly sales">
+                    <h2>Weekly Sales
+                    </h2>
+                </a>
+                <div id="ctl00_ctl00_content_content_divHiddenBackground" class="">
+                    <div id="ctl00_ctl00_content_content_divHiddenContent" class="">
+                        <span></span>
+                        <span id="ctl00_ctl00_content_content_lblMessage"></span>
+                    </div>
+                    <div id="ctl00_ctl00_content_content_divSalesChart" class="salesChart">
+                        <input name="ctl00$ctl00$content$content$Line_hfDataURL" id="Line_hfDataURL" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;chart&gt;
+  &lt;series&gt;&lt;name&gt;Sales&lt;/name&gt;&lt;data from=&quot;20150717&quot;&gt;&lt;point&gt;Date.UTC(2015,7,17),0&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,18),0&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,19),253.890000&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,20),45.000000&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,21),235.000000&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,22),25.000000&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,23),0&lt;/point&gt;&lt;/data&gt;&lt;/series&gt;&lt;series&gt;&lt;name&gt;Cost&lt;/name&gt;&lt;data from=&quot;20150717&quot;&gt;&lt;point&gt;Date.UTC(2015,7,17),0&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,18),0&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,19),186.5000&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,20),25.0000&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,21),165.0000&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,22),15.0000&lt;/point&gt;&lt;point&gt;Date.UTC(2015,7,23),0&lt;/point&gt;&lt;/data&gt;&lt;/series&gt;
+&lt;/chart&gt;" type="hidden">
+                        <div id="LineChart" class="chart"><div style="position: relative; overflow: hidden; width: 788px; height: 260px; text-align: left; line-height: normal; z-index: 0; font-family: &quot;Lucida Grande&quot;,&quot;Lucida Sans Unicode&quot;,Verdana,Arial,Helvetica,sans-serif; font-size: 12px; left: 0px; top: 0.133331px;" id="highcharts-0" class="highcharts-container"><svg height="260" width="788" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="highcharts-1"><rect height="220" width="731" y="0" x="0" fill="none"></rect></clipPath></defs><rect stroke-width="0" height="260" width="788" y="0" x="0" fill="#FFFFFF" ry="5" rx="5"></rect><g zIndex="1" class="highcharts-grid"></g><g zIndex="1" class="highcharts-grid"><path zIndex="1" stroke-width="1" stroke="#f4f4f4" d="M 42 157.5 L 773 157.5" fill="none"></path><path zIndex="1" stroke-width="1" stroke="#f4f4f4" d="M 42 83.5 L 773 83.5" fill="none"></path><path zIndex="1" stroke-width="1" stroke="#f4f4f4" d="M 42 10.5 L 773 10.5" fill="none"></path><path zIndex="1" stroke-width="1" stroke="#f4f4f4" d="M 42 230.5 L 773 230.5" fill="none"></path></g><g zIndex="2" class="highcharts-axis"><path stroke-width="1" stroke="#C0D0E0" d="M 168.5 230 L 168.5 235" fill="none"></path><path stroke-width="1" stroke="#C0D0E0" d="M 287.5 230 L 287.5 235" fill="none"></path><path stroke-width="1" stroke="#C0D0E0" d="M 407.5 230 L 407.5 235" fill="none"></path><path stroke-width="1" stroke="#C0D0E0" d="M 526.5 230 L 526.5 235" fill="none"></path><path stroke-width="1" stroke="#C0D0E0" d="M 645.5 230 L 645.5 235" fill="none"></path><path stroke-width="1" stroke="#C0D0E0" d="M 765.5 230 L 765.5 235" fill="none"></path><path stroke-width="1" stroke="#C0D0E0" d="M 48.5 230 L 48.5 235" fill="none"></path><path visibility="visible" zIndex="7" stroke-width="1" stroke="#C0D0E0" d="M 42 230.5 L 773 230.5" fill="none"></path></g><g zIndex="2" class="highcharts-axis"></g><path visibility="visible" zIndex="2" stroke="#C0C0C0" stroke-width="1" d="M 526.5 10 L 526.5 230" fill="none"></path><g zIndex="3" class="highcharts-series-group"><g clip-path="url(#highcharts-1)" transform="translate(42,10)" zIndex="0.1" visibility="visible" class="highcharts-series"><path zIndex="0" fill-opacity="0.3" d="M 7.166666666666667 220 L 126.61111111111111 220 L 246.05555555555557 33.8 L 365.5 187 L 484.94444444444446 47.7 L 604.3888888888889 201.7 L 723.8333333333334 220 L 723.8333333333334 220 L 7.166666666666667 220" fill="rgb(166,201,101)"></path><path zIndex="1" stroke-width="1" stroke="#7EB7EE" d="M 7.166666666666667 220 L 126.61111111111111 220 L 246.05555555555557 33.8 L 365.5 187 L 484.94444444444446 47.7 L 604.3888888888889 201.7 L 723.8333333333334 220" fill="none"></path></g><g clip-path="none" transform="translate(42,10)" zIndex="0.1" visibility="visible" class="highcharts-markers"><path stroke-width="0" stroke="#FFFFFF" d="M 723.8333333333334 216 C 729.1613333333333 216 729.1613333333333 224 723.8333333333334 224 C 718.5053333333334 224 718.5053333333334 216 723.8333333333334 216 Z" fill="#7EB7EE"></path><path stroke-width="0" stroke="#FFFFFF" d="M 604.3888888888889 197.7 C 609.7168888888889 197.7 609.7168888888889 205.7 604.3888888888889 205.7 C 599.0608888888889 205.7 599.0608888888889 197.7 604.3888888888889 197.7 Z" fill="#7EB7EE"></path><path stroke-width="0" stroke="#FFFFFF" d="M 484.94444444444446 43.7 C 490.27244444444443 43.7 490.27244444444443 51.7 484.94444444444446 51.7 C 479.6164444444445 51.7 479.6164444444445 43.7 484.94444444444446 43.7 Z" fill="#7EB7EE"></path><path stroke-width="0" stroke="#FFFFFF" d="M 365.5 183 C 370.828 183 370.828 191 365.5 191 C 360.172 191 360.172 183 365.5 183 Z" fill="#7EB7EE"></path><path stroke-width="0" stroke="#FFFFFF" d="M 246.05555555555557 29.799999999999997 C 251.38355555555557 29.799999999999997 251.38355555555557 37.8 246.05555555555557 37.8 C 240.72755555555557 37.8 240.72755555555557 29.799999999999997 246.05555555555557 29.799999999999997 Z" fill="#7EB7EE"></path><path stroke-width="0" stroke="#FFFFFF" d="M 126.61111111111111 216 C 131.93911111111112 216 131.93911111111112 224 126.61111111111111 224 C 121.28311111111111 224 121.28311111111111 216 126.61111111111111 216 Z" fill="#7EB7EE"></path><path stroke-width="0" stroke="#FFFFFF" d="M 7.166666666666667 216 C 12.494666666666667 216 12.494666666666667 224 7.166666666666667 224 C 1.838666666666667 224 1.838666666666667 216 7.166666666666667 216 Z" fill="#7EB7EE"></path></g><g clip-path="url(#highcharts-1)" transform="translate(42,10)" zIndex="0.1" visibility="visible" class="highcharts-series"><path zIndex="0" fill-opacity="0.3" d="M 7.166666666666667 220 L 126.61111111111111 220 L 246.05555555555557 83.2 L 365.5 201.7 L 484.94444444444446 99 L 604.3888888888889 209 L 723.8333333333334 220 L 723.8333333333334 220 L 7.166666666666667 220" fill="rgb(170,70,67)"></path><path zIndex="1" stroke-width="1" stroke="#AA4643" d="M 7.166666666666667 220 L 126.61111111111111 220 L 246.05555555555557 83.2 L 365.5 201.7 L 484.94444444444446 99 L 604.3888888888889 209 L 723.8333333333334 220" fill="none"></path></g><g clip-path="none" transform="translate(42,10)" zIndex="0.1" visibility="visible" class="highcharts-markers"><path stroke-width="0" stroke="#FFFFFF" d="M 723.8333333333334 216 L 727.8333333333334 220 723.8333333333334 224 719.8333333333334 220 Z" fill="#AA4643"></path><path stroke-width="0" stroke="#FFFFFF" d="M 604.3888888888889 205 L 608.3888888888889 209 604.3888888888889 213 600.3888888888889 209 Z" fill="#AA4643"></path><path stroke-width="0" stroke="#FFFFFF" d="M 484.94444444444446 95 L 488.94444444444446 99 484.94444444444446 103 480.94444444444446 99 Z" fill="#AA4643"></path><path stroke-width="0" stroke="#FFFFFF" d="M 365.5 197.7 L 369.5 201.7 365.5 205.7 361.5 201.7 Z" fill="#AA4643"></path><path stroke-width="0" stroke="#FFFFFF" d="M 246.05555555555557 79.2 L 250.05555555555557 83.2 246.05555555555557 87.2 242.05555555555557 83.2 Z" fill="#AA4643"></path><path stroke-width="0" stroke="#FFFFFF" d="M 126.61111111111111 216 L 130.61111111111111 220 126.61111111111111 224 122.61111111111111 220 Z" fill="#AA4643"></path><path stroke-width="0" stroke="#FFFFFF" d="M 7.166666666666667 216 L 11.166666666666668 220 7.166666666666667 224 3.166666666666667 220 Z" fill="#AA4643"></path></g></g><text zIndex="4" class="highcharts-title" text-anchor="middle" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:16px;color:#3E576F;fill:#3E576F;" y="-5" x="392"><tspan x="392"> </tspan></text><g zIndex="7" class="highcharts-axis-labels"><text visibility="visible" text-anchor="middle" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;line-height:14px;fill:#666;" y="244" x="49.166666666666664"><tspan x="49.166666666666664">17. Jul</tspan></text><text visibility="visible" text-anchor="middle" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;line-height:14px;fill:#666;" y="244" x="168.61111111111111"><tspan x="168.61111111111111">18. Jul</tspan></text><text visibility="visible" text-anchor="middle" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;line-height:14px;fill:#666;" y="244" x="288.05555555555554"><tspan x="288.05555555555554">19. Jul</tspan></text><text visibility="visible" text-anchor="middle" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;line-height:14px;fill:#666;" y="244" x="407.5"><tspan x="407.5">20. Jul</tspan></text><text visibility="visible" text-anchor="middle" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;line-height:14px;fill:#666;" y="244" x="526.9444444444445"><tspan x="526.9444444444445">21. Jul</tspan></text><text visibility="visible" text-anchor="middle" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;line-height:14px;fill:#666;" y="244" x="646.3888888888889"><tspan x="646.3888888888889">22. Jul</tspan></text><text visibility="visible" text-anchor="middle" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;line-height:14px;fill:#666;" y="244" x="765.8333333333334"><tspan x="765.8333333333334">23. Jul</tspan></text></g><g zIndex="7" class="highcharts-axis-labels"><text visibility="visible" text-anchor="end" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;width:346px;color:#666;line-height:14px;fill:#666;" y="242.6" x="34"></text><text visibility="visible" text-anchor="end" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;width:346px;color:#666;line-height:14px;fill:#666;" y="161.76666666666668" x="34"><tspan x="34">100</tspan></text><text visibility="visible" text-anchor="end" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;width:346px;color:#666;line-height:14px;fill:#666;" y="88.43333333333334" x="34"><tspan x="34">200</tspan></text><text visibility="visible" text-anchor="end" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;width:346px;color:#666;line-height:14px;fill:#666;" y="15.100000000000028" x="34"><tspan x="34">300</tspan></text></g><g transform="translate(399,105)" visibility="visible" style="padding:0;white-space:nowrap;" zIndex="8" class="highcharts-tooltip"><rect transform="translate(1, 1)" stroke-opacity="0.049999999999999996" stroke="black" isShadow="true" fill-opacity="0.85" stroke-width="5" height="54" width="116" y="0" x="0" fill="none" ry="5" rx="5"></rect><rect transform="translate(1, 1)" stroke-opacity="0.09999999999999999" stroke="black" isShadow="true" fill-opacity="0.85" stroke-width="3" height="54" width="116" y="0" x="0" fill="none" ry="5" rx="5"></rect><rect transform="translate(1, 1)" stroke-opacity="0.15" stroke="black" isShadow="true" fill-opacity="0.85" stroke-width="1" height="54" width="116" y="0" x="0" fill="none" ry="5" rx="5"></rect><rect anchorY="39" anchorX="128" stroke="#7EB7EE" fill-opacity="0.85" stroke-width="2" height="54" width="116" y="0" x="0" fill="rgb(255,255,255)" ry="5" rx="5"></rect><text zIndex="1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#333333;fill:#333333;" y="18" x="5"><tspan x="5" style="font-size: 10px">Tuesday, Jul 21, 2015</tspan><tspan x="5" dy="14" style="fill:#7EB7EE">Sales</tspan><tspan dx="3">: </tspan><tspan dx="3" style="font-weight:bold">235</tspan><tspan x="5" dy="16" style="fill:#AA4643">Cost</tspan><tspan dx="3">: </tspan><tspan dx="3" style="font-weight:bold">165</tspan></text></g><g zIndex="9" class="highcharts-tracker"><g transform="translate(42,10)" zIndex="1" visibility="visible"><path style="" stroke-width="21" stroke="rgb(192,192,192)" stroke-opacity="0.000001" visibility="visible" stroke-linejoin="bevel" isTracker="true" d="M -2.833333333333333 220 L 7.166666666666667 220 L 126.61111111111111 220 L 246.05555555555557 33.8 L 365.5 187 L 484.94444444444446 47.7 L 604.3888888888889 201.7 L 723.8333333333334 220 L 733.8333333333334 220" fill="none"></path></g><g transform="translate(42,10)" zIndex="1" visibility="visible"><path style="" stroke-width="21" stroke="rgb(192,192,192)" stroke-opacity="0.000001" visibility="visible" stroke-linejoin="bevel" isTracker="true" d="M -2.833333333333333 220 L 7.166666666666667 220 L 126.61111111111111 220 L 246.05555555555557 83.2 L 365.5 201.7 L 484.94444444444446 99 L 604.3888888888889 209 L 723.8333333333334 220 L 733.8333333333334 220" fill="none"></path></g></g></svg></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ctl00_ctl00_content_content_divTodayOverview" class="today_sales">
+                <h2>Today
+                </h2>
+                <div>
+                    <a href="http://demo.dealpos.com/Authenticated/Report/Sales/Summary.aspx?date=today" title="View today's revenue">
+                        <h3>Revenue</h3>
+                        <span id="ctl00_ctl00_content_content_lblSales">$ 0</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://demo.dealpos.com/Authenticated/Report/Sales/Summary.aspx?date=today" title="View today's transaction">
+                        <h3>Transaction</h3>
+                        <span id="ctl00_ctl00_content_content_lblTransaction" class="number">0</span>
+                        <small class="free_info">
+                            <span id="ctl00_ctl00_content_content_lblTransactionFree"></span></small>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://demo.dealpos.com/Authenticated/Report/Sales/Summary.aspx?date=today" title="View today's quantity">
+                        <h3>Quantity</h3>
+                        <span id="ctl00_ctl00_content_content_lblTotalQuantity">0</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://demo.dealpos.com/Authenticated/Contacts/Contact/Contact/Customers.aspx?date=today" title="View today's quantity">
+                        <h3>New Customer(s)</h3>
+                        <span id="ctl00_ctl00_content_content_lblNewCustomer">0</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="twopanel">
+            <div class="panel">
+                <h2>Activity</h2>
+                <a href="http://demo.dealpos.com/Authenticated/Report/Sales/Rank/Product.aspx?date=today" title="View today's top product">
+
+                    <h3><span>Best Seller</span><small>Quantity</small></h3>
+                    <div class="row-data">
+                        <span id="ctl00_ctl00_content_content_lblBestSellerName"></span>
+                        <span id="ctl00_ctl00_content_content_lblBestSellerQuantity"></span>
+                    </div>
+                </a>
+                <a href="http://demo.dealpos.com/Authenticated/Report/Sales/Group/Entity.aspx?date=today" title="View today's top outlet">
+
+                    <h3><span>Best Outlet</span><small>Number of Transaction</small></h3>
+                    <div class="row-data">
+                        <span id="ctl00_ctl00_content_content_lblBestOutletName"></span>
+                        <span id="ctl00_ctl00_content_content_lblBestOutletQuantity"></span>
+                    </div>
+                </a>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+
+    </div>
+</body>
+</html>
