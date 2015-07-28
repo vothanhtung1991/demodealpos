@@ -1,0 +1,54 @@
+#ctl00_ctl00_ctl00_content_pageHeaderTitle {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 11px 10px;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px solid #DDE2EB;
+    font-family: "Roboto Slab",serif;
+    color: #262C3F;
+    line-height: 28px;
+}
+div.page_menu > ul {
+    margin: 0px 0px 7px;
+    padding: 10px 0px 0px 5px;
+    list-style: outside none none;
+    height: 25px;
+    border-bottom: 1px solid #D3D6DB;
+}
+div.page_menu > ul li {
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+    list-style: outside none none;
+    float: left;
+}
+div.page_menu > ul li.active a {
+    position: relative;
+    background-image: url("../images/arrow_tab.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+div.page_menu > ul li.active a, div.page_menu > ul li a:hover {
+    color: #000 !important;
+}
+div.page_menu > ul li a {
+    margin: 0px;
+    padding: 0px 0px 11px;
+    list-style: outside none none;
+    display: block;
+    color: #3B5998;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 15px;
+    height: 15px;
+}
+
+div.more_menu > a {
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-image: url("../images/icons/top-icon.png");
+    background-position: 17px -69px;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    margin-top: 4px;
+}
