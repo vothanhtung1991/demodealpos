@@ -92,3 +92,38 @@ div.more_menu > a {
     line-height: normal;
     min-height: 10px;
 }
+.filter a.more {
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 0px 0px 5px 5px;
+    background: #F6F6F6 url("../images/icons/down.png") no-repeat scroll 132px center !important;
+    border: 1px solid #CCC;
+    padding: 0px 15px 0px 10px;
+    color: #666;
+    display: block;
+    position: absolute;
+    bottom: -22px;
+    height: 20px;
+    left: 10px;
+    line-height: 21px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 123px;
+    cursor: pointer;
+    z-index: 1;
+}
+.filter_more {
+    display: none !important;
+}
+.filter_more.active {
+    display: block !important;;
+}
+.pageHeaderTitle {
+    position: relative;
+}
+
+.pageHeaderTitle .page_action {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

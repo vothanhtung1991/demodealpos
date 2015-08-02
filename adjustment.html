@@ -229,109 +229,47 @@
 
 <div class="span12">
 <div class="pageHeaderTitle">
-    <h1 id="ctl00_ctl00_ctl00_content_pageHeaderTitle" class="inventory"><i></i><span>Inventory for All Entity</span></h1>
+    <h1 id="ctl00_ctl00_ctl00_content_pageHeaderTitle" class="inventory"><i></i><span>Inventory Adjustment</span></h1>
     <div class="page_action">
     <a class="btn" href="#"><span class="icon16 typ-icon-export"></span>Export</a>
+    <a class="btn btn-success" href="#"><span class="icon16 icomoon-icon-plus" style="color: white;"></span>Add</a>
     </div>
 </div>
 <div id="page_menu" class="page_menu">
-<ul><li class="active"><a href="/Authenticated/Stock/Quantity/Category.aspx">Detail</a></li><li><a href="/Authenticated/Stock/Quantity/Entity.aspx">Outlet</a></li><li><a href="/Authenticated/Stock/Quantity/Rank.aspx">Rank</a></li><li><a href="/Authenticated/Stock/Quantity/Reorder.aspx">Reorder Point</a></li><li><a href="/Authenticated/Stock/Quantity/InventoryAvailable.aspx">Available</a></li><li><a href="/Authenticated/Stock/Quantity/DepletingInventory.aspx">Depleting</a></li><li><a href="/Authenticated/Stock/Quantity/InventoryTransit.aspx">Transit</a></li></ul>
+<ul>
+    <li class="active"><a href="#">Inventory Adjustment</a></li>
+    <li><a href="#">Inventory Count</a></li>
+</ul>
 
-<div class="more_menu"> <a title="More menu" class=""></a> <div style="display: none;" class="drop_menu"><strong>Inventory Traffic</strong><ul><li><a href="/Authenticated/Stock/Traffic/Product/Simple.aspx">Product</a></li><li><a href="/Authenticated/Stock/Traffic/Entity.aspx">Outlet</a></li><li><a href="/Authenticated/Stock/Traffic/Date.aspx">Inventory Date</a></li></ul><strong>View</strong><ul><li><a href="/Authenticated/Stock/View/Transferable.aspx">Transferable Stock</a></li></ul></div> </div>
+
+<div class="more_menu"> <a title="More menu" class=""></a> <div style="display: none;" class="drop_menu"><strong>Tools</strong><ul><li><a href="/Authenticated/Audit/Stock/ProductSheet.aspx">Product Sheet</a></li><li><a href="/Authenticated/Audit/Stock/NegativeQuantity.aspx">Negative</a></li></ul><strong>Report</strong><ul><li><a href="/Authenticated/Audit/Adjustment/Report/Adjustment.aspx">Adjustment</a></li></ul></div> </div>
+
+</div>
+
+<div class="filter">
+    <div class="col-left">
+        <div class="span3">
+            <strong>Number</strong>
+            <input class="text" id="normalInput" type="text">
+        </div>
+        <div class="span3">
+            <strong>From</strong>
+            <input class="text hasDatepicker" id="datepicker" type="text" value="">
+        </div>
+        <div class="span3">
+            <strong>To</strong>
+            <input class="text hasDatepicker" id="datepicker" type="text" value="">
+        </div>
+
+    </div>
+    <div class="col-right">
+        <button class="btn" href="#"><span class="icon16 icomoon-icon-loop"></span> Update</button>
+    </div>
 </div>
 
 
-<table class="responsive table table-bordered">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Code</th>
-        <th>Qty</th>
-        <th>UOM</th>
-        <th>UnitCost(All)</th>
-        <th>UnitPrice(All) </th>
-        <th>Margin(%)</th>
-        <th>Discount(%)</th>
-
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>serial (red)</td>
-        <td></td>
-        <td>1</td>
-        <td></td>
-        <td>0</td>
-        <td>0</td>
-        <td>100</td>
-        <td>0</td>
-      </tr>
-    </tbody>
-</table>
 
 
-
-
-<table class="summary">
-
-
-    <tbody>
-        <tr id="ctl00_ctl00_ctl00_content_content_ItemSummary1_trSales">
-            <th>
-                Outlet's Inventory Value
-            </th>
-            <td>
-                :
-            </td>
-            <td class="sales border_bottom">
-                0
-            </td>
-        </tr>
-
-
-
-
-
-        <tr id="ctl00_ctl00_ctl00_content_content_ItemSummary1_trCost">
-            <th>
-                Inventory Cost (
-                <span id="ctl00_ctl00_ctl00_content_content_ItemSummary1_litCostPercentage" class="Percentage">0 %</span>)
-            </th>
-            <td>
-                :
-            </td>
-            <td class="cost">
-                0
-            </td>
-        </tr>
-
-        <tr id="ctl00_ctl00_ctl00_content_content_ItemSummary1_trProfit" class="profit">
-            <th>
-                Inventory Margin (<span id="ctl00_ctl00_ctl00_content_content_ItemSummary1_lblPercentage" class="Percentage">0 %</span>)
-            </th>
-            <td>
-                :
-            </td>
-            <td class="profit border_top">
-                0
-            </td>
-        </tr>
-
-        <tr class="profit">
-            <th>
-                Quantity
-            </th>
-            <td>
-                :
-            </td>
-            <td class="profit">
-                1
-            </td>
-        </tr>
-
-
-    </tbody>
-</table>
 
 </div> <!-- end span12 -->
 
