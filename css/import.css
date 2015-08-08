@@ -1,0 +1,86 @@
+﻿a.csv_download {
+    display: inline-block;
+    height: 55px;
+    background-image: url(/Images/Icon/csv-download.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 22px 10px 0 75px;
+    text-decoration: none;
+    width: 135px;
+    text-align: center;
+    line-height: 17px;
+    color: Blue;
+    font-weight: bold;
+}
+
+    a.csv_download:hover {
+        background-image: url(/Images/Icon/csv-download_hover.png);
+        text-decoration: underline;
+    }
+
+fieldset {
+    border: solid 1px #D3DAE8;
+    margin: 0 0 12px 0;
+    padding: 8px 12px 6px 8px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+    fieldset legend {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    fieldset.extra legend {
+        color: blue;
+    }
+
+    fieldset ol {
+        margin: 0 0 3px 22px;
+        padding: 0;
+    }
+
+        fieldset ol li {
+            margin: 3px 0 0 0;
+        }
+
+            fieldset ol li a, fieldset ol li a:visited {
+                font-weight: bold;
+                color: blue;
+                text-decoration: none;
+            }
+
+                fieldset ol li a:hover {
+                    text-decoration: underline;
+                }
+
+input.txtQty{
+    padding: 5px;
+    border: 1px solid #C8D3DF;
+    width: 50px !important;
+}
+
+input.datepicker {
+    padding: 5px;
+}
+
+div.section_info {
+    width: 140px !important;
+}
+
+div.section_content input.file {
+    padding: 5px;
+    border: 1px solid #C8D3DF;
+    display: block;
+    min-width: 400px;
+}
+
+div.section_content > ol {
+    margin: 5px 0 0 20px;
+    padding: 0;
+}
+
+div.section_content > ol li {
+    margin: 0 0 5px 0;
+    padding: 0;
+}

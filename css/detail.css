@@ -1,0 +1,656 @@
+﻿div.half_pane_left {
+    float: left;
+    width: 475px;
+}
+
+div.half_pane_button_left {
+    float: left;
+    width: 460px;
+}
+
+div.half_pane_right {
+    margin-left: 485px;
+}
+
+div.half_pane_button_right {
+    float: right;
+    width: 460px;
+}
+
+div.small_pane {
+    float: left;
+    width: 340px;
+}
+
+div.large_pane {
+    margin-left: 350px;
+}
+
+div.output_pane {
+    float: left;
+    width: 375px;
+}
+
+div.input_pane {
+    float: left;
+    width: 600px;
+    margin-left: 15px;
+}
+
+div.pane {
+    border: 1px solid #9e9e9e;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0 0 20px 0;
+}
+
+    div.pane h2 {
+        margin: 0;
+        padding: 8px 7px 8px 25px;
+        -webkit-border-radius: 3px 3px 0px 0px;
+        border-radius: 3px 3px 0px 0px;
+        border-bottom: 1px solid #9e9e9e;
+        background: url("/images/icon/arrow/down_dark.png") no-repeat 8px center,-webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#f4f4f4),color-stop(100%,#e4e4e4));
+        background: url("/images/icon/arrow/down_dark.png") no-repeat 8px center,-webkit-linear-gradient(#f4f4f4,#e4e4e4);
+        background: url("/images/icon/arrow/down_dark.png") no-repeat 8px center,-moz-linear-gradient(#f4f4f4,#e4e4e4);
+        background: url("/images/icon/arrow/down_dark.png") no-repeat 8px center,-o-linear-gradient(#f4f4f4,#e4e4e4);
+        background: url("/images/icon/arrow/down_dark.png") no-repeat 8px center,-ms-linear-gradient(#f4f4f4,#e4e4e4);
+        background: url("/images/icon/arrow/down_dark.png") no-repeat 8px center,linear-gradient(#f4f4f4,#e4e4e4);
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    div.pane div.body {
+        padding: 5px 10px;
+    }
+
+ul.bullets {
+    margin: 0 0 0 21px;
+    padding: 0;
+    display: block;
+}
+
+    ul.bullets li {
+        margin: 0 0 3px 0;
+        padding: 2px 0;
+        list-style-type: circle;
+    }
+
+        ul.bullets li a, ul.bullets li a:visited {
+            color: blue;
+            text-decoration: none;
+        }
+
+ul.checkbox {
+    margin: 0 0 0 21px;
+    padding: 0;
+    display: block;
+}
+
+    ul.checkbox li {
+        margin: 0 0 3px 0;
+        padding: 0;
+        display: block;
+    }
+
+        ul.checkbox li label {
+            display: inline-block;
+            margin: 0 0 0 5px;
+        }
+
+
+ul.pane_action, ul.document_info {
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 4px 5px;
+    background-color: #ffffe1;
+    background-position: 8px center;
+    background-repeat: no-repeat;
+    border: 1px solid #CACACA;
+    list-style: none;
+    min-height: 26px;
+}
+
+ul.document_info {
+    padding: 5px;
+    min-height: 18px;
+}
+
+    ul.pane_action li, ul.document_info li {
+        margin: 0 10px 0 0;
+        padding: 0;
+        float: left;
+    }
+
+        ul.pane_action li.right {
+            float: right;
+        }
+
+        ul.pane_action li.label {
+            font-weight: bold;
+            padding: 5px 0 0 0;
+            color: #545454;
+        }
+
+div.pane table.form {
+}
+
+    div.pane table.form th {
+        padding: 4px 0;
+    }
+
+    div.pane table.form td > a, div.pane table.form td > a:visited {
+        color: Blue;
+        text-decoration: none;
+    }
+
+    div.pane table.form a:hover {
+        text-decoration: none;
+    }
+
+    div.pane table.form .chzn-select-deselect, div.pane table.form .chzn-select {
+        width: 200px;
+    }
+
+    div.pane table.form input[type=text], div.pane table.form input[type=password], div.pane table.form textarea {
+        border: solid 1px #D8DFEA;
+        padding: 5px;
+        margin: 0 3px 0 0;
+        width: 200px;
+    }
+
+    div.pane table.form textarea {
+        width: 325px;
+        height: 50px;
+    }
+
+    div.pane table.form th.textarea, div.pane table.form td.textarea {
+        vertical-align: top;
+        padding-top: 7px;
+    }
+
+    div.pane table.form small {
+        font-size: 11px;
+        color: Maroon;
+    }
+
+        div.pane table.form small.info {
+            display: block;
+            margin: 5px 0 0 0;
+        }
+
+    div.pane table.form img.border {
+        display: inline-block;
+        border: solid 1px #9e9e9e;
+        padding: 1px;
+    }
+
+    div.pane table.form img.border {
+        display: inline-block;
+        border: solid 1px Gray;
+        padding: 1px;
+        margin: 0 0 2px 0;
+    }
+
+    div.pane table.form input[type=file] {
+        display: block;
+    }
+
+div.pane hr {
+    border-width: 0px;
+    border-top: 1px solid #d8d8d8;
+    margin: 5px 0;
+    padding: 0;
+}
+
+div.button-options {
+    float: right;
+}
+
+    div.button-options strong {
+        display: inline-block;
+        padding: 6px 0 0 0;
+        margin-right: 10px;
+        float: left;
+    }
+
+    div.button-options ul {
+        float: left !important;
+    }
+
+input.number {
+    width: 127px !important;
+    text-align: right;
+}
+
+input.txtPcg {
+    border: solid 1px #C8D3DF;
+    width: 36px !important;
+    text-align: right;
+    padding-right: 2px;
+}
+
+input.txtPcg {
+    color: Red;
+}
+
+select.currency {
+    width: 70px !important;
+}
+
+input.txtEmail {
+    width: 250px;
+}
+
+div.left {
+    float: left;
+}
+
+/* root element for tabs  */
+ul.tabs {
+    margin: 0 !important;
+    padding: 0 0 0 5px;
+    height: 30px;
+    border-bottom: 1px solid #666;
+}
+
+    /* single tab */
+    ul.tabs li {
+        float: left;
+        padding: 0;
+        margin: 0 3px 0 0 !important;
+        list-style-type: none;
+    }
+
+    /* link inside the tab. uses a background image */
+    ul.tabs a {
+        float: left;
+        font-size: 13px;
+        display: block;
+        padding: 5px 30px !important;
+        text-decoration: none;
+        border: 1px solid #666;
+        border-bottom: 0px;
+        height: 18px;
+        background-color: #efefef;
+        color: #777;
+        position: relative;
+        top: 1px;
+        outline: 0;
+        webkit-border-radius: 3px 3px 0px 0px;
+        border-radius: 3px 3px 0px 0px;
+        font-weight: bold;
+    }
+
+        ul.tabs a:hover {
+            background-color: #F7F7F7;
+            color: #333;
+        }
+
+        /* selected tab */
+        ul.tabs a.current {
+            background-color: White;
+            border-bottom: 1px solid White;
+            color: #000;
+            cursor: default;
+        }
+
+    /* tab bottom*/
+    ul.tabs.bottomDir {
+        border-top: 1px solid #666;
+        border-bottom: none;
+    }
+
+        ul.tabs.bottomDir a {
+            border-top: 0px;
+            border-bottom: 1px solid #666;
+            top: 0px;
+            webkit-border-radius: 0px 0px 3px 3px;
+            border-radius: 0px 0px 3px 3px;
+        }
+
+    ul.tabs.floatL {
+        float: left;
+        border-top: none;
+    }
+
+/* tab pane */
+div.panes > div {
+    display: none;
+    padding: 8px 0 0 0;
+    min-height: 150px;
+    background-color: White;
+}
+
+    div.panes > div.nopad {
+        padding: 0;
+    }
+
+div.buttons_middle {
+    top: 42px;
+    left: 50%;
+    margin: 0 0 0 -16px;
+    position: absolute;
+    width: 32px;
+}
+
+    div.buttons_middle input {
+        margin: 0;
+        display: block;
+        font-size: 11px;
+        font-family: Arial;
+        width: 32px;
+        padding: 5px;
+        text-align: center;
+    }
+
+
+div.columns3 > div {
+    float: left;
+    width: 31%;
+    margin-right: 2%;
+}
+
+    div.columns3 > div:last-child {
+        margin-right: 0;
+    }
+
+div.pane div.body > input[type=text] {
+    border: solid 1px #D8DFEA;
+    padding: 5px;
+    margin: 0 3px 0 0;
+    width: 200px;
+}
+
+input.grid_delete {
+    background-image: url("/Images/Icon/Op/Delete.png");
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+}
+
+a.grid_edit {
+    background-image: url("/Images/Icon/Op/Edit.png");
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+}
+
+/*dialog picker*/
+ul.dialogPicker {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 574px;
+}
+
+ul.dialogPickerFull {
+    width: 100%;
+}
+
+ul.dialogPicker li {
+    width: 180px;
+    min-height: 95px;
+    margin-right: 17px;
+    margin-top: 17px;
+    float: left;
+    position: relative;
+}
+
+
+    ul.dialogPicker li.top3 {
+        margin-top: 8px;
+    }
+
+    ul.dialogPicker li.right {
+        margin-right: 0px;
+    }
+
+    ul.dialogPicker li.clear {
+       clear:both;
+    }
+
+    ul.dialogPicker li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        outline: 0;
+    }
+
+ul.dialogPicker > li > a {
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #A49B9B;
+    background: white;
+    color: black;
+}
+
+ul.dialogPicker li > span {
+    position: absolute;
+    width: 27px;
+    height: 28px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url(/Images/Cashier/dialog-picker-icon.png);
+    top: -8px;
+}
+
+ul.dialogPicker li span.close {
+    background-position: 0px 0px;
+}
+
+ul.dialogPicker li span.print {
+    background-position: 0px -32px;
+}
+
+ul.dialogPicker li span:last-child {
+    right: -13px;
+}
+
+ul.dialogPicker li span:nth-last-child(2) {
+    right: 12px;
+}
+
+ul.dialogPicker li a strong, ul.dialogPicker li a small {
+    display: block;
+}
+
+ul.dialogPicker li a strong {
+    height: 20px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: white;
+    background: #B1AAAA;
+}
+
+    ul.dialogPicker li a strong i {
+        float: left;
+        display: inline-block;
+        background-position: right -31px;
+        margin-right: 9px;
+        width: 16px;
+        height: 16px;
+        background-image: url(/Images/NewUI/menu_16px.png);
+        background-repeat: no-repeat;
+        float: left;
+    }
+
+#dialogRetrieve ul.dialogPicker li a strong i {
+    background-position: right -340px;
+}
+
+    ul.dialogPicker li a strong span {
+        display: block;
+        max-width: 180px;
+        max-height: 18px;
+        overflow: hidden;
+        font-family: 'Roboto Slab', serif;
+        font-size: 14px;
+    }
+
+ul.dialogPicker li a small {
+    min-height: 30px;
+    padding: 15px 10px;
+}
+
+    ul.dialogPicker li a small span {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        font-family: Arial;
+    }
+
+        ul.dialogPicker li a small span:first-child {
+            margin-top: -5px;
+            margin-bottom: 5px;
+        }
+
+        ul.dialogPicker li a small span.idle {
+            display: block;
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+        ul.dialogPicker li a small span i {
+            display: inline-block;
+            margin-right: 5px;
+            width: 20px;
+            height: 18px;
+            background-image: url(/Images/Cashier/icons_2014.png);
+            background-repeat: no-repeat;
+            float: left;
+            font-size: 16px;
+            text-align: center;
+        }
+
+
+
+        ul.dialogPicker li a small span.cashier i, ul.dialogPicker li a small span.customer i {
+            background-position: -22px -36px;
+        }
+
+        ul.dialogPicker li a small span.open i, ul.dialogPicker li a small span.date i {
+            background-position: -22px -18px;
+        }
+
+ul.dialogPicker > li > a:hover, ul.dialogPicker li a.active {
+    background: #FFFED9;
+    border: 1px solid #88AE3D;
+}
+
+    ul.dialogPicker > li > a:hover > strong, ul.dialogPicker > li > a.active > strong {
+        background: #88AE3D;
+    }
+
+div.dialog input.txtFilter {
+    margin: 0;
+    padding: 3px 0 3px 30px;
+    width: 530px;
+    display: block;
+    padding-left: 30px;
+    border: 1px solid #A49B9B;
+    border-radius: 5px;
+    background-image: url(/Images/NewUI/magnify.png);
+    background-position: 7px 4px;
+    background-repeat: no-repeat;
+}
+/*Customize for tabling*/
+#myDiningTablePicker a.vacant {
+    border: 1px solid #88AE3D;
+}
+
+    #myDiningTablePicker a.vacant > strong {
+        background: #88AE3D;
+    }
+
+    #myDiningTablePicker a.vacant:hover {
+        background: #FFFED9;
+    }
+
+#myDiningTablePicker a.occupied {
+    border: 1px solid #e74c3c;
+}
+
+    #myDiningTablePicker a.occupied > strong {
+        background: #e74c3c;
+    }
+
+    #myDiningTablePicker a.occupied:hover {
+        background: white;
+    }
+
+div.growlUI {
+    min-height: 50px;
+    padding: 0px;
+}
+
+    div.growlUI div.logo, div.growlUI span {
+        float: left;
+        line-height: 1.6;
+    }
+
+    div.growlUI div.logo {
+        width: 50px;
+        height: 50px;
+    }
+
+        div.growlUI div.logo i {
+            margin: 13px;
+            width: 24px;
+            height: 24px;
+            background-image: url(/Images/NewUI/menu_24px.png);
+            background-repeat: no-repeat;
+            display: block;
+        }
+
+    div.growlUI div.notice i {
+        background-position: -24px -506px;
+    }
+
+    div.growlUI span {
+        padding: 10px;
+        border-left: 1px solid #1c5380;
+        font-size: 16px;
+        min-height: 30px;
+        position: relative;
+        max-width: 250px;
+    }
+
+        div.growlUI span:before {
+            content: " ";
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            position: absolute;
+            border-left: 1px double #ddd;
+        }
+
+
+
+    div.growlUI div {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div.growlUI a {
+        padding: 10px;
+        margin: 10px;
+        border: white 2px solid;
+        cursor: pointer;
+        min-width: 60px;
+        float: left;
+    }

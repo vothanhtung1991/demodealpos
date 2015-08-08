@@ -9,7 +9,88 @@ body {
 	background: url(../images/patterns/5.png) repeat;
 	height: 100%;
 }
-
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"), url("http://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2") format("woff2"), url("http://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff") format("woff");
+}
+h1 i {
+  background-image: url("Images/NewUI/menu_24px.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 24px;
+  line-height: 0;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  text-indent: 999em;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 24px;
+}
+#content div.page_action {
+  position: absolute;
+  right: 20px;
+  top: 75px;
+}
+div.page_action a.clock i {
+  background-image: url("Images/Cashier/icons_2014.png");
+  background-position: -22px -18px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 18px;
+  line-height: 0;
+  margin: 0 3px 0 0;
+  overflow: hidden;
+  text-indent: 999em;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 18px;
+}
+#content div.page_action > a:not(.button), #content div.page_action > input:not(.button), 
+#content div.page_action > ul a:not(.button), #content div.page_action > ul input:not(.button), 
+#content div.page_action > div a.more {
+  -moz-user-select: none;
+  background-color: rgb(244, 244, 244);
+  background-image: url("Images/NewUI/button-icon-16px.png");
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  box-shadow: 0 2px 0 -1px rgb(255, 255, 255) inset;
+  box-sizing: content-box;
+  color: rgb(84, 84, 84);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  height: 16px;
+  line-height: 16px;
+  margin: 0;
+  padding: 8px 10px 8px 30px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgb(255, 255, 255);
+  text-transform: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+div.page_action a.clock {
+  background-color: rgb(255, 255, 255) !important;
+  background-image: none !important;
+  border: medium none !important;
+  float: none !important;
+  line-height: 18px !important;
+  padding-left: 0 !important;
+}
+#content h1#ctl00_ctl00_content_pageHeaderTitle {
+  border-bottom: 1px solid rgb(221, 226, 235);
+  color: rgb(38, 44, 63);
+  font-family: "Roboto Slab",serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 28px;
+  margin: 0 10px 20px 0px;
+  padding: 14px 0 11px 10px;
+}
 /*Switcher styles (Remove it in production site)*/
 #switcher {
 	display: none;
@@ -279,7 +360,7 @@ h1 { font-size: 30px;line-height: 45px;}
 h1 small {font-size: 18px;}
 h2 { font-size: 24px;line-height: 36px;}
 h2 small {font-size: 18px;}
-h3 {font-size: 18px;line-height: 27px;}
+h3 {font-size: 15px;line-height: 27px;}
 h3 small {font-size: 14px;}
 h4,h5,h6 {line-height: 18px;}
 h4 {font-size: 14px;}
@@ -287,7 +368,66 @@ h4 small {font-size: 12px;}
 h5 {font-size: 12px;}
 h6 {font-size: 11px;color: #999999;text-transform: uppercase;}
 
-
+div.today_sales a {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  padding: 0 0 0.83em 5px;
+  text-decoration: none;
+}
+div.panel a {
+  border: 1px solid rgb(221, 221, 221);
+  box-sizing: border-box;
+  display: inline-block;
+  height: 70px;
+  padding: 10px 15px;
+  width: 100%;
+}
+div.twopanel a:last-child {
+  border-top: 0 none;
+}
+div.twopanel a div.row-data span:last-child {
+  color: rgb(102, 168, 34) !important;
+  float: right;
+  font-size: 19px;
+  padding-right: 10px;
+}
+div.twopanel a h3 span {
+  float: left;
+}
+div.twopanel a h3 small {
+  color: rgb(70, 70, 70);
+  float: right;
+  line-height: 19px;
+  margin: 0 0 5px;
+  padding-right: 11px;
+}
+div.twopanel a div.row-data span:first-of-type {
+  clear: both;
+  color: rgb(124, 181, 236);
+  float: left !important;
+  font-size: 19px;
+  text-transform: capitalize;
+}
+div.twopanel a h3 {
+  color: rgb(70, 70, 70);
+  margin: 0 0 5px;
+}
+div.panel h3 {
+  font-family: "Roboto Slab",serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+div.twopanel h2 {
+  color: rgb(70, 70, 70);
+  font-family: "Roboto Slab",serif;
+  font-weight: normal;
+  margin: 15px 0 5px;
+  padding-left: 15px;
+}
+div.twopanel div.panel:last-child {
+  margin-right: 0;
+}
 /*Change here if you want to use other fonts*/
 #top-nav a, h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif;}
 body, p {font-family: 'Droid Sans', Helvetica, Arial, sans-serif;}
@@ -405,7 +545,7 @@ body, p {font-family: 'Droid Sans', Helvetica, Arial, sans-serif;}
 .form-row .grid-inputs {margin-left:0;}
 .form-row .grid-inputs input {margin-bottom:15px;}
 .form-row .controls, .form-row .controls-textarea {margin-left:0;}
-	.form-row .controls input {margin-bottom: 20px;}
+	.form-row .controls input {margin-bottom: 8px;  width: 10px;}
 	.form-row .controls input:nth-child(2) {
 		margin-bottom: 5px;
 	}
@@ -1103,8 +1243,8 @@ select {width: 150px;}
 		position: absolute;
 		left:1px;
 		top:1px;
-		width:36px;
-		height:32px;
+		width:34px;
+		height:30px;
 	}
 	.dropdown-menu {
 		font-size:12px;
@@ -1379,9 +1519,8 @@ select {width: 150px;}
 
 /*Content for left sidebar only*/
 #content {
-	padding: 67px 25px 25px 25px;
+	padding: 130px 8px 25px;
 	margin-left: 212px;
-	padding-top: 67px;
 	min-height: 100%;
 	background: url(../images/patterns/5.png) repeat;
 }
@@ -2006,6 +2145,62 @@ select {width: 150px;}
          box-shadow: none;
 	}
 
+div.twopanel {
+    height: auto;
+    overflow: auto;
+    clear: both;
+}
+
+    div.twopanel div.panel {
+        width: 49.5%;
+        margin-right: 1%;
+        box-sizing: border-box;
+    }
+
+        div.twopanel div.panel:last-child {
+            margin-right: 0px;
+        }
+
+    div.twopanel h2 {
+        font-weight: normal;
+        padding-left: 15px;
+        margin: 15px 0 5px 0;
+        color: #464646;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    div.twopanel a div.row {
+        height: 70px;
+        border: 1px solid #DDDDDD;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+
+        div.twopanel a div.row:last-child {
+            border-top: 0px;
+        }
+
+        div.twopanel a div.row h3 {
+            font-family: 'Roboto Slab', serif;
+            color: #464646;
+            margin: 0 0 5px 0;
+            display: block;
+        }
+
+    div.twopanel a div.row-data span:last-child {
+        color: #66a822!important;
+        font-size: 19px;
+        float: right;
+        padding-right: 10px;
+    }
+
+    div.twopanel a div.row-data span:first-of-type {
+        float: left!important;
+        color: #7CB5EC;
+        font-size: 19px;
+        text-transform: capitalize;
+        clear: both;
+    }
 .circular-progress-item {position: relative; width:82px; height: 82px;margin-right:20px; margin-bottom: 10px; display: inline-block;}
 	.circular-progress-item input {
 		cursor: default;
@@ -2480,8 +2675,8 @@ h4 .icon span:hover {color: #3F3F3F;}
 	.invoice-footer p {margin-left: 20px; margin-top: 10px;}
 
 form .image {
-	padding: 5px; 
-	border: 1px solid #c4c4c4;
+	padding: 1px; 
+	/*border: 1px solid #c4c4c4;*/
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius:2px;
@@ -2837,7 +3032,34 @@ form input.valid {border: 1px solid #9FC569 !important;}
 #toTop:active, #toTop:focus {
 	outline:none;
 }
+div.today_sales > div {
+    position: relative;
+    border-bottom: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    height: 65px;
+}
 
+
+    div.today_sales > div:last-child {
+        border-bottom: 0px solid #DDDDDD;
+    }
+
+
+div.today_sales a small {
+    font-size: 10px;
+    color: #464646;
+}
+div.today_sales a > span {
+  color: rgb(102, 168, 34);
+  font-size: 16px;
+}
+div.today_sales h3 {
+  color: rgb(70, 70, 70);
+  font-family: "Roboto Slab",serif;
+  font-weight: normal;
+  margin: 0 0 6px;
+  padding: 0;
+}
 /* # Media queries
 ================================================== */
 

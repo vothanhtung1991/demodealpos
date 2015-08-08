@@ -1,0 +1,43 @@
+div.pane h2{line-height: 20px;}
+table.plain th.borderLRB0, table.plain td.borderLRB0{color: #000; }
+table.plain th.label, table.plain td.label{background: none;border-top-width:0 !important; display: block;}
+.table thead th, .table tbody td{text-align: left;}
+.table thead th, .table tbody td a:hover{text-decoration: none;}
+header div.page_action > a:not(.button), header div.page_action > input:not(.button), header div.page_action > ul a:not(.button), header div.page_action > ul input:not(.button), header div.page_action > div a.more{width: auto;}
+button.button, input.button, a.button{padding: 6px 16px;}
+div.radio{width: auto;}
+div.radio input{opacity: 1; background: none;}
+div.radio .float label{display: inline-block;}
+div.content span:first-child{height: auto;}
+table.zebra thead tr th, table.zebra tr.floating th{color: #353535;line-height: 28px; 
+	padding: 5px 15px 5px 7px; text-shadow:display;}
+table.zebra th.number, table.zebra td.number {
+  padding-right: 15px;
+}
+table.zebra tr input[type="checkbox"]{margin-bottom: 5px;}
+div.filter div.column > a.picker {
+  padding: 2px 5px;
+}
+div.filter div.column label{display: inline;}
+div.filter div.column .box{box-shadow: none;}
+button.button, input.button, a.button{line-height: 16px; height: 16px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+button.button:hover, input.button:hover, a.button:hover, a:hover{text-decoration: none;}
+.ui-dialog .ui-dialog-buttonpane button:hover{background: #f4ffff;}
+.ui-dialog .ui-dialog-buttonpane button{
+    padding: 0.2em 1em;
+    background: #d0e5f5 url("images/ui-bg_glass_75_d0e5f5_1x400.png") repeat-x scroll 50% 50%;
+    border: 1px solid #79b7e7;
+    color: #1d5987;
+    font-weight: bold;
+    border-radius: 4px;
+}
+input[disabled], select[disabled], textarea[disabled], input[readonly], 
+select[readonly], textarea[readonly]{cursor: inherit;}
+.dataTables_filter{display: none;}
+div.filter div.column input[type="text"]{width: 100% !important;}
+a:hover{text-decoration: none;}
+label{display: inline;}
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+  background-image: url("../images/ui-icons_217bc0_256x240.png");
+}

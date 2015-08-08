@@ -1,0 +1,107 @@
+﻿ul.redarrow
+{
+	margin: 0px;
+	padding: 0px 0 0 4px;
+}
+ul.redarrow li
+{
+	display: block;
+	margin: 0 0 2px 0;
+	padding: 0 0 1px 15px;
+	background-image: url(/images/List/bullets_red.gif);
+	background-position: left 3px;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	text-align: left;
+}
+ul.redarrow li p
+{
+	margin: 0;
+	padding: 0 0 0 0px;
+}
+ul.redarrow li a, ul.redarrow li a:visited
+{
+	text-decoration: none;
+	color: #004276;
+	display: block;
+}
+ul.redarrow li a:hover
+{
+	text-decoration: underline;
+}
+
+ul.redarrow li.sep
+{
+	border-top: dotted 1px #CCCCCC;
+	margin-top: 4px;
+	padding-top: 4px;
+	background-position: left 7px;
+	width: 80%;
+}
+
+ul.float
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+
+ul.float li
+{
+    float: left;
+    margin-right: 12px;
+}
+
+ul.radio
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+
+ul.radio li
+{
+    float: left;
+    margin-right: 12px;
+}
+
+ul.radio li label
+{
+    margin-left: 5px;
+}
+
+ul.normal
+{
+	margin: 2px 0 0 25px;
+	padding: 0;
+	list-style-type: circle;
+}
+ul.normal li
+{
+	text-align: left;
+	padding: 2px 0 2px 0px;
+}
+
+ul.circle
+{
+	margin: 0 0 0 20px;
+	padding: 0;
+	list-style-type: circle;
+}
+ul.circle li
+{
+	text-align: left;
+	padding: 0;
+	margin-bottom: 2px;
+}
+
+ul.circle li a, ul.circle li a:visited
+{
+    text-decoration: none;
+    color: #0000F4;
+}
+
+ul.circle li a:hover
+{
+    text-decoration: underline;    
+}

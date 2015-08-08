@@ -226,7 +226,7 @@ div.filter a.more {
     -ms-border-radius: 0 0 5px 5px;
     -khtml-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;
-    background: url(/images/icon/arrow/down.png) no-repeat 132px center #f6f6f6;
+    background: url(Images/icon/arrow/down.png) no-repeat 132px center #f6f6f6;
     border: 1px solid #ccc;
     padding: 0 15px 0 10px;
     color: #666;
@@ -272,11 +272,11 @@ table.form a.picker {
 }
 
 .button-update {
-    background: url("/images/icon/refresh.png") no-repeat 15px center,-webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#fefefe),color-stop(100%,#d4d4d4));
-    background: url("/images/icon/refresh.png") no-repeat 15px center,-webkit-linear-gradient(#fefefe,#d4d4d4);
-    background: url("/images/icon/refresh.png") no-repeat 15px center,-moz-linear-gradient(#fefefe,#d4d4d4);
-    background: url("/images/icon/refresh.png") no-repeat 15px center,-o-linear-gradient(#fefefe,#d4d4d4);
-    background: url("/images/icon/refresh.png") no-repeat 15px center,linear-gradient(#fefefe,#d4d4d4);
+    background: url("..Images/icons/refresh.png") no-repeat 15px center,-webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#fefefe),color-stop(100%,#d4d4d4));
+    background: url("..Images/icons/refresh.png") no-repeat 15px center,-webkit-linear-gradient(#fefefe,#d4d4d4);
+    background: url("..Images/icons/refresh.png") no-repeat 15px center,-moz-linear-gradient(#fefefe,#d4d4d4);
+    background: url("..Images/icons/refresh.png") no-repeat 15px center,-o-linear-gradient(#fefefe,#d4d4d4);
+    background: url("..Images/icons/refresh.png") no-repeat 15px center,linear-gradient(#fefefe,#d4d4d4);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
@@ -321,6 +321,11 @@ table.form a.picker {
     padding: 9px 25px 9px 25px;
     margin: 8px 5px 0 0;
     line-height: 13px;
+}
+div.more_menu > div.drop_menu > ul li.arrow:hover > a {
+  background-image: url("..Images/icons/blue_arrow.png");
+  background-position: 8px center;
+  background-repeat: no-repeat;
 }
 
 table.zebra {
@@ -578,7 +583,7 @@ table.zebra ul.bullet {
 
 table td input.Delete {
     background-color: transparent;
-    background-image: url("/Images/Icon/Op/Delete.png");
+    background-image: url("Images/Icon/Op/Delete.png");
     border-width: 0;
     cursor: pointer;
     display: block;
@@ -668,7 +673,7 @@ div.search_filter {
 
     div.search_filter > a {
         background-color: #eeeeee;
-        background-image: url(/Images/NewUI/down.png);
+        background-image: url(Images/NewUI/down.png);
         background-repeat: no-repeat;
         background-position: 87px center;
         border: 1px solid #bbbbbb;
@@ -740,7 +745,7 @@ div.update_button {
 }
 
     div.update_button input {
-        background-image: url(/Images/NewUI/magnify.png);
+        background-image: url(Images/NewUI/magnify.png);
         background-position: center -57px;
         background-repeat: no-repeat;
         padding: 7px 0;
@@ -769,7 +774,7 @@ div.chosen-search input[type=text] {
 div.fileUploadCamera {
     height: 65px;
     width: 65px;
-    background-image: url(/Images/Icon/cam.png);
+    background-image: url(Images/Icon/cam.png);
     background-repeat: no-repeat;
     display: inline-block;
 }
@@ -785,4 +790,13 @@ div.fileUploadCamera {
 
 .weekend {
     background-color: #FDF3C5 !important;
+}
+div.error {
+  background-color: rgb(255, 235, 232);
+  background-image: url("../images/icons/error.png");
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(221, 60, 16);
+  margin-bottom: 10px;
+  padding: 8px 8px 8px 32px;
 }

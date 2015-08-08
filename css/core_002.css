@@ -59,7 +59,7 @@ header > div.account {
     }
 
 header h1 {
-    margin: 0 10px 0 152px;
+    margin: 0 10px 0 220px;
     padding: 14px 0 11px 10px;
     font-size: 20px;
     font-weight: normal;
@@ -67,12 +67,13 @@ header h1 {
     font-family: 'Roboto Slab', serif;
     color: #262C3F;
     line-height: 28px;
+    background: #fff;
 }
 
 header div.page_action {
     position: absolute;
     right: 20px;
-    top: 52px;
+    top: 75px;
 }
 
     header div.page_action > a, header div.page_action > input {
@@ -101,7 +102,7 @@ header div.page_action {
                 line-height: 16px;
                 height: 16px;
                 margin: 0;
-                padding: 8px 10px 8px 30px;
+                padding: 6px 10px 6px 30px;
                 text-shadow: 0 1px 0 white;
                 -webkit-box-shadow: inset 0 2px 0 -1px white;
                 -moz-box-shadow: inset 0 2px 0 -1px white;
@@ -153,7 +154,7 @@ header div.page_action {
         header div.page_action > div.more > a {
             background-repeat: no-repeat;
             background-position: 5px -350px;
-            padding: 8px 8px 8px 8px !important;
+            padding: 6px 8px 6px 8px !important;
         }
 
             header div.page_action > div.more > a:hover {
@@ -423,7 +424,7 @@ div.more_menu {
         background-position: 8px 4px;
     }
 
-/*.dropdown {
+.search_filter .dropdown,  .more .dropdown {
     display: none;
     line-height: 18px;
     position: absolute;
@@ -439,7 +440,7 @@ div.more_menu {
     border-radius: 3px;
 }
 
-    .dropdown:before {
+    .search_filter .dropdown:before, .more .dropdown:before{
         position: absolute;
         top: -7px;
         right: 10px;
@@ -452,7 +453,7 @@ div.more_menu {
         border-bottom: 7px solid #c2c2c2;
     }
 
-    .dropdown:after {
+    .search_filter .dropdown:after , .more .dropdown:after{
         position: absolute;
         top: -6px;
         right: 10px;
@@ -464,31 +465,31 @@ div.more_menu {
         border-left: 8px solid transparent;
         border-bottom: 7px solid #fff;
     }
-*/
-/*header .dropdown ul {
+
+header .more .dropdown ul {
 margin: 0;
 padding: 5px 0;
 display: block;
 }
 
-header .dropdown ul li {
+header .more  .dropdown ul li {
 margin: 0;
 padding: 0;
 display: block;
 }
 
-header .dropdown ul li a {
+header .more  .dropdown ul li a {
 color: #3a9ef0;
 padding: 5px 0 5px 8px;
 display: block;
 text-decoration: none;
 }
 
-header .dropdown ul li:first-child {
+header .more  .dropdown ul li:first-child {
 border-top-width: 0px !important;
 }
 
-header .dropdown ul li input {
+header .more  .dropdown ul li input {
 color: #3a9ef0;
 margin: 0;
 padding: 5px 0 5px 8px;
@@ -504,11 +505,12 @@ cursor: pointer;
 box-sizing: border-box !important;
 }
 
-header .dropdown ul li a:hover, header .dropdown ul li input:hover {
+header .more .dropdown ul li a:hover, header .more  .dropdown ul li input:hover {
     text-decoration: none;
     color: #fff;
     background: #479ccf;
-}*/
+}
+.filter.clearfix .row_wrapper .row{margin-left: 0;}
 
 header div.profile ul li:last-child {
     border-top: solid 1px #EEEEEE;
@@ -600,10 +602,10 @@ div.status_bar {
 
 nav {
     display: block;
-    top: 62px;
+    top: 67px;
     left: 0;
     bottom: 20px;
-    width: 140px;
+    width: 210px;
     position: fixed;
     z-index: 99;
     border: solid 1px #BBBBBB;
@@ -614,12 +616,12 @@ nav {
     box-shadow: 0 0 5px rgba(10, 10, 10, 0.2);
     -webkit-box-shadow: 0 0 5px rgba(10, 10, 10, 0.2);
     -moz-box-shadow: 0 0 5px rgba(10, 10, 10, 0.2);
-    padding: 6px 0 6px 0;
+    padding: 0 0 6px;
     background-color: white;
 }
 
 div.content_scroll {
-    padding: 101px 20px 25px 160px;
+    padding: 130px 20px 25px 220px;
 }
 
 nav a {
@@ -1414,4 +1416,9 @@ a.suspend {
     color: blue;
     border: none;
     cursor: pointer;
+}
+
+div.filter div.column input[type="text"]{
+	width: 120px !important; border-radius: inherit;
+	padding: 2px 3px !important;
 }

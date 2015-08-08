@@ -1,0 +1,6 @@
+﻿table.main tbody tr:nth-child(2n) {
+    background-color: white;
+}
+table.child tbody tr:nth-child(2n) {
+    background-color: #f6f6f6;
+}
