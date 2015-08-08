@@ -44,147 +44,169 @@
     <script type="text/javascript" src="plugins/charts/flot/jquery.flot.tooltip_0.4.4.js"></script>
     <script type="text/javascript" src="plugins/charts/flot/jquery.flot.orderBars.js"></script>
     <script type="text/javascript" src="plugins/charts/sparkline/jquery.sparkline.min.js"></script><!-- Sparkline plugin -->
+
     <!-- Important Place before main.js  -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="plugins/fix/touch-punch/jquery.ui.touch-punch.min.js"></script><!-- Unable touch for JQueryUI -->
     <!-- Init plugins -->
-    <script type="text/javascript" src="js/main.js"></script><!-- Core js functions -->
-    <script type="text/javascript" src="js/charts.js"></script><!-- Init plugins only for page -->
     
-
+    <script type="text/javascript" src="js/charts.js"></script><!-- Init plugins only for page -->
+    <script src="js/jquery-ui-1.js" type="text/javascript"></script>
     <script src="js/dialog.js" type="text/javascript"></script>
     <script src="js/jstree.js" type="text/javascript"></script>
     <script src="js/initAccountsTree.js" type="text/javascript"></script>
     <link href="css/chosen.css" rel="stylesheet" type="text/css">
     <script src="js/chosen.js" type="text/javascript"></script>
     <script src="js/chosen_002.js" type="text/javascript"></script>
-    <script src="js/jquery-ui-1.js" type="text/javascript"></script>
-
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/summary.css" rel="stylesheet" type="text/css">
     <link href="css/lam.css" rel="stylesheet" type="text/css"/>
-
+    
+    <script src="js/autocomplete.js" type="text/javascript"></script>
+    <script src="js/autoNumeric-1.js" type="text/javascript"></script>
+    <script src="js/autoNumericLoader.js" type="text/javascript"></script>
+    <script src="js/datepicker.js" type="text/javascript"></script>
+    <!-- Table plugins -->
+    <script type="text/javascript" src="plugins/tables/dataTables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="plugins/tables/responsive-tables/responsive-tables.js"></script>
+    <!-- Make tables responsive -->
+    <script type="text/javascript" src="js/datatable.js"></script><!-- Init plugins only for page -->
 </head>
 <body>
 <div id="ctl00_ctl00_divContainer">
-    <div id="header">
-        <div class="navbar">
-            <div class="navbar-inner">
-              <div class="container-fluid">
-                <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
-                <div class="nav-no-collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="icon16 icomoon-icon-cog"></span> Settings
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul>
-                                        <li>                                                    
-                                            <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
-                                        </li>
-                                        <li>                                                    
-                                            <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul class="messages">    
-                                        <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
-                                        <li>
-                                           <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
-                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
-                                            <span class="msg">I have question about new function ...</span>
-                                        </li>
-                                        <li>
-                                           <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
-                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
-                                            <span class="msg">I need to meet you urgent please call me ...</span>
-                                        </li>
-                                        <li>
-                                            <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
-                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
-                                            <span class="msg">I send you my suggestion, please look and ...</span>
-                                        </li>
-                                        <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                  
-                    <ul class="nav pull-right usernav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul class="notif">
-                                        <li class="header"><strong>Notifications</strong> (3) items</li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
-                                                <span class="event">1 User is registred</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
-                                                <span class="event">Jony add 1 comment</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
-                                                <span class="event">admin Julia added post with a long description</span>
-                                            </a>
-                                        </li>
-                                        <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
-                                <img src="images/avatar.jpg" alt="" class="image" /> 
-                                <span class="txt">admin@supr.com</span>
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
-                    </ul>
-                </div><!-- /.nav-collapse -->
-              </div>
-            </div><!-- /navbar-inner -->
-          </div><!-- /navbar --> 
-    </div><!-- End #header -->
+    <header>
+        <div id="header">
+            <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="container-fluid">
+                    <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
+                    <div class="nav-no-collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="icon16 icomoon-icon-cog"></span> Settings
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu">
+                                        <ul>
+                                            <li>                                                    
+                                                <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
+                                            </li>
+                                            <li>                                                    
+                                                <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu">
+                                        <ul class="messages">    
+                                            <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
+                                            <li>
+                                               <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
+                                                <span class="msg">I have question about new function ...</span>
+                                            </li>
+                                            <li>
+                                               <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
+                                                <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
+                                                <span class="msg">I need to meet you urgent please call me ...</span>
+                                            </li>
+                                            <li>
+                                                <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
+                                                <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
+                                                <span class="msg">I send you my suggestion, please look and ...</span>
+                                            </li>
+                                            <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                      
+                        <ul class="nav pull-right usernav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu">
+                                        <ul class="notif">
+                                            <li class="header"><strong>Notifications</strong> (3) items</li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                    <span class="event">1 User is registred</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
+                                                    <span class="event">Jony add 1 comment</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
+                                                    <span class="event">admin Julia added post with a long description</span>
+                                                </a>
+                                            </li>
+                                            <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+                                    <img src="images/avatar.jpg" alt="" class="image" /> 
+                                    <span class="txt">admin@supr.com</span>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
+                        </ul>
+                    </div><!-- /.nav-collapse -->
+                  </div>
+                </div><!-- /navbar-inner -->
+              </div><!-- /navbar --> 
+             <h1 class="inventory"><i></i><span>Inventory for All Entity</span></h1>
+            <div class="page_action">
+                <ul>
+                    <li>
+                        <input name="ctl00$ctl00$ctl00$content$actions$ExportCSV1$btnExport" value="Export" id="ctl00_ctl00_ctl00_content_actions_ExportCSV1_btnExport" title="Export" class="export" type="submit">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div><!-- End #header -->
+    </header>
     <nav class="mCustomScrollbar _mCS_1">
         <div class="mCustomScrollBox mCS-dark" id="mCSB_1" style="position:relative; height:100%; overflow:hidden; max-width:100%;">
             <div class="mCSB_container mCS_no_scrollbar" style="position:relative; top:0;">
@@ -233,243 +255,289 @@
         </div>
     </nav>
     <div class="content_scroll">
+        <div id="page_menu" class="page_menu">
+            <ul><li class="active"><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Category.aspx">Detail</a></li><li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Entity.aspx">Outlet</a></li><li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Rank.aspx">Rank</a></li><li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Reorder.aspx">Reorder Point</a></li><li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/InventoryAvailable.aspx">Available</a></li><li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/DepletingInventory.aspx">Depleting</a></li><li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/InventoryTransit.aspx">Transit</a></li></ul>
+
+            <div class="more_menu"> <a title="More menu" class=""></a> <div class="drop_menu"><strong>Inventory Traffic</strong><ul><li><a href="http://demo.dealpos.com/Authenticated/Stock/Traffic/Product/Simple.aspx">Product</a></li><li><a href="http://demo.dealpos.com/Authenticated/Stock/Traffic/Entity.aspx">Outlet</a></li><li><a href="http://demo.dealpos.com/Authenticated/Stock/Traffic/Date.aspx">Inventory Date</a></li></ul><strong>View</strong><ul><li><a href="http://demo.dealpos.com/Authenticated/Stock/View/Transferable.aspx">Transferable Stock</a></li></ul></div> </div>
+        </div>
         
-    <div class="tabContent">
+        <div class="tabContent">
             
-<div class="row-fluid">
-
-<div class="span12">
-<div class="pageHeaderTitle">
-    <h1 id="ctl00_ctl00_ctl00_content_pageHeaderTitle" class="inventory"><i></i><span>Inventory for All Entity</span></h1>
-    <div class="page_action">
-    <a class="btn" href="#"><span class="icon16 typ-icon-export"></span>Export</a>
-    </div>
-</div>
-<div id="page_menu" class="page_menu">
-<ul><li class="active"><a href="/Authenticated/Stock/Quantity/Category.aspx">Detail</a></li><li><a href="/Authenticated/Stock/Quantity/Entity.aspx">Outlet</a></li><li><a href="/Authenticated/Stock/Quantity/Rank.aspx">Rank</a></li><li><a href="/Authenticated/Stock/Quantity/Reorder.aspx">Reorder Point</a></li><li><a href="/Authenticated/Stock/Quantity/InventoryAvailable.aspx">Available</a></li><li><a href="/Authenticated/Stock/Quantity/DepletingInventory.aspx">Depleting</a></li><li><a href="/Authenticated/Stock/Quantity/InventoryTransit.aspx">Transit</a></li></ul>
-
-<div class="more_menu"> <a title="More menu" class=""></a> <div style="display: none;" class="drop_menu"><strong>Inventory Traffic</strong><ul><li><a href="/Authenticated/Stock/Traffic/Product/Simple.aspx">Product</a></li><li><a href="/Authenticated/Stock/Traffic/Entity.aspx">Outlet</a></li><li><a href="/Authenticated/Stock/Traffic/Date.aspx">Inventory Date</a></li></ul><strong>View</strong><ul><li><a href="/Authenticated/Stock/View/Transferable.aspx">Transferable Stock</a></li></ul></div> </div>
-</div>
-
-<div class="search_filter_box" buttonid="btnFilter">
-        <div class="clearfix">
-            <div class="search_filter">
-                <a>More Filter</a>
-                <div style="display: none;" class="filter dropdown">
-                    <div class="row clearfix">
-                        
-                        <div class="column">
-                            <strong>Category</strong>
-                            <a id="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_linkProductCategory" class="picker" dialogid="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory">Choose..</a>
-<input name="ctl00$ctl00$ctl00$content$content$ProductCategoryPicker1$hfProductCategory" id="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_hfProductCategory" title="* Required" type="hidden">
+                <div class="search_filter_box" buttonid="btnFilter">
+                    <div class="clearfix">
+                        <div class="search_filter">
+                            <a>More Filter</a>
+                            <div style="display: none;" class="filter dropdown">
+                                <div class="row clearfix">
+                                    <div class="column">
+                                        <strong>Category</strong>
+                                        <a class="picker" dialogid="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory">Choose..</a>
+                                        <input name="ctl00$ctl00$ctl00$content$content$ProductCategoryPicker1$hfProductCategory" id="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_hfProductCategory" title="* Required" type="hidden">
 
 
+                                    </div>
+                                    <div class="column">
+                                        <strong>Supplier</strong>
+                                        <input autocomplete="off" name="" class="autocomplete ui-autocomplete-input" wsmethod="GetSupplierSuggestion" hfid="ctl00_ctl00_ctl00_content_content_txtSupplier_hfID" type="text"><input name="ctl00$ctl00$ctl00$content$content$txtSupplier$hfID" id="ctl00_ctl00_ctl00_content_content_txtSupplier_hfID" type="hidden">
+
+                                    </div>
+                                    <div class="column">
+                                        <strong>Quantity</strong>
+                                        <div>
+                                            <input name="ctl00$ctl00$ctl00$content$content$MaskedDecInputQuantityFrom$txtInput" value="1" id="ctl00_ctl00_ctl00_content_content_MaskedDecInputQuantityFrom_txtInput" class="txtQty" style="width:50px;" type="text">
+
+                                            <span>≤</span>
+                                            <input name="ctl00$ctl00$ctl00$content$content$MaskedDecInputQuantityTo$txtInput" id="ctl00_ctl00_ctl00_content_content_MaskedDecInputQuantityTo_txtInput" class="txtQty" style="width:50px;" type="text">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row" style="height: 52px;">
+                                    <div class="column">
+                                        <div class="option">
+                                            <strong>Year / Month</strong>
+                                            <div>
+                                                <select name="ctl00$ctl00$ctl00$content$content$ddlPredefined" id="ctl00_ctl00_ctl00_content_content_ddlPredefined" class="chzn-select" style="width: 170px; display: none;">
+                                                <option selected="selected" value="0">Please Select</option>
+                                                <option value="1">Last 3 Months</option>
+                                                <option value="2">4 - 6 Months</option>
+                                                <option value="3">7 - 12 Months</option>
+
+                                            </select>
+             
+                                            </div>
+                                        </div>
+                                        </div>
+                                    <div class="column">
+                                        <div class="option">
+                                            <strong>From / To</strong>
+                                            <div>
+                                                <input name="ctl00$ctl00$ctl00$content$content$DatePickerFrom$txtDate" id="ctl00_ctl00_ctl00_content_content_DatePickerFrom_txtDate" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <strong>Inventory Date</strong>
+                                        <input name="ctl00$ctl00$ctl00$content$content$datePickerStockDate$txtDate" id="ctl00_ctl00_ctl00_content_content_datePickerStockDate_txtDate" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
+
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div id="ctl00_ctl00_ctl00_content_content_divLastOrder" class="column">
+                                        <strong>Render Last Order</strong>
+                                        <ul id="ctl00_ctl00_ctl00_content_content_radBtnLastOrder" class="float">
+                <li><input id="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_0" name="ctl00$ctl00$ctl00$content$content$radBtnLastOrder" value="1" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_0">Yes</label></li>
+                <li><input id="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_1" name="ctl00$ctl00$ctl00$content$content$radBtnLastOrder" value="0" checked="checked" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_1">No</label></li>
+
+            </ul>
+                                    </div>
+                                    <div class="column">
+                                        <strong>Display Discontinued</strong>
+                                        <div>
+                                            <ul id="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued" class="float">
+                <li><input id="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_0" name="ctl00$ctl00$ctl00$content$content$radBtnDisplayDiscontinued" value="true" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_0">Yes</label></li>
+                <li><input id="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_1" name="ctl00$ctl00$ctl00$content$content$radBtnDisplayDiscontinued" value="false" checked="checked" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_1">No</label></li>
+
+            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <strong>Currency</strong>
+                                        <select name="ctl00$ctl00$ctl00$content$content$ddlCurrency" id="ctl00_ctl00_ctl00_content_content_ddlCurrency" class="chzn-select-deselect" style="width: 80px; display: none;">
+                <option selected="selected" value="0">All</option>
+                <option value="1">$</option>
+                <option value="2">E</option>
+
+            </select>
                         </div>
-                        <div class="column">
-                            <strong>Supplier</strong>
-                            <input autocomplete="off" name="ctl00$ctl00$ctl00$content$content$txtSupplier$txtInput" id="ctl00_ctl00_ctl00_content_content_txtSupplier_txtInput" class="autocomplete ui-autocomplete-input" wsmethod="GetSupplierSuggestion" hfid="ctl00_ctl00_ctl00_content_content_txtSupplier_hfID" type="text"><input name="ctl00$ctl00$ctl00$content$content$txtSupplier$hfID" id="ctl00_ctl00_ctl00_content_content_txtSupplier_hfID" type="hidden">
-
-                        </div>
-                        <div class="column">
-                            <strong>Quantity</strong>
-                            <div>
-                                <input name="ctl00$ctl00$ctl00$content$content$MaskedDecInputQuantityFrom$txtInput" value="1" id="ctl00_ctl00_ctl00_content_content_MaskedDecInputQuantityFrom_txtInput" class="txtQty" style="width:50px;" type="text">
-
-                                <span>≤</span>
-                                <input name="ctl00$ctl00$ctl00$content$content$MaskedDecInputQuantityTo$txtInput" id="ctl00_ctl00_ctl00_content_content_MaskedDecInputQuantityTo_txtInput" class="txtQty" style="width:50px;" type="text">
-
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row" style="height: 52px;">
-                        <div class="column">
-                            <div class="option">
-                                <strong>Year / Month</strong>
-                                <div>
-                                    <select name="ctl00$ctl00$ctl00$content$content$ddlPredefined" id="ctl00_ctl00_ctl00_content_content_ddlPredefined" class="chzn-select" style="width: 170px; display: none;">
-    <option value="0">Please Select</option>
-    <option value="1">Last 3 Months</option>
-    <option value="2">4 - 6 Months</option>
-    <option value="3">7 - 12 Months</option>
-
-</select><div id="ctl00_ctl00_ctl00_content_content_ddlPredefined_chosen" title="" style="width: 170px;" class="chosen-container chosen-container-single"><a class="chosen-single" tabindex="-1"><span>Please Select</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input autocomplete="off" type="text"></div><ul class="chosen-results"></ul></div></div>
+                                 <div class="column" style="margin-right: 0px">
+                                     <strong>Search By</strong>              
+                                     <div class="radio">
+                                                 <ul class="float">
+                                                <li>
+                                                    <input id="ctl00_ctl00_ctl00_content_content_radBtnByUnitPrice" name="ctl00$ctl00$ctl00$content$content$FilterByCurrency" value="radBtnByUnitPrice" checked="checked" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnByUnitPrice">Unit Price</label></li>
+                                                <li>
+                                                    <input id="ctl00_ctl00_ctl00_content_content_radBtnByUnitCost" name="ctl00$ctl00$ctl00$content$content$FilterByCurrency" value="radBtnByUnitCost" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnByUnitCost">Unit Cost</label></li>
+                                            </ul>
+                                                     </div>
+                                     
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                        <div class="column">
-                            <div class="option">
-                                <strong>From / To</strong>
-                                <div>
-                                    <input name="ctl00$ctl00$ctl00$content$content$DatePickerFrom$txtDate" id="ctl00_ctl00_ctl00_content_content_DatePickerFrom_txtDate" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-
-                                    <input name="ctl00$ctl00$ctl00$content$content$DatePickerTo$txtDate" id="ctl00_ctl00_ctl00_content_content_DatePickerTo_txtDate" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-
-                                </div>
-                            </div>
                         </div>
-                        <div class="column">
-                            <strong>Inventory Date</strong>
-                            <input name="ctl00$ctl00$ctl00$content$content$datePickerStockDate$txtDate" id="ctl00_ctl00_ctl00_content_content_datePickerStockDate_txtDate" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-
+                        <div class="search_input">
+                            <input name="ctl00$ctl00$ctl00$content$content$txtProductFilter" id="ctl00_ctl00_ctl00_content_content_txtProductFilter" class="txt" placeholder="Type a product name or code..." type="text">
                         </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div id="ctl00_ctl00_ctl00_content_content_divLastOrder" class="column">
-                            <strong>Render Last Order</strong>
-                            <ul id="ctl00_ctl00_ctl00_content_content_radBtnLastOrder" class="float">
-    <li><input id="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_0" name="ctl00$ctl00$ctl00$content$content$radBtnLastOrder" value="1" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_0">Yes</label></li>
-    <li><input id="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_1" name="ctl00$ctl00$ctl00$content$content$radBtnLastOrder" value="0" checked="checked" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_1">No</label></li>
-
-</ul>
-                        </div>
-                        <div class="column">
-                            <strong>Display Discontinued</strong>
-                            <div>
-                                <ul id="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued" class="float">
-    <li><input id="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_0" name="ctl00$ctl00$ctl00$content$content$radBtnDisplayDiscontinued" value="true" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_0">Yes</label></li>
-    <li><input id="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_1" name="ctl00$ctl00$ctl00$content$content$radBtnDisplayDiscontinued" value="false" checked="checked" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_1">No</label></li>
-
-</ul>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <strong>Currency</strong>
-                            <select name="ctl00$ctl00$ctl00$content$content$ddlCurrency" id="ctl00_ctl00_ctl00_content_content_ddlCurrency" class="chzn-select-deselect" style="width: 80px; display: none;">
-    <option selected="selected" value="0">All</option>
-    <option value="1">$</option>
-    <option value="2">E</option>
-
-</select><div id="ctl00_ctl00_ctl00_content_content_ddlCurrency_chosen" title="" style="width: 80px;" class="chosen-container chosen-container-single"><a class="chosen-single" tabindex="-1"><span>All</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input autocomplete="off" type="text"></div><ul class="chosen-results"></ul></div></div>
-                            </div>
-                     <div class="column" style="margin-right: 0px">
-                         <strong>Search By</strong>              
-                         <div class="radio">
-                                     <ul class="float">
-                                    <li>
-                                        <input id="ctl00_ctl00_ctl00_content_content_radBtnByUnitPrice" name="ctl00$ctl00$ctl00$content$content$FilterByCurrency" value="radBtnByUnitPrice" checked="checked" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnByUnitPrice">Unit Price</label></li>
-                                    <li>
-                                        <input id="ctl00_ctl00_ctl00_content_content_radBtnByUnitCost" name="ctl00$ctl00$ctl00$content$content$FilterByCurrency" value="radBtnByUnitCost" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnByUnitCost">Unit Cost</label></li>
-                                </ul>
-                                         </div>
-                         
+                        <div class="update_button">
+                            <input name="ctl00$ctl00$ctl00$content$content$btnFilter" value="" id="btnFilter" type="submit">
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="search_input">
-                <input name="ctl00$ctl00$ctl00$content$content$txtProductFilter" id="ctl00_ctl00_ctl00_content_content_txtProductFilter" class="txt" placeholder="Type a product name or code..." type="text">
-            </div>
-            <div class="update_button">
-                <input name="ctl00$ctl00$ctl00$content$content$btnFilter" value="" id="btnFilter" type="submit">
-            </div>
-        </div>
-    </div>
+    
+    <table class="responsive table table-bordered" style="width: 98.7% ; margin-left:17px">
+        <thead>
+            <tr id="ctl00_ctl00_ctl00_content_content_trStockRecap">
+    <th style="padding-left: 20px">Name
+                </th>
+    <th style="width: 80px">Code
+                </th>
+    <th class="number" style="width: 50px">Qty
+                </th>
+    <th class="UOMWidth" style="width: 50px">UOM
+                </th>
+    <th id="ctl00_ctl00_ctl00_content_content_thCost" class="number" style="width: 80px">UnitCost(All)
+                </th>
+    <th id="ctl00_ctl00_ctl00_content_content_thPrice" class="number" style="width: 80px">UnitPrice(All)
+                </th>
+    <th id="ctl00_ctl00_ctl00_content_content_thMargin" class="number" style="width: 80px">Margin(%)
+                </th>
+    <th id="ctl00_ctl00_ctl00_content_content_thDiscount" class="number" style="width: 80px">Discount(%)
+                </th>
+</tr>
 
+        </thead>
+    </table>
+        
 
-<table class="responsive table table-bordered">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Code</th>
-        <th>Qty</th>
-        <th>UOM</th>
-        <th>UnitCost(All)</th>
-        <th>UnitPrice(All) </th>
-        <th>Margin(%)</th>
-        <th>Discount(%)</th>
+    
+            <h3>
+                Drinks</h3>
+            
+                    <div id="ctl00_ctl00_ctl00_content_content_content_repCategory_ctl00_repProduct_ctl00_divProduct">
+                            <h4>
+                            <a href="http://demo.dealpos.com/Authenticated/Catalog/Master/ProductInfo.aspx?ID=f916fc78-f5c9-42c0-8cd3-5b99b4e91170">Juice</a>
+                            <small id="ctl00_ctl00_ctl00_content_content_content_repCategory_ctl00_repProduct_ctl00_lblTotalQty">[ Product Qty : 9 ]</small>
+                        </h4>
+                        
 
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>serial (red)</td>
-        <td></td>
-        <td>1</td>
-        <td></td>
-        <td>0</td>
-        <td>0</td>
-        <td>100</td>
-        <td>0</td>
-      </tr>
-    </tbody>
-</table>
+                    </div>
+                    
+                    <div class="variants">
+                        
+        <table class="zebra" style="width: 100%; border-collapse: collapse;" border="0" cellspacing="0">
+            <tbody>
+    
+        <tr class="">
+            <td><a href="http://demo.dealpos.com/Authenticated/Catalog/Master/Variant/Info.aspx?ID=d51c3ee5-60f6-43e9-a9bd-1c26787cfdba">
+                Regular</a></td>
+            <td>
+                2004</td>
+            <td class="number">5</td>
+            <td class="UOMWidth"></td>
+            <td id="ctl00_ctl00_ctl00_content_content_content_repCategory_ctl00_repProduct_ctl00_CartItemsRepeater1_repItems_ctl01_columnCost" class="number">10</td>
 
+            <td id="ctl00_ctl00_ctl00_content_content_content_repCategory_ctl00_repProduct_ctl00_CartItemsRepeater1_repItems_ctl01_columnPrice" class="number">20</td>
 
+            <td id="ctl00_ctl00_ctl00_content_content_content_repCategory_ctl00_repProduct_ctl00_CartItemsRepeater1_repItems_ctl01_columnMargin" class="number">100</td>
 
+            <td class="number">0</td>
+        </tr>
+    
+        <tr class="">
+            <td><a href="http://demo.dealpos.com/Authenticated/Catalog/Master/Variant/Info.aspx?ID=5b4aa233-29b6-4076-8a1c-62942ee341fe">
+                Large</a></td>
+            <td>
+                2005</td>
+            <td class="number">4</td>
+            <td class="UOMWidth"></td>
+            <td id="ctl00_ctl00_ctl00_content_content_content_repCategory_ctl00_repProduct_ctl00_CartItemsRepeater1_repItems_ctl02_columnCost" class="number">10</td>
 
+            <td id="ctl00_ctl00_ctl00_content_content_content_repCategory_ctl00_repProduct_ctl00_CartItemsRepeater1_repItems_ctl02_columnPrice" class="number">10</td>
+
+            <td id="ctl00_ctl00_ctl00_content_content_content_repCategory_ctl00_repProduct_ctl00_CartItemsRepeater1_repItems_ctl02_columnMargin" class="number">0</td>
+
+            <td class="number">0</td>
+        </tr>
+    
+        </tbody>
+        </table>
+    
+
+                    </div>
+                
+        
+
+    
 <table class="summary">
+    
+    
+    <tbody><tr id="ctl00_ctl00_ctl00_content_content_ItemSummary1_trSales">
+    <th>
+            Outlet's Inventory Value
+        </th>
+    <td>
+            :
+        </td>
+    <td class="sales border_bottom">
+            140
+        </td>
+</tr>
 
+    
+    
+    
+    
+    
+    
+    <tr id="ctl00_ctl00_ctl00_content_content_ItemSummary1_trCost">
+    <th>
+            Inventory Cost
+            (<span id="ctl00_ctl00_ctl00_content_content_ItemSummary1_litCostPercentage" class="Percentage">64 %</span>)
+        </th>
+    <td>
+            :
+        </td>
+    <td class="cost">
+            90
+        </td>
+</tr>
 
-    <tbody>
-        <tr id="ctl00_ctl00_ctl00_content_content_ItemSummary1_trSales">
-            <th>
-                Outlet's Inventory Value
-            </th>
-            <td>
-                :
-            </td>
-            <td class="sales border_bottom">
-                0
-            </td>
-        </tr>
+    <tr id="ctl00_ctl00_ctl00_content_content_ItemSummary1_trProfit" class="profit">
+    <th>
+            Inventory Margin (<span id="ctl00_ctl00_ctl00_content_content_ItemSummary1_lblPercentage" class="Percentage">36 %</span>)
+        </th>
+    <td>
+            :
+        </td>
+    <td class="profit border_top">
+            50
+        </td>
+</tr>
 
-
-
-
-
-        <tr id="ctl00_ctl00_ctl00_content_content_ItemSummary1_trCost">
-            <th>
-                Inventory Cost (
-                <span id="ctl00_ctl00_ctl00_content_content_ItemSummary1_litCostPercentage" class="Percentage">0 %</span>)
-            </th>
-            <td>
-                :
-            </td>
-            <td class="cost">
-                0
-            </td>
-        </tr>
-
-        <tr id="ctl00_ctl00_ctl00_content_content_ItemSummary1_trProfit" class="profit">
-            <th>
-                Inventory Margin (<span id="ctl00_ctl00_ctl00_content_content_ItemSummary1_lblPercentage" class="Percentage">0 %</span>)
-            </th>
-            <td>
-                :
-            </td>
-            <td class="profit border_top">
-                0
-            </td>
-        </tr>
-
-        <tr class="profit">
-            <th>
-                Quantity
-            </th>
-            <td>
-                :
-            </td>
-            <td class="profit">
-                1
-            </td>
-        </tr>
-
-
-    </tbody>
+    <tr class="profit">
+        <th>
+            Quantity
+        </th>
+        <td>
+            :
+        </td>
+        <td class="profit">
+            9
+        </td>
+    </tr>
+     
+    
+</tbody>
 </table>
 
-</div> <!-- end span12 -->
 
-
-
-</div>
+    </div>    
 
 
     </div>
     </div>
+    <div role="dialog" tabindex="-1" style="display: none; height: auto; width: auto; top: 76px; left: 543px;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
+    <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-id-1">Choose Product Category.</span><button title="Close" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" type="button"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory" class="dialog maxDialogHeight ui-dialog-content ui-widget-content" style="width: auto; min-height: 34px; max-height: none; height: auto;">
+    
+    <div aria-activedescendant="d7800baa-7a63-4e6f-baad-5d5513af4655" role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_linkProductCategory" hfid="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_hfProductCategory"><ul class="jstree-container-ul jstree-children"><li aria-selected="false" class="jstree-node  jstree-open jstree-last" id="undefined" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/home.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>Home</a><ul class="jstree-children" role="group"><li aria-selected="false" class="jstree-node  jstree-open" id="d7800baa-7a63-4e6f-baad-5d5513af4655" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : true}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>BABY ACCESSORIES</a><ul class="jstree-children" role="group"><li aria-selected="true" class="jstree-node  jstree-open jstree-last" id="b27941de-888c-4778-bdef-aaf9b75c37c1" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : true}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>New Category</a><ul class="jstree-children" role="group"><li class="jstree-node  jstree-leaf jstree-last" id="b0846fd7-65c9-4c0b-a76c-55158ca92f57" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>New Category</a></li></ul></li></ul></li><li class="jstree-node  jstree-leaf" id="c303256d-59d7-4cf3-8a64-35dbab830941" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>BABY CARE</a></li><li class="jstree-node  jstree-leaf" id="58edda8a-074c-4520-9938-fcdbd627e16f" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>BAGS</a></li><li class="jstree-node  jstree-leaf" id="9f52ac4c-eda2-4070-9d84-3ffdaac03e9d" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>BAGS&amp;SUITCASE</a></li><li class="jstree-node  jstree-leaf" id="c8be847e-0039-43a5-b3c3-3c8f83fabd56" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>BATTERY</a></li><li class="jstree-node  jstree-leaf" id="f6f13de6-b1df-4ae7-ad0c-3117dc1fc7d3" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>BECUTE COSMETICS</a></li><li class="jstree-node  jstree-leaf" id="3ca36827-d616-4d28-addb-c4769c3aab16" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>BLUSH ON</a></li><li class="jstree-node  jstree-leaf" id="e3466493-8ae6-48ef-90f3-a090e802e602" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>BRUSHES &amp; COMB</a></li><li class="jstree-node  jstree-leaf" id="917f125f-53ca-4c82-8e41-a49a4dfd5d67" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>CLEANSING MILK</a></li><li class="jstree-node  jstree-leaf" id="0e98538a-4851-4989-bfc8-cdd392210524" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>CREAM</a></li><li class="jstree-node  jstree-leaf" id="2d53918d-9736-4fbd-97bb-efb3353db19c" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>DIAPERS</a></li><li class="jstree-node  jstree-open" id="afb3aa11-472a-42ea-8ccc-136f2a5de433" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : true}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>Drinks</a><ul class="jstree-children" role="group"><li class="jstree-node  jstree-leaf jstree-last" id="80b3f931-45ba-4d60-9338-80c809c6a415" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>kljsdfkj s</a></li></ul></li><li class="jstree-node  jstree-open" id="7c2bf422-769f-41bf-9b61-2f5dca421063" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : true}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>Electronics</a><ul class="jstree-children" role="group"><li class="jstree-node  jstree-leaf jstree-last" id="07782ef3-d238-48d0-ae07-c68ad6c9b667" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>Mobile</a></li></ul></li><li class="jstree-node  jstree-leaf" id="74a42085-25fa-4d21-9c2f-e4dbdb3b3e44" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>EYE SHADES</a></li><li class="jstree-node  jstree-leaf" id="09c6c903-f315-47f7-85ff-2a7be7961cec" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>EYELASH &amp; GUM</a></li><li class="jstree-node  jstree-leaf" id="443ffee0-ebf1-4556-98f5-840ae70bef58" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>FACE POWERS</a></li><li class="jstree-node  jstree-leaf" id="2366735b-54f4-4563-85f3-c4ffcc7ad6a5" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>FACIAL PRODUCTS</a></li><li class="jstree-node  jstree-leaf" id="ec276280-b084-46e6-986d-ef08c3cd3ad5" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>FEEDER &amp; ACCESSORY</a></li><li class="jstree-node  jstree-open" id="50710325-5631-4e0b-88ae-f3dd3f121523" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : true}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>Food</a><ul class="jstree-children" role="group"><li class="jstree-node  jstree-leaf" id="4fe77397-8a54-4716-9cc6-b9bd318134ec" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>Chili</a></li><li class="jstree-node  jstree-leaf jstree-last" id="f91d5699-77bc-4007-a7df-d7ccf4be34c3" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>Grilled</a></li></ul></li><li class="jstree-node  jstree-leaf" id="dce8cd25-d2e9-4b96-aa4d-6bad59bb89a5" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>Fridge</a></li><li class="jstree-node  jstree-leaf" id="76fa1559-43a3-4668-9c07-9edf26be5a18" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>GARMENTS</a></li><li class="jstree-node  jstree-leaf" id="01cd8ec7-332d-490d-b1aa-d7d44c649b28" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>GENERAL</a></li><li class="jstree-node  jstree-leaf" id="f9e213d9-067f-464a-b946-d857d1f10dae" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>HAIR TREATMENT</a></li><li class="jstree-node  jstree-leaf" id="51bc5728-cc24-4b2e-a6d2-50e5ebca4644" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>HASHMI SURMA</a></li><li class="jstree-node  jstree-leaf" id="2927215a-4a65-4311-82f7-2475517f6fd1" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>HOSIERY</a></li><li class="jstree-node  jstree-leaf" id="829a8cbd-fc64-471f-9a5e-0c7450d518fb" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>IFG</a></li><li class="jstree-node  jstree-leaf" id="a7f54464-26d2-46f4-9a37-76d893b9a403" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>INDIAN PRODUCT</a></li><li class="jstree-node  jstree-leaf" id="6dc0090b-583f-4a1e-a7e4-d9efcd996e30" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>LIP STICKS &amp; BALM</a></li><li class="jstree-node  jstree-leaf" id="92f6aaa3-bb89-4dce-89c2-82072cdd2e80" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>LOTIONS</a></li><li class="jstree-node  jstree-leaf" id="c559cf50-5e05-4087-9bf7-48927250db57" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>LUNCH BOX &amp; BOTTLES</a></li><li class="jstree-node  jstree-leaf" id="7e50d6a2-7307-4c25-828a-524b307d555e" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>MAKEUP ACCESSORIES</a></li><li class="jstree-node  jstree-leaf" id="4dee3abc-b368-4388-9580-15b3a482cde4" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>MAKEUP BASE</a></li><li class="jstree-node  jstree-leaf" id="19919201-b6b6-4e84-94f8-38f17df7701f" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>MAKEUP KIT</a></li><li class="jstree-node  jstree-leaf" id="ebe6c3b4-0d41-4d48-a418-622b84a24b69" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>MANICURE TOOLS</a></li><li class="jstree-node  jstree-leaf" id="668768bd-460e-4856-9e44-4a78260a9bbe" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>MASCARA &amp; LINERS</a></li><li class="jstree-node  jstree-leaf" id="aae19937-5145-4ea6-8d3e-dd5ad95e364c" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>Mechanical</a></li><li class="jstree-node  jstree-leaf" id="bc3060c3-8f1e-4418-85ba-43942758870a" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>MEN PANTS</a></li><li class="jstree-node  jstree-leaf" id="238ee076-0c89-42af-8265-57666c213e09" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>MEN SHIRTS</a></li><li class="jstree-node  jstree-leaf" id="b24b383b-cd43-4eda-b57e-b0bd586afcae" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>MISCELLANEOUS</a></li><li class="jstree-node  jstree-leaf" id="07f06ea2-7435-48ea-a6d2-c755ffba6933" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>MORTEIN</a></li><li class="jstree-node  jstree-leaf" id="5adcab32-b2a9-4671-80e9-3a6cd7b0dbb8" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>MY NEW CAT</a></li><li class="jstree-node  jstree-open" id="aec6d28e-a604-442a-a2db-2cfd131d9b50" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : true}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>New Category</a><ul class="jstree-children" role="group"><li class="jstree-node  jstree-leaf jstree-last" id="c84ba4fd-1265-4225-8e3d-b9a8ddc294b3" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>washers</a></li></ul></li><li class="jstree-node  jstree-leaf" id="d2530156-9ecc-4132-a35e-74722a049eaf" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>NOSE &amp; BODY STRIPS</a></li><li class="jstree-node  jstree-leaf" id="821bb21d-b7a1-4758-8b96-267b9d20060c" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>Panadol Extra</a></li><li class="jstree-node  jstree-leaf" id="c3ba40be-66a5-4f91-879d-65f0b3b24ee5" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>PENCILS</a></li><li class="jstree-node  jstree-leaf" id="a3153728-9f7f-4f08-8eb0-92711370b3d6" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>PERFUMES &amp; BODY SPRAY</a></li><li class="jstree-node  jstree-leaf" id="b38499b2-8b4b-44ba-86dd-aa05a85253ec" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>PHONE</a></li><li class="jstree-node  jstree-leaf" id="3c675c39-9dfb-4543-bada-4326c656282e" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>POLISH</a></li><li class="jstree-node  jstree-leaf" id="e7ef9ff7-ba25-4b9f-85bc-8f55393fc78e" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>Red wine</a></li><li class="jstree-node  jstree-leaf" id="d7a8e8b2-99f6-4e4d-af99-2ff6ffddad94" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>ROUND &amp; HIGH NECK</a></li><li class="jstree-node  jstree-leaf" id="91336cf1-c236-4280-9a45-05d2b7124135" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>SHAMPOO &amp; COND</a></li><li class="jstree-node  jstree-leaf" id="c6017987-9b16-4176-8917-803499b67c07" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>SHAVINGS</a></li><li class="jstree-node  jstree-open" id="f4af1f65-d2d0-4f4d-90d0-6a5718ab5c76" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : true}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>Shop</a><ul class="jstree-children" role="group"><li class="jstree-node  jstree-leaf jstree-last" id="6c0e73a3-d2ca-40e9-ab82-3c869f96edab" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>Shoes</a></li></ul></li><li class="jstree-node  jstree-leaf" id="57c00123-b11b-42d3-825f-b8e7da7de4c9" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>SOAPS AND WASH</a></li><li class="jstree-node  jstree-leaf" id="56f3f3de-0c18-4ebb-aefa-5df8790adc9f" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>SOCKS</a></li><li class="jstree-node  jstree-leaf" id="52ade1cc-4f92-44ac-a1db-a058adff5f97" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>TALC &amp; POWDERS</a></li><li class="jstree-node  jstree-leaf" id="f2f4fc5e-f5d5-451f-b66d-5febd5bcbcc4" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>TIGHTS &amp; LEGGINGS</a></li><li class="jstree-node  jstree-leaf" id="a99349bc-849e-41fa-bf79-acb157fac820" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>TISSUE</a></li><li class="jstree-node  jstree-leaf" id="d4a84ff4-da01-489b-8a5f-3122c34353b1" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>TOOTH PASTE</a></li><li class="jstree-node  jstree-leaf" id="3bb74767-eb68-4391-9f75-4fe1161ea60e" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>VEST &amp; BRIEF</a></li><li class="jstree-node  jstree-leaf" id="b405b964-6ef3-4ff9-bc5c-182ae58a1aa4" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>WAX &amp; REMOVERS</a></li><li class="jstree-node  jstree-leaf" id="a45af2d3-f5f5-46f7-abc7-a40703856394" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>WIPES</a></li><li class="jstree-node  jstree-open jstree-last" id="7e9ea0db-5066-44ee-a8b1-e75610fd4daf" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;&quot;, &quot;opened&quot; : true}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i class="jstree-icon jstree-themeicon"></i>xxx</a><ul class="jstree-children" role="group"><li class="jstree-node  jstree-leaf" id="d6e27e3e-0575-4990-958a-6ea86a862324" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>cotton dupatta</a></li><li class="jstree-node  jstree-leaf" id="1ee471cc-4869-4bc5-9204-089bd20b05ee" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>LONG TOP</a></li><li class="jstree-node  jstree-leaf jstree-last" id="09a1d0b2-1da4-4df9-beba-ab252a8f73f5" data-jstree="{&quot;icon&quot;:&quot;/images/plugin/jstree/icon/file.png&quot;, &quot;opened&quot; : false}" role="treeitem"><i class="jstree-icon jstree-ocl"></i><a href="#" class="jstree-anchor"><i style="background-image: url(&quot;/images/plugin/jstree/icon/file.png&quot;); background-position: center center; background-size: auto auto;" class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>salwar material</a></li></ul></li></ul></li></ul></div>
+</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Cancel</span></button><button role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text">Ok (F2)</span></button></div></div></div></form>
 
-    </div>
+
+<ul class="vakata-context"></ul><div style="display: none;" id="jstree-marker">&nbsp;</div><ul style="display: none;" tabindex="0" id="ui-id-2" class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content"></ul><span class="ui-helper-hidden-accessible" aria-relevant="additions" aria-live="assertive" role="status"></span><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
 </body>
 </html>

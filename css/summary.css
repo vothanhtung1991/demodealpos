@@ -1,0 +1,93 @@
+﻿div.tabContent h2
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0 0 0;
+    padding: 0;
+    color: maroon;
+}
+
+
+div.tabContent h3, a.head {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0 0 0;
+    padding: 0;
+    color: #3b5998;
+}
+
+    div.tabContent h3.mBottom {
+        margin-bottom: 5px !important;
+    }
+
+a.head {
+    text-decoration: none;
+}
+
+    a.head:hover {
+        text-decoration: underline;
+    }
+
+div.tabContent h4 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 2px 0 0 5px;
+    padding: 0;
+    color: Maroon;
+}
+
+div.tabContent h4 a {
+    color: inherit;
+    text-decoration:none;
+}
+
+div.tabContent h4 a:hover {
+    text-decoration:underline;
+}
+
+div.tabContent h4 small {
+    color: Blue;
+}
+
+div.tabContent small {
+    margin: 0 0 0 5px;
+}
+
+div.variants {
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+div.head {
+    padding: 8px 7px 0;
+}
+
+    div.head .status {
+        padding: 5px 0 0 0;
+        float: right;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+div.detail {
+    margin: 2px 0;
+    font-size: 12px;
+}
+
+    div.detail strong {
+        font-weight: bold;
+        color: Maroon;
+    }
+
+    div.detail i {
+        margin-left: 5px;
+    }
+
+h2.summary {
+    margin: 8px 8px 0 0;
+    padding: 0;
+    text-align: right;
+    color: Maroon;
+    font-size: 14px;
+    
+}
