@@ -50,7 +50,18 @@
     <!-- Init plugins -->
     <script type="text/javascript" src="js/main.js"></script><!-- Core js functions -->
     <script type="text/javascript" src="js/charts.js"></script><!-- Init plugins only for page -->
+    
+
+    <script src="js/dialog.js" type="text/javascript"></script>
+    <script src="js/jstree.js" type="text/javascript"></script>
+    <script src="js/initAccountsTree.js" type="text/javascript"></script>
+    <link href="css/chosen.css" rel="stylesheet" type="text/css">
+    <script src="js/chosen.js" type="text/javascript"></script>
+    <script src="js/chosen_002.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.js" type="text/javascript"></script>
+
     <link href="css/lam.css" rel="stylesheet" type="text/css"/>
+
 </head>
 <body>
 <div id="ctl00_ctl00_divContainer">
@@ -239,6 +250,122 @@
 
 <div class="more_menu"> <a title="More menu" class=""></a> <div style="display: none;" class="drop_menu"><strong>Inventory Traffic</strong><ul><li><a href="/Authenticated/Stock/Traffic/Product/Simple.aspx">Product</a></li><li><a href="/Authenticated/Stock/Traffic/Entity.aspx">Outlet</a></li><li><a href="/Authenticated/Stock/Traffic/Date.aspx">Inventory Date</a></li></ul><strong>View</strong><ul><li><a href="/Authenticated/Stock/View/Transferable.aspx">Transferable Stock</a></li></ul></div> </div>
 </div>
+
+<div class="search_filter_box" buttonid="btnFilter">
+        <div class="clearfix">
+            <div class="search_filter">
+                <a>More Filter</a>
+                <div style="display: none;" class="filter dropdown">
+                    <div class="row clearfix">
+                        
+                        <div class="column">
+                            <strong>Category</strong>
+                            <a id="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_linkProductCategory" class="picker" dialogid="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory">Choose..</a>
+<input name="ctl00$ctl00$ctl00$content$content$ProductCategoryPicker1$hfProductCategory" id="ctl00_ctl00_ctl00_content_content_ProductCategoryPicker1_hfProductCategory" title="* Required" type="hidden">
+
+
+                        </div>
+                        <div class="column">
+                            <strong>Supplier</strong>
+                            <input autocomplete="off" name="ctl00$ctl00$ctl00$content$content$txtSupplier$txtInput" id="ctl00_ctl00_ctl00_content_content_txtSupplier_txtInput" class="autocomplete ui-autocomplete-input" wsmethod="GetSupplierSuggestion" hfid="ctl00_ctl00_ctl00_content_content_txtSupplier_hfID" type="text"><input name="ctl00$ctl00$ctl00$content$content$txtSupplier$hfID" id="ctl00_ctl00_ctl00_content_content_txtSupplier_hfID" type="hidden">
+
+                        </div>
+                        <div class="column">
+                            <strong>Quantity</strong>
+                            <div>
+                                <input name="ctl00$ctl00$ctl00$content$content$MaskedDecInputQuantityFrom$txtInput" value="1" id="ctl00_ctl00_ctl00_content_content_MaskedDecInputQuantityFrom_txtInput" class="txtQty" style="width:50px;" type="text">
+
+                                <span>≤</span>
+                                <input name="ctl00$ctl00$ctl00$content$content$MaskedDecInputQuantityTo$txtInput" id="ctl00_ctl00_ctl00_content_content_MaskedDecInputQuantityTo_txtInput" class="txtQty" style="width:50px;" type="text">
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" style="height: 52px;">
+                        <div class="column">
+                            <div class="option">
+                                <strong>Year / Month</strong>
+                                <div>
+                                    <select name="ctl00$ctl00$ctl00$content$content$ddlPredefined" id="ctl00_ctl00_ctl00_content_content_ddlPredefined" class="chzn-select" style="width: 170px; display: none;">
+    <option value="0">Please Select</option>
+    <option value="1">Last 3 Months</option>
+    <option value="2">4 - 6 Months</option>
+    <option value="3">7 - 12 Months</option>
+
+</select><div id="ctl00_ctl00_ctl00_content_content_ddlPredefined_chosen" title="" style="width: 170px;" class="chosen-container chosen-container-single"><a class="chosen-single" tabindex="-1"><span>Please Select</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input autocomplete="off" type="text"></div><ul class="chosen-results"></ul></div></div>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="column">
+                            <div class="option">
+                                <strong>From / To</strong>
+                                <div>
+                                    <input name="ctl00$ctl00$ctl00$content$content$DatePickerFrom$txtDate" id="ctl00_ctl00_ctl00_content_content_DatePickerFrom_txtDate" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
+
+                                    <input name="ctl00$ctl00$ctl00$content$content$DatePickerTo$txtDate" id="ctl00_ctl00_ctl00_content_content_DatePickerTo_txtDate" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <strong>Inventory Date</strong>
+                            <input name="ctl00$ctl00$ctl00$content$content$datePickerStockDate$txtDate" id="ctl00_ctl00_ctl00_content_content_datePickerStockDate_txtDate" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div id="ctl00_ctl00_ctl00_content_content_divLastOrder" class="column">
+                            <strong>Render Last Order</strong>
+                            <ul id="ctl00_ctl00_ctl00_content_content_radBtnLastOrder" class="float">
+    <li><input id="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_0" name="ctl00$ctl00$ctl00$content$content$radBtnLastOrder" value="1" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_0">Yes</label></li>
+    <li><input id="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_1" name="ctl00$ctl00$ctl00$content$content$radBtnLastOrder" value="0" checked="checked" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnLastOrder_1">No</label></li>
+
+</ul>
+                        </div>
+                        <div class="column">
+                            <strong>Display Discontinued</strong>
+                            <div>
+                                <ul id="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued" class="float">
+    <li><input id="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_0" name="ctl00$ctl00$ctl00$content$content$radBtnDisplayDiscontinued" value="true" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_0">Yes</label></li>
+    <li><input id="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_1" name="ctl00$ctl00$ctl00$content$content$radBtnDisplayDiscontinued" value="false" checked="checked" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnDisplayDiscontinued_1">No</label></li>
+
+</ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <strong>Currency</strong>
+                            <select name="ctl00$ctl00$ctl00$content$content$ddlCurrency" id="ctl00_ctl00_ctl00_content_content_ddlCurrency" class="chzn-select-deselect" style="width: 80px; display: none;">
+    <option selected="selected" value="0">All</option>
+    <option value="1">$</option>
+    <option value="2">E</option>
+
+</select><div id="ctl00_ctl00_ctl00_content_content_ddlCurrency_chosen" title="" style="width: 80px;" class="chosen-container chosen-container-single"><a class="chosen-single" tabindex="-1"><span>All</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input autocomplete="off" type="text"></div><ul class="chosen-results"></ul></div></div>
+                            </div>
+                     <div class="column" style="margin-right: 0px">
+                         <strong>Search By</strong>              
+                         <div class="radio">
+                                     <ul class="float">
+                                    <li>
+                                        <input id="ctl00_ctl00_ctl00_content_content_radBtnByUnitPrice" name="ctl00$ctl00$ctl00$content$content$FilterByCurrency" value="radBtnByUnitPrice" checked="checked" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnByUnitPrice">Unit Price</label></li>
+                                    <li>
+                                        <input id="ctl00_ctl00_ctl00_content_content_radBtnByUnitCost" name="ctl00$ctl00$ctl00$content$content$FilterByCurrency" value="radBtnByUnitCost" type="radio"><label for="ctl00_ctl00_ctl00_content_content_radBtnByUnitCost">Unit Cost</label></li>
+                                </ul>
+                                         </div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search_input">
+                <input name="ctl00$ctl00$ctl00$content$content$txtProductFilter" id="ctl00_ctl00_ctl00_content_content_txtProductFilter" class="txt" placeholder="Type a product name or code..." type="text">
+            </div>
+            <div class="update_button">
+                <input name="ctl00$ctl00$ctl00$content$content$btnFilter" value="" id="btnFilter" type="submit">
+            </div>
+        </div>
+    </div>
 
 
 <table class="responsive table table-bordered">
