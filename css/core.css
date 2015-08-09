@@ -272,11 +272,11 @@ table.form a.picker {
 }
 
 .button-update {
-    background: url("..Images/icons/refresh.png") no-repeat 15px center,-webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#fefefe),color-stop(100%,#d4d4d4));
-    background: url("..Images/icons/refresh.png") no-repeat 15px center,-webkit-linear-gradient(#fefefe,#d4d4d4);
-    background: url("..Images/icons/refresh.png") no-repeat 15px center,-moz-linear-gradient(#fefefe,#d4d4d4);
-    background: url("..Images/icons/refresh.png") no-repeat 15px center,-o-linear-gradient(#fefefe,#d4d4d4);
-    background: url("..Images/icons/refresh.png") no-repeat 15px center,linear-gradient(#fefefe,#d4d4d4);
+    background: url("../images/icons/refresh.png") no-repeat 15px center,-webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#fefefe),color-stop(100%,#d4d4d4));
+    background: url("../images/icons/refresh.png") no-repeat 15px center,-webkit-linear-gradient(#fefefe,#d4d4d4);
+    background: url("../images/icons/refresh.png") no-repeat 15px center,-moz-linear-gradient(#fefefe,#d4d4d4);
+    background: url("../images/icons/refresh.png") no-repeat 15px center,-o-linear-gradient(#fefefe,#d4d4d4);
+    background: url("../images/icons/refresh.png") no-repeat 15px center,linear-gradient(#fefefe,#d4d4d4);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
