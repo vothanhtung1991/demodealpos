@@ -133,3 +133,4 @@ div.search_filter div.dropdown div.column {
   height: auto;
 }
 .ui-dialog-buttons{z-index: 9999;}
+div.filter div.column input[type="text"].txtQty{width: 50px !important; }

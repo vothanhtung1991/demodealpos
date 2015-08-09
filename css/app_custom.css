@@ -1,0 +1,13 @@
+th.UOMWidth, td.UOMWidth
+{
+    width: 15px;    
+}
+
+div.header div.text h4
+{
+	color: #3B5998;
+	font-style: italic;    
+}
+.print_containers h1 ,.invoice_container h1{
+font-size :12px;
+}

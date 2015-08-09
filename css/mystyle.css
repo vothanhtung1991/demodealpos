@@ -34,7 +34,7 @@ button.button:hover, input.button:hover, a.button:hover, a:hover{text-decoration
 input[disabled], select[disabled], textarea[disabled], input[readonly], 
 select[readonly], textarea[readonly]{cursor: inherit;}
 .dataTables_filter{display: none;}
-div.filter div.column input[type="text"]{width: 100% !important;}
+div.filter div.column .chosen-search input[type="text"]{width: 100% !important;}
 a:hover{text-decoration: none;}
 label{display: inline;}
 
