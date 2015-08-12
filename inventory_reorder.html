@@ -254,8 +254,8 @@
             <ul>
                 <li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Category.aspx">Detail</a></li>
                 <li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Entity.aspx">Outlet</a></li>
-                <li class="active"><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Rank.aspx">Rank</a></li>
-                <li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Reorder.aspx">Reorder Point</a></li>
+                <li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Rank.aspx">Rank</a></li>
+                <li class="active"><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/Reorder.aspx">Reorder Point</a></li>
                 <li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/InventoryAvailable.aspx">Available</a></li>
                 <li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/DepletingInventory.aspx">Depleting</a></li>
                 <li><a href="http://demo.dealpos.com/Authenticated/Stock/Quantity/InventoryTransit.aspx">Transit</a></li>
@@ -280,163 +280,14 @@
         <div class="tabContent">
 
             <div class="filter clearfix">
-                <div buttonid="btnFilter" class="row_wrapper">
+                <div class="row_wrapper" buttonid="btnFilter">
                     <div class="row clearfix">
 
-                        <div class="column">
-                            <strong>Category</strong>
-                            <a dialogid="ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory" class="picker" id="ctl00_ctl00_content_content_ProductCategoryPicker1_linkProductCategory">Choose..</a>
-                            <input type="hidden" title="* Required" id="ctl00_ctl00_content_content_ProductCategoryPicker1_hfProductCategory" name="ctl00$ctl00$content$content$ProductCategoryPicker1$hfProductCategory">
-
-
-                        </div>
-                        <div class="column">
-                            <strong>Row Count</strong>
-                            <input type="text" class="txtQty" id="ctl00_ctl00_content_content_decInputCount_txtInput" value="20" name="ctl00$ctl00$content$content$decInputCount$txtInput">
-
-                        </div>
-                        <div class="column">
-                            <strong>Group By</strong>
-                            <ul class="float clearfix" id="ctl00_ctl00_content_content_radBtnGroupBy">
-                                <li>
-                                    <input type="radio" checked="checked" value="Product" name="ctl00$ctl00$content$content$radBtnGroupBy" id="ctl00_ctl00_content_content_radBtnGroupBy_0">
-                                    <label for="ctl00_ctl00_content_content_radBtnGroupBy_0">Product</label>
-                                </li>
-                                <li>
-                                    <input type="radio" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$content$content$radBtnGroupBy$1\',\'\')', 0)" value="Variant" name="ctl00$ctl00$content$content$radBtnGroupBy" id="ctl00_ctl00_content_content_radBtnGroupBy_1">
-                                    <label for="ctl00_ctl00_content_content_radBtnGroupBy_1">Variant</label>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <strong>Quantity</strong>
-                            <div>
-                                <input type="text" style="width:50px;" class="txtQty" id="ctl00_ctl00_content_content_MaskedDecInputQuantityFrom_txtInput" name="ctl00$ctl00$content$content$MaskedDecInputQuantityFrom$txtInput">
-
-                                <span>≤</span>
-                                <input type="text" style="width:50px;" class="txtQty" id="ctl00_ctl00_content_content_MaskedDecInputQuantityTo_txtInput" name="ctl00$ctl00$content$content$MaskedDecInputQuantityTo$txtInput">
-
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <input type="submit" class="button-update right" id="btnFilter" value="Update" name="ctl00$ctl00$content$content$btnFilter">
+                <input name="ctl00$ctl00$content$content$btnFilter" value="Update" id="btnFilter" class="button-update right" type="submit">
             </div>
 
-            <div class="box gradient">
-
-                <div class="title">
-                    <h4>
-                                        <span>Data table</span>
-                                    </h4>
-                </div>
-                <div class="content noPad clearfix">
-                    <div role="grid" class="dataTables_wrapper" id="DataTables_Table_0_wrapper">
-                        <div class="dataTables_filter" id="DataTables_Table_0_filter">
-                            <label>Search:
-                                <input type="text" aria-controls="DataTables_Table_0" id="search">
-                            </label>
-                        </div>
-                        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="responsive dynamicTable display table table-bordered dataTable" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
-                            <thead>
-                                <tr role="row">
-                                    <th class="sorting_desc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="descending" aria-label="Rendering engine: activate to sort column ascending">Rendering engine</th>
-                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Browser</th>
-                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Platform(s)</th>
-                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Engine version</th>
-                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">CSS grade</th>
-                                </tr>
-                            </thead>
-
-                            <tfoot>
-                                <tr>
-                                    <th rowspan="1" colspan="1">Rendering engine</th>
-                                    <th rowspan="1" colspan="1">Browser</th>
-                                    <th rowspan="1" colspan="1">Platform(s)</th>
-                                    <th rowspan="1" colspan="1">Engine version</th>
-                                    <th rowspan="1" colspan="1">CSS grade</th>
-                                </tr>
-                            </tfoot>
-                            <tbody role="alert" aria-live="polite" aria-relevant="all">
-                                <tr class="gradeA odd">
-                                    <td class=" sorting_1">Webkit</td>
-                                    <td class="">S60</td>
-                                    <td class="">S60</td>
-                                    <td class="center ">413</td>
-                                    <td class="center ">A</td>
-                                </tr>
-                                <tr class="gradeA even">
-                                    <td class=" sorting_1">Webkit</td>
-                                    <td class="">Safari 3.0</td>
-                                    <td class="">OSX.4+</td>
-                                    <td class="center ">522.1</td>
-                                    <td class="center ">A</td>
-                                </tr>
-                                <tr class="gradeA odd">
-                                    <td class=" sorting_1">Webkit</td>
-                                    <td class="">Safari 2.0</td>
-                                    <td class="">OSX.4+</td>
-                                    <td class="center ">419.3</td>
-                                    <td class="center ">A</td>
-                                </tr>
-                                <tr class="gradeA even">
-                                    <td class=" sorting_1">Webkit</td>
-                                    <td class="">OmniWeb 5.5</td>
-                                    <td class="">OSX.4+</td>
-                                    <td class="center ">420</td>
-                                    <td class="center ">A</td>
-                                </tr>
-                                <tr class="gradeA odd">
-                                    <td class=" sorting_1">Webkit</td>
-                                    <td class="">Safari 1.3</td>
-                                    <td class="">OSX.3</td>
-                                    <td class="center ">312.8</td>
-                                    <td class="center ">A</td>
-                                </tr>
-                                <tr class="gradeA even">
-                                    <td class=" sorting_1">Webkit</td>
-                                    <td class="">Safari 1.2</td>
-                                    <td class="">OSX.3</td>
-                                    <td class="center ">125.5</td>
-                                    <td class="center ">A</td>
-                                </tr>
-                                <tr class="gradeA odd">
-                                    <td class=" sorting_1">Webkit</td>
-                                    <td class="">iPod Touch / iPhone</td>
-                                    <td class="">iPod</td>
-                                    <td class="center ">420.1</td>
-                                    <td class="center ">A</td>
-                                </tr>
-                                <tr class="gradeA even">
-                                    <td class=" sorting_1">Trident</td>
-                                    <td class="">Internet Explorer 7</td>
-                                    <td class="">Win XP SP2+</td>
-                                    <td class="center ">7</td>
-                                    <td class="center ">A</td>
-                                </tr>
-                                <tr class="gradeA odd">
-                                    <td class=" sorting_1">Trident</td>
-                                    <td class="">AOL browser (AOL desktop)</td>
-                                    <td class="">Win XP</td>
-                                    <td class="center ">6</td>
-                                    <td class="center ">A</td>
-                                </tr>
-                                <tr class="even gradeA">
-                                    <td class=" sorting_1">Trident</td>
-                                    <td class="">Internet Explorer 6</td>
-                                    <td class="">Win 98+</td>
-                                    <td class="center ">6</td>
-                                    <td class="center ">A</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="dataTables_info" id="DataTables_Table_0_info">Showing 1 to 10 of 57 entries</div>
-                        <div class="dataTables_paginate paging_full_numbers" id="DataTables_Table_0_paginate"><a class="first paginate_button paginate_button_disabled" tabindex="0" id="DataTables_Table_0_first">First</a><a class="previous paginate_button paginate_button_disabled" tabindex="0" id="DataTables_Table_0_previous">Previous</a><span><a class="paginate_active" tabindex="0">1</a><a class="paginate_button" tabindex="0">2</a><a class="paginate_button" tabindex="0">3</a><a class="paginate_button" tabindex="0">4</a><a class="paginate_button" tabindex="0">5</a></span><a class="next paginate_button" tabindex="0" id="DataTables_Table_0_next">Next</a><a class="last paginate_button" tabindex="0" id="DataTables_Table_0_last">Last</a></div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
     </div>
