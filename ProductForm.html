@@ -50,7 +50,11 @@
 <link rel="stylesheet" href="css/jquery-ui-1.css">
 <link rel="stylesheet" href="css/jquery-ui-app.css">
 <link rel="stylesheet" href="css/style.css">
+<link href="css/form_002.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<link href="css/table.css" rel="stylesheet" type="text/css">
 <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+<script src="js/form.js" type="text/javascript"></script>
 <script src="js/jquery-ui-1.js" type="text/javascript"></script>
 <script src="js/dialog.js" type="text/javascript"></script>
 <script src="js/jstree.js" type="text/javascript"></script>
@@ -59,6 +63,7 @@
 
 </head>
 <body>
+<form novalidate="novalidate" name="aspnetForm" method="post" action="" id="aspnetForm">
     <div id="ctl00_ctl00_divContainer">
         <header>
             <div id="header">
@@ -180,41 +185,10 @@
                         </div>
                     </div><!-- /navbar-inner -->
                 </div><!-- /navbar -->
-                <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Products</span></h1>
-                <div id="ctl00_ctl00_content_divActions" class="page_action">
-                    <ul style="display: none;" class="section table_action">
-                        <li>
-                            <input name="" value="Delete" title="Delete" class="delete" type="submit">
-                        </li>
-                        <li><a dialogid="dialogMove" class="move" title="Move">Move</a></li>
-                    </ul>
-                    <ul class="section">
-                        <li><a href="product-import.html" class="import" title="Import">Import</a></li>
-                        <li><input value="Export" title="Export" class="export" type="submit"></li>
-                    </ul>
-                    <div class="more">
-                        <a class="more"></a>
-                        <div class="dropdown">
-                            <ul>
-                                <li>
-                                    <input value="Export With Outlet Price" title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Components" title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Pricebook" title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Parent"  title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Inventory" title="Export" class="export" type="submit">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a class="button" title="Add" href="ProductForm.html">Add Product</a>
+                <h1 class="accounting"><i></i><span>Product Form</span></h1>
+                <div class="page_action">
+                    <a href="product.html">Cancel</a>
+                    <input name="" value="Save" class="button" type="submit">
                 </div>
             </div><!-- End #header -->
         </header>
@@ -268,12 +242,17 @@
             <div id="page_menu" class="page_menu">
                  <ul>
                      <li><a href="product-cat.html">Categories</a></li>
-                     <li class="active"><a href="product.html">Products</a></li>
+                     <li  class="active"><a href="product.html">Products</a></li>
                      <li><a href="Variants.html">Variants</a></li>
                  </ul>
-                <div class="more_menu">
-                    <a title="More menu" class=""></a>
-                    <div class="drop_menu"><strong>Setup</strong>
+                <div class="more_menu"><a title="More menu" class=""></a>
+                    <div class="drop_menu">
+                        <strong>Catalog</strong>
+                        <ul>
+                            <li><a href="ProductCategory.aspx">Category</a></li>
+                            <li><a href="List.aspx">Variants</a></li>
+                        </ul>
+                        <strong>Setup</strong>
                         <ul>
                             <li><a href="">Measurement</a></li>
                             <li><a href="">UOM</a></li>
@@ -287,196 +266,184 @@
                 </div>
             </div>
             <div class="tabContent">
-                <div class="search_filter_box" buttonid="btnFilter">
-                    <div class="clearfix">
-                        <div class="search_filter">
-                            <a>More Filter</a>
-                            <div class="filter dropdown">
-                                <div class="column">
-                                    <strong>Category</strong>
-                                    <a id="ctl00_ctl00_content_content_pcFilter_linkProductCategory" class="picker" dialogid="ctl00_ctl00_content_content_pcFilter_dialogProductCategory">Choose..</a>
-                                    <input id="ctl00_ctl00_content_content_pcFilter_hfProductCategory" title="* Required" type="hidden">
-                                </div>
-                                <div class="column">
-                                    <strong>Released Date</strong>
-                                    <div class="radio">
-                                        <ul class="float">
-                                            <li>
-                                                <input id="predefined" name="nameReleased" value="radBtnByPredefined" checked="checked" type="radio">
-                                                <label for="predefined">Predefined</label>
-                                            </li>
-                                            <li>
-                                                <input id="range" name="nameReleased" value="radBtnByRange" type="radio">
-                                                <label for="range">Range</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div style="display: block;" class="option">
-                                        <strong>Period</strong>
-                                        <div>
-                                            <select name="" class="chzn-select" style="width: 170px; display: none;">
-                                                <option selected="selected" value="0">All</option>
-                                                <option value="1">Last 3 Months</option>
-                                                <option value="2">4 - 6 Months</option>
-                                                <option value="3">7 - 12 Months</option>
-                                            </select>   
-                                        </div>
-                                    </div>
-                                    <div style="display: none;" class="option">
-                                        <strong>From / To</strong>
-                                        <div>
-                                            <input name="" id="predefined" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-
-                                            <input name="" id="range" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-
-                                        </div>
-                                    </div>
-                                </div>
+                 <div class="row_section clearfix">
+                    <div class="section_info">
+                        <strong>Product Details</strong>
+                        <span>Provide name, code and category</span>
+                    </div>
+                    <div class="section_content">
+                        <div class="section_full clearfix">
+                            <strong>Name</strong>
+                            <input name="" id="txtName" class="txt required" autofocus="" placeholder="e.g. Samsung Ativ" type="text">
+                            <div id="trModel" style="display: none">
+                                <strong>Model</strong>
+                                <input name="" class="txt" type="text">
                             </div>
                         </div>
-                        <div class="search_input">
-                            <input name="" class="txt" placeholder="Type a product name or code..." type="text">
-                        </div>
-                        <div class="update_button">
-                            <input name="" value="" id="btnUpdate" type="submit">
+                        
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong>Code</strong>
+                                <input name="" class="txt" placeholder="e.g. 1001" type="text">
+                            </div>
+                            <div class="section_right">
+                                <strong>Category</strong>
+                                <a id="ctl00_ctl00_content_content_ProductCategoryPicker1_linkProductCategory" class="picker" dialogid="ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory">Choose..</a>
+                                <input name="" id="ctl00_ctl00_content_content_ProductCategoryPicker1_hfProductCategory" title="* Required" class="required" type="hidden">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row-fluid">
-                    <div class="span12">
-                        <div class="box">
-                            <div class="title">
-                                <h4>
-                                    <span class="icon16 icomoon-icon-equalizer-2"></span>
-                                    <span>Products</span>
-                                </h4>
-                                <a href="#" class="minimize">Minimize</a>
+
+                <div class="row_section clearfix">
+                    <div class="section_info">
+                        <strong>Pricing &amp; Variants</strong>
+                        <span>Manage pricing, and configure variant(s) for this product</span>
+                        <a id="ctl00_ctl00_content_content_btnAddVariant" onclick="openDialog()" class="button-gray button-variant" title="Add a Variant (F4)" style="display:none;">Add a Variant</a>
+                    </div>
+                    <div class="section_content">
+                        <div class="section_full clearfix small_bottom">
+                            <div class="section_left">
+                                <strong class="no-block">Cost</strong><span class="note"> cost of goods sold</span>
+                                <input name="" id="txtUnitCost" class="txtPrice" type="text">
                             </div>
-                            <div class="content noPad">
-                                <table cellpadding="0" cellspacing="0" border="0" class="responsive dynamicTable display table table-bordered zebra" width="100%">
+                            <div class="section_right">
+                                <strong class="no-block">Price</strong><span class="note">price to sell to customer</span>
+                                <input name="" id="txtUnitPrice" class="txtPrice" type="text">
+                            </div>
+                        </div>
+                        <div id="ctl00_ctl00_content_content_divType" class="section_full clearfix small_bottom">
+                            <div class="section_left">
+                                <strong>Type</strong>
+                                <select name="" id="ddlMultipleType" class="chzn-select" style="width: 100%; display: none;">
+                                    <option selected="selected" value="1">Standard</option>
+                                    <option value="2">Non-Inventory</option>
+                                    <option value="3">Composite</option>
+                                    <option value="4">Serialized</option>
+                                    <option value="5">Manufactured</option>
+                                    <option value="6">Complementary</option>
+                                    <option value="7">Has Parent Inventory (Specify Ratio)</option>
+                                </select> 
+                            </div>
+                            <div class="section_right">
+                                <strong>UOM</strong>
+                                <select name="" id="ddlMultipleUOM" class="chzn-select-deselect" style="width: 100%; display: none;">
+                                    <option selected="selected" value=""></option>
+                                    <option value="">H?p</option>
+                                    <option value="">pcs</option>
+                                    <option value="">Roll</option>
+                                    <option value="">V?</option>
+                                    <option value="">Viên</option>
+                                </select> 
+                            </div>
+                        </div>
+                        <div class="section_full clearfix small_bottom border-top">
+                            <span class="checkBox bold">
+                                <input id="chkMultiple" name="ctl00$ctl00$content$content$chkMultiple" type="checkbox">
+                                <label for="chkMultiple">This product has multiple variants</label>
+                            </span>
+                            <span class="note">e.g. Multiple sizes and / or colors</span>
+                        </div>
+                        <div id="variantBlock" class="variantBlock" style="display:none;">
+                            <div class="clearfix marginBottom">
+                                <strong class="no-block"></strong><span class="note" style="padding-left: 0">Enter any number of variant separated by comma</span>
+                                <div>
+                                    <input style="display: none;" id="txtModelMultiple" type="text">
+                                    <div style="width: 90%; min-height: 20px; height: 100%;" id="txtModelMultiple_tagsinput" class="tagsinput">
+                                        <div id="txtModelMultiple_addTag">
+                                        <input style="color: rgb(102, 102, 102); width: 300px;" id="txtModelMultiple_tag" value="e.g. Red,Green,Blue" data-default="e.g. Red,Green,Blue">
+                                        </div>
+                                    <div class="tags_clear"></div></div>
+                                </div>
+                                <input id="btnSaveVariant" value="Add" class="button-gray button-variant" onclick="OnCartMultipleOK()" type="button">
+                            </div>
+                            <div id="divTable" style="display:none;">
+                                <table class="cart">
                                     <thead>
-                                        <tr class="header">
-                                            <th scope="col" id="no-sort" style="width:14px;"><input type="checkbox"></th>
-                                            <th scope="col" style="width:300px;">Product</th>
-                                            <th scope="col" id="no-sort" style="width:100px;">Code</th>
-                                            <th scope="col" style="width:90px;">Category</th>
-                                            <th scope="col">Variants</th>
-                                            <th class="number" scope="col" style="width:120px;">Price</th>
-                                            <th scope="col" style="width:60px;">Released</th>
+                                        <tr class="silverGray">
+                                            <th></th>
+                                            <th>Name
+                                            </th>
+                                            <th>Code
+                                            </th>
+                                            <th>Cost
+                                            </th>
+                                            <th>Price
+                                            </th>
+                                            <th>%
+                                            </th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                    <tr>
-                                            <td><input name="" type="checkbox"></td>
-                                            <td>
-                                                <a class="thumb" href="">
-                                                    <img src="images/product/ImageGen_002.jpg">
-                                                </a>
-                                                <div class="text">
-                                                    <a href="product-info.html">php book</a>
-                                                </div>
-                                            </td>
-                                            <td>123456</td>
-                                            <td>BAGS</td>
-                                            <td>
-                                                <ul class="float">
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Default</a>
-                                                        <small>123456</small>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                            <td class="number">
-                                                <span>550</span>
-                                            </td>
-                                            <td>Jul 2015</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input name="" type="checkbox"></td>
-                                            <td>
-                                                <a class="thumb" href="">
-                                                    <img src="images/product/ImageGen_002.jpg">
-                                                </a>
-                                                <div class="text">
-                                                    <a href="product-info.html">php book</a>
-                                                </div>
-                                            </td>
-                                            <td>123456</td>
-                                            <td>BAGS</td>
-                                            <td>
-                                                <ul class="float">
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Default</a>
-                                                        <small>2013</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Large</a>
-                                                        <small>2017</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Regular</a>
-                                                        <small>2016</small>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                            <td class="number">
-                                                <span>25</span>
-                                            </td>
-                                            <td>Sep 2014</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input name="" type="checkbox"></td>
-                                            <td>
-                                                <a class="thumb" href="">
-                                                    <img src="images/product/ImageGen_002.jpg">
-                                                </a>
-                                                <div class="text">
-                                                    <a href="product-info.html">php book</a>
-                                                </div>
-                                            </td>
-                                            <td>123456</td>
-                                            <td>BAGS</td>
-                                            <td>
-                                                <ul class="float">
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Default</a>
-                                                        <small>2013</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Large</a>
-                                                        <small>2017</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Regular</a>
-                                                        <small>2016</small>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                            <td class="number">
-                                                <span>25</span>
-                                            </td>
-                                            <td>Sep 2014</td>
-                                        </tr>
+                                    <tbody style="" class="ui-sortable">
+                                        
                                     </tbody>
                                 </table>
                             </div>
-
-                        </div><!-- End .box -->
-
-                    </div><!-- End .span6 -->
-                </div><!-- End .row-fluid -->
-                <div>
+                        </div>
+                    </div>
                 </div>
+                <div class="row_section clearfix">
+                    <div class="section_info">
+                        <strong>Miscellaneous</strong>
+                        <span>Other details information about this product</span>
+                    </div>
+                    <div class="section_content">
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong class="no-block">Image</strong><span class="note">Recommended size 80 x 80 pixel</span>
+                                <input name="ctl00$ctl00$content$content$fuImage" id="fuImage" type="file">
+                                
+                            </div>
+                            <div class="section_right">
+                                
+                            </div>
+                        </div>
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong>Release Date</strong>
+                                <input name="" value="11 Aug 2015" id="" class="datepicker hasDatepicker" readonly="readonly" type="text">
+
+                            </div>
+                            <div class="section_right">
+                                <strong>Supplier</strong>
+                                <input autocomplete="off" name="" class="autocomplete contact ui-autocomplete-input" wsmethod="GetSupplierSuggestion" hfid="ctl00_ctl00_content_content_acSupplier_hfID" type="text">
+                            </div>
+                        </div>
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong>Storage</strong>
+                                <input name="" class="txt" placeholder="Location of placement" type="text">
+                            </div>
+                            <div class="section_right">
+                                <strong>Discontinued</strong>
+                                <ul class="float box">
+                                    <li>
+                                        <input id="DiscontinuedY" name="DiscontinuedN" value="true" type="radio">
+                                        <label for="DiscontinuedY">Yes</label>
+                                    </li>
+                                    <li>
+                                        <input id="DiscontinuedN" name="DiscontinuedN" value="false" checked="checked" type="radio">
+                                        <label for="DiscontinuedN">No</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section_full clearfix">
+                            <strong>Description</strong>
+                            <textarea name="" rows="2" cols="20" id="txtDescription" placeholder="Enter the description for this product"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
-        <div id="ctl00_ctl00_content_content_pcFilter_dialogProductCategory" class="dialog maxDialogHeight ui-dialog-content ui-widget-content" >
-            <div role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_pcFilter_linkProductCategory" hfid="ctl00_ctl00_content_content_pcFilter_hfProductCategory">
-                <ul class="jstree-container-ul jstree-children">
-                    <li class="jstree-node  jstree-open jstree-last"  data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
-                    <a>Home</a>
-                    <ul class="jstree-children" role="group">
+        </div>
+    <div style="display: none; " class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
+    <div id="ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory" class="dialog maxDialogHeight ui-dialog-content ui-widget-content" >
+    <div aria-activedescendant="d7800baa-7a63-4e6f-baad-5d5513af4655" role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_ProductCategoryPicker1_linkProductCategory" hfid="ctl00_ctl00_content_content_ProductCategoryPicker1_hfProductCategory">
+    <ul class="jstree-container-ul jstree-children">
+    <li class="jstree-node  jstree-open jstree-last"  data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
+        <a>Home</a>
+        <ul class="jstree-children" role="group">
                     <li class="jstree-node  jstree-open"><a>BABY ACCESSORIES</a></li>
                     <li class="jstree-node jstree-leaf"></i><a>BABY CARE</a></li>
                     <li class="jstree-node  jstree-leaf"><a >BAGS</a></li>
@@ -563,10 +530,10 @@
                         </ul>
                     </li>
                 </ul>
-            </li>
-    </ul>
+    </li></ul>
+    </div>
 </div>
 </div>
-</div>
+</form>
 </body>
 </html>

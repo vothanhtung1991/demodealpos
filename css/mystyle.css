@@ -23,21 +23,29 @@ div.filter div.column .box{box-shadow: none;}
 button.button, input.button, a.button{line-height: 16px; height: 16px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
 button.button:hover, input.button:hover, a.button:hover, a:hover{text-decoration: none;}
 .ui-dialog .ui-dialog-buttonpane button:hover{background: #f4ffff;}
-.ui-dialog .ui-dialog-buttonpane button{
-    padding: 0.2em 1em;
-    background: #d0e5f5 url("images/ui-bg_glass_75_d0e5f5_1x400.png") repeat-x scroll 50% 50%;
-    border: 1px solid #79b7e7;
-    color: #1d5987;
-    font-weight: bold;
-    border-radius: 4px;
-}
+/*.chosen-container{margin-bottom: 12px;}*/
 input[disabled], select[disabled], textarea[disabled], input[readonly], 
 select[readonly], textarea[readonly]{cursor: inherit;}
 .dataTables_filter{display: none;}
-div.filter div.column .chosen-search input[type="text"]{width: 100% !important;}
+div.filter div.column input[type="text"]{width: 100% !important;}
 a:hover{text-decoration: none;}
 label{display: inline;}
 
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
   background-image: url("../images/ui-icons_217bc0_256x240.png");
 }
+.table caption + thead tr:first-child th, .table caption + thead tr:first-child td, .table colgroup + thead tr:first-child th, .table colgroup + thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {
+  border: 1px solid rgb(196, 196, 196);
+}
+#no-sort{background: none !important;}
+div.filter div.column .option input[type="text"]#predefined, div.filter div.column .option input[type="text"]#range {
+  width: auto !important;
+}
+#tabs-3 .clearfix table{background:#FCECA3; }
+#tabs-3 .clearfix table thead tr th {
+  border: 1px solid rgb(158, 158, 158);
+  color: rgb(0, 0, 0);
+  text-shadow: none;
+  padding: 5px;
+}
+#tabs-1 div.section_content input.partialWidth[type="text"]{ margin-bottom: 0;}

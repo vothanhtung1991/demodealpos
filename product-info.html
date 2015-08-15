@@ -3,30 +3,29 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>
-        Demo DealPOS POS | Dashboard
-    </title>
-    <link href="css/css_002.css" rel="stylesheet" type="text/css"/>
-    <link href="css/css.css" rel="stylesheet" type="text/css"/>
-    <script src="css/jquery-1.js" type="text/javascript"></script>
+<title>
+    Demo DealPOS POS | Dashboard
+</title>
+<link href="css/css_002.css" rel="stylesheet" type="text/css"/>
+<link href="css/css.css" rel="stylesheet" type="text/css"/>
+<script src="css/jquery-1.js" type="text/javascript"></script>
 
-    <link href="css/core_002.css" rel="stylesheet" type="text/css"/>
-    <link href="css/jquery.css" rel="stylesheet" type="text/css"/>
+<link href="css/core_002.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.css" rel="stylesheet" type="text/css"/>
 
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
 
-    <script type="text/javascript" src="css/jquery.js"></script>
-    <script src="css/jquery_002.js" type="text/javascript"></script>
-    <script type="text/javascript" src="css/core.js"></script>
-    <script src="css/jquery_003.js" type="text/javascript"></script>
+<script type="text/javascript" src="css/jquery.js"></script>
+<script src="css/jquery_002.js" type="text/javascript"></script>
+<script type="text/javascript" src="css/core.js"></script>
+<script src="css/jquery_003.js" type="text/javascript"></script>
 
-    <link href="css/core.css" rel="stylesheet" type="text/css"/>
+<link href="css/core.css" rel="stylesheet" type="text/css"/>
 <link href="css/icons.css" rel="stylesheet" type="text/css"/>
 <link href="css/home_dashboard.css" rel="stylesheet" type="text/css"/>
-<link href="css/jquery-ui-app.css" rel="stylesheet" type="text/css"/>
-<link href="css/jquery-ui-1.css" rel="stylesheet" type="text/css"/>
+
 <!-- Plugin stylesheets -->
 <link href="plugins/misc/qtip/jquery.qtip.css" rel="stylesheet" type="text/css" />
 <link href="plugins/forms/uniform/uniform.default.css" type="text/css" rel="stylesheet" />        
@@ -35,25 +34,30 @@
 <!--<script src="css/LineHome.js" type="text/javascript"></script>-->
 <script src="css/jquery-ui-1.js" type="text/javascript"></script>
 <script src="css/dialog.js" type="text/javascript"></script>
-<script type="text/javascript" src="plugins/forms/uniform/jquery.uniform.min.js"></script>
+
 <!-- Important plugins put in all pages -->
 <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>  
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-<link href="css/detail.css" rel="stylesheet" type="text/css">
+<!-- Table plugins -->
+<script type="text/javascript" src="plugins/tables/dataTables/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="plugins/tables/responsive-tables/responsive-tables.js"></script><!-- Make tables responsive -->
+<script type="text/javascript" src="js/datatable.js"></script><!-- Init plugins only for page -->
 <link href="css/chosen.css" rel="stylesheet" type="text/css">
-<link href="css/form.css" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/mystyle.css">
 <script src="js/chosen.js" type="text/javascript"></script>
-<script src="js/chosen_002.js" type="text/javascript"></script> 
-<script src="js/jquery-ui-1.js" type="text/javascript"></script>  
-<script src="js/jstree.js" type="text/javascript"></script>
-<script src="js/initAccountsTree.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/form.js"></script>
+<script src="js/chosen_002.js" type="text/javascript"></script>
+<script src="js/option.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/jquery-ui-1.css">
+<link rel="stylesheet" href="css/jquery-ui-app.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="css/detail.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-ui-1.js" type="text/javascript"></script>
+<script src="js/dialog.js" type="text/javascript"></script>
+
 </head>
 <body>
-<form novalidate="novalidate" name="aspnetForm" method="post" action="Form.aspx" id="aspnetForm">
     <div id="ctl00_ctl00_divContainer">
         <header>
             <div id="header">
@@ -72,10 +76,10 @@
                                         <ul class="dropdown-menu">
                                             <li class="menu">
                                                 <ul>
-                                                    <li>                                                    
+                                                    <li>                                              
                                                         <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
                                                     </li>
-                                                    <li>                                                    
+                                                    <li>                                                
                                                         <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
                                                     </li>
                                                     <li>
@@ -175,10 +179,34 @@
                         </div>
                     </div><!-- /navbar-inner -->
                 </div><!-- /navbar -->
-                <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Account Code Import</span></h1>
+                <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Bread</span></h1>
                 <div id="ctl00_ctl00_content_divActions" class="page_action">
-                    <a href="accounts.html">Cancel</a> 
-                    <input name="" value="Save"  class="button" type="submit">
+                    <ul class="section">
+                        <li>
+                            <a id="" class="outlet" href="OutletInventory.html">Outlet Inventory</a>
+                        </li>
+                        <li>
+                            <a id="" class="report" href="SalesHistory.html">Sales History</a>
+                        </li>
+                    </ul>
+                    <div class="more">
+                        <a class="more"></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li>
+                                    <a id="" class="report" href="PurchaseHistory.html">Purchase History</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="section">
+                        <li>
+                            <a id="" class="edit" href="ProductForm.html">Edit</a>
+                        </li>
+                        <li>
+                            <input name="" value="Delete" class="delete" type="submit">
+                        </li>
+                    </ul>
                 </div>
             </div><!-- End #header -->
         </header>
@@ -231,143 +259,148 @@
         <div class="content_scroll">
             <div id="page_menu" class="page_menu">
                 <ul>
-                    <li><a href="types.html">Types</a>
-                    </li>
-                    <li class="active"><a href="accounts.html">Accounts</a></li>
-                    <li><a href="journal.html">Journal</a></li>
-                    <li><a href="dashboard-ac.html">Dashboard</a></li>
+                     <li><a href="product-cat.html">Categories</a></li>
+                     <li class="active"><a href="product.html">Products</a></li>
+                     <li ><a href="Variants.html">Variants</a></li>
                 </ul>
-
-                <div class="more_menu">
-                    <a title="More menu" class=""></a>
-                    <div class="drop_menu">
-                        <strong>Report</strong>
+                <div class="more_menu"><a title="More menu" class=""></a>
+                    <div class="drop_menu"><strong>Catalog</strong>
                         <ul>
-                            <li class="arrow"><a>Standard</a>
-                                <ul>
-                                    <li><a href="trial-balance.html">Trial Balance</a></li>
-                                    <li><a href="general-ledger.html">General Ledger</a></li>
-                                    <li><a href="BalanceSheet.html">Balance Sheet</a></li>
-                                    <li><a href="IncomeStatement.html">Income Statement</a></li>
-                                </ul>
-                            </li>
-                            <li class="arrow"><a>Advanced</a>
-                                <ul>
-                                    <li><a href="ComparativeBalance.html">Comparative Bal.</a></li>
-                                    <li><a href="Worksheet.html">Worksheet</a></li>
-                                </ul>
-                            </li>
-                            <li class="arrow"><a>Outlet</a>
-                                <ul>
-                                    <li><a href="OutletExpense.html">Expense</a>
-                                    </li>
-                                    <li><a href="OutletExpenseDetail.html">Expense Detail</a></li>
-                                </ul>
-                            </li>
-                        </ul><strong>Fixed Asset</strong>
+                            <li><a href="product-cat.html">Category</a></li>
+                            <li><a href="product.html">Products</a></li>
+                        </ul><strong>Setup</strong>
                         <ul>
-                            <li><a href="FixedAsset.html">Fixed Asset</a>
-                            </li>
+                            <li><a href="Measurement-List.html">Measurement</a></li>
+                            <li><a href="UOM-List.html">UOM</a></li>
+                            <li><a href="Pricebook-List.html">Pricebook</a></li>
+                            <li><a href="MarkUpPrice.html">Set Category Price</a></li>
+                        </ul><strong>Print</strong>
+                        <ul>
+                            <li><a href="PrintBarcode.html" target="_blank">Product Barcode</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="tabContent">
-                 <div class="row_section clearfix">
+                <div class="row_section clearfix">
                     <div class="section_info">
-                        <strong>Account Details</strong>
+                        <strong>Product Details</strong>
                         <span>Provide name, code and category</span>
                     </div>
                     <div class="section_content">
-                         <div class="section_full clearfix">
+                        <div class="section_full clearfix">
                             <strong>Name</strong>
-                            <input name="" class="txt required" autofocus="" placeholder="e.g. Account..." type="text">
+                            <span>Bread</span>
                         </div>
                         <div class="section_full clearfix">
                             <div class="section_left">
                                 <strong>Code</strong>
-                                <input name="" class="txt required" placeholder="e.g. 101" type="text">
+                                <span></span>
                             </div>
                             <div class="section_right">
                                 <strong>Category</strong>
-                                 <a id="ctl00_ctl00_content_content_acFilter_linkAccountCode" class="picker" dialogid="ctl00_ctl00_content_content_acFilter_dialogAccountCode">Choose..</a>
-                                <input name="" class="required" type="hidden">
+                                <span>
+                                    <a id="" class="imp" href="ProductCategoryInfo.html">Food</a>
+                                </span>
                             </div>
                         </div>
-                   </div>
-                </div>
-
-                 <div class="row_section clearfix">
-                    <div class="section_info">
-                        <strong>Miscellanaeous</strong>
-                        <span>Other details information about this Account</span>
                     </div>
-                     <div class="section_content">
-                        <div class="section_full clearfix">
-                            <strong>Note</strong>
-                            <textarea name="" rows="2" cols="20" class="textarea" placeholder="Enter the description for this account"></textarea>
-                        </div>
-                     </div>
                 </div>
-
                 <div class="row_section clearfix">
                     <div class="section_info">
-                        <strong>Advanced</strong>
-                        <span></span>
+                        <strong>Pricing &amp; Variants</strong>
+                        <span>Pricing, and Variant(s) for this product</span>
                     </div>
-                     <div class="section_content">
-                        <div class="section_full clearfix">
-                            <div class="section_left">
-                                <strong>Outlet</strong>
-                                <select name="" class="chzn-select-deselect" data-placeholder="Choose an Outlet" style="width: 100%; display: none;">
-                                    <option selected="selected" value=""></option>
-                                    <option value="">Branch1</option>
-                                </select>
+                    <div class="section_content">
+                        <div class="section_full">
+                            <div>
+                                <table class="responsive table table-bordered">
+                                    <thead>
+                                        <tr class="silverGray">
+                                            <th scope="col">Variant</th>
+                                            <th scope="col" style="width:100px;">Code</th>
+                                            <th class="number" scope="col" style="width:120px;">UnitCost</th>
+                                            <th class="number" scope="col" style="width:120px;">UnitPrice</th>
+                                            <th class="number" scope="col" style="width:25px;">%</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="Product-Variant-Info.html">Default</a></td>
+                                            <td>2013</td>
+                                            <td class="number">15</td><td class="number">25</td>
+                                            <td class="number red">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                     </div>
-                </div>
-
-            <div>
-        </div>
-        <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
-            <div id="ctl00_ctl00_content_content_acFilter_dialogAccountCode" class="dialog ui-dialog-content ui-widget-content">
-                    <div class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_acFilter_linkAccountCode" hfid="ctl00_ctl00_content_content_acFilter_hfAccountCode">
-                        <ul class="jstree-container-ul jstree-children">
-                            <li aria-selected="false" class="jstree-node  jstree-open jstree-last" id="undefined" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
-                            <a>Home</a>
-                                <ul class="jstree-children" role="group">
-                                    <li class="jstree-node  jstree-open"><a>Asset - 1xxx</a>
-                                        <ul class="jstree-children" role="group">
-                                            <li><a>Fixed Assets</a></li>
-                                            <li><a>Current Assets</a></li>
-                                            <li><a>Cash &amp; Banks</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="jstree-node  jstree-open"><a >Liability - 2xxx</a>
-                                        <ul class="jstree-children" role="group">
-                                            <li class="jstree-node  jstree-open"><a>Current Liabilities</a>
-                                                <ul class="jstree-children" role="group">
-                                                    <li class="jstree-node  jstree-leaf jstree-last">
-                                                        <a>Rent Payable</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="jstree-node  jstree-leaf jstree-last">
-                                                <a>Non-Current Liabilities</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="jstree-node  jstree-leaf"><a>Equity - 3xxx</a></li>
-                                </ul>
-                                <li class="jstree-node jstree-leaf"><a>Revenue - 4xxx</a></li>
-                                <li class="jstree-node  jstree-leaf jstree-last"><a>Expense - 5xxx-8xxx</a></li>
-                                </ul>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-        </div><!--category popup-->
-    </form>
-    </body>
+                <div class="row_section clearfix">
+                    <div class="section_info">
+                        <strong>Miscellanaeous</strong>
+                        <span>Other details information about this product</span>
+                    </div>
+                    <div class="section_content">
+                        <div id="ctl00_ctl00_content_content_divImage" class="section_full clearfix">
+                            <div class="section_left">
+                                <strong>Image</strong>
+                                <a href=""  target="_blank">
+                                    <img id="ctl00_ctl00_content_content_imgThumbnail" src="images/product/ImageGen_002.jpg" style="border-width:0px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong>Release Date</strong>
+                                <span>16 Sep 2014</span>
+                            </div>
+                            <div id="ctl00_ctl00_content_content_divSupplier" class="section_right">
+                                <strong>Supplier</strong>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong>Storage</strong>
+                                <span></span>
+                            </div>
+                            <div class="section_right">
+                                <strong>Discontinued</strong>
+                                <span>No</span>
+                            </div>
+                        </div>
+                        <div class="section_full clearfix">
+                            <strong>Description</strong>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row_section clearfix">
+                    <div class="section_info">
+                        <strong>Update History</strong>
+                    </div>
+                    <div class="section_content">
+                        <div class="section_full clearfix">
+                            <div>
+                                <table class="responsive table table-bordered">
+                                    <thead>
+                                        <tr class="silverGray">
+                                            <th scope="col" style="width:100px;">Modified By</th><th scope="col" style="width:120px;">Modified</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>dealpos</td><td>27 Apr 2015 17:58</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
 </html>

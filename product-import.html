@@ -42,7 +42,6 @@
 <!-- Table plugins -->
 <script type="text/javascript" src="plugins/tables/dataTables/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="plugins/tables/responsive-tables/responsive-tables.js"></script><!-- Make tables responsive -->
-<script type="text/javascript" src="js/datatable.js"></script><!-- Init plugins only for page -->
 <link href="css/chosen.css" rel="stylesheet" type="text/css">
 <script src="js/chosen.js" type="text/javascript"></script>
 <script src="js/chosen_002.js" type="text/javascript"></script>
@@ -55,10 +54,15 @@
 <script src="js/dialog.js" type="text/javascript"></script>
 <script src="js/jstree.js" type="text/javascript"></script>
 <script src="js/initAccountsTree.js" type="text/javascript"></script>
-<script src="js/productCategory.js" type="text/javascript"></script>
-
+<link href="css/list.css" rel="stylesheet" type="text/css">
+<link href="css/import.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet">
+<script src="js/additional-methods.js" type="text/javascript"></script>
+<script src="js/form.js" type="text/javascript"></script>
+<script src="js/import.js" type="text/javascript"></script>
 </head>
 <body>
+    <form novalidate="novalidate" name="aspnetForm" method="post" action="ProductImport.aspx" id="aspnetForm" enctype="multipart/form-data">
     <div id="ctl00_ctl00_divContainer">
         <header>
             <div id="header">
@@ -180,41 +184,23 @@
                         </div>
                     </div><!-- /navbar-inner -->
                 </div><!-- /navbar -->
-                <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Products</span></h1>
+                <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Import Products</span></h1>
                 <div id="ctl00_ctl00_content_divActions" class="page_action">
-                    <ul style="display: none;" class="section table_action">
-                        <li>
-                            <input name="" value="Delete" title="Delete" class="delete" type="submit">
-                        </li>
-                        <li><a dialogid="dialogMove" class="move" title="Move">Move</a></li>
-                    </ul>
-                    <ul class="section">
-                        <li><a href="product-import.html" class="import" title="Import">Import</a></li>
-                        <li><input value="Export" title="Export" class="export" type="submit"></li>
-                    </ul>
+                    <a class="table" href="Products_DealPOS.csv" title="Download Sample">Download Sample</a>
                     <div class="more">
                         <a class="more"></a>
                         <div class="dropdown">
                             <ul>
                                 <li>
-                                    <input value="Export With Outlet Price" title="Export" class="export" type="submit">
+                                    <a class="table" href="Products_Serial_DealPOS.csv" title="Download Sample Serial">Download Sample Serial</a>
                                 </li>
                                 <li>
-                                    <input value="Export With Components" title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Pricebook" title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Parent"  title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Inventory" title="Export" class="export" type="submit">
+                                    <a class="table" href="Products_Composite_DealPOS.csv" title="Download Sample Composite">Download Sample Composite</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <a class="button" title="Add" href="ProductForm.html">Add Product</a>
+                    <input name="" value="Upload" id="" title="Upload" class="button" type="submit">
                 </div>
             </div><!-- End #header -->
         </header>
@@ -266,216 +252,117 @@
         </nav>
         <div class="content_scroll">
             <div id="page_menu" class="page_menu">
-                 <ul>
+                <ul>
                      <li><a href="product-cat.html">Categories</a></li>
-                     <li class="active"><a href="product.html">Products</a></li>
-                     <li><a href="Variants.html">Variants</a></li>
-                 </ul>
-                <div class="more_menu">
-                    <a title="More menu" class=""></a>
-                    <div class="drop_menu"><strong>Setup</strong>
+                     <li><a href="product.html">Products</a></li>
+                     <li class="active"><a href="Variants.html">Variants</a></li>
+                </ul>
+                <div class="more_menu"><a title="More menu" class=""></a>
+                    <div class="drop_menu"><strong>Catalog</strong>
                         <ul>
-                            <li><a href="">Measurement</a></li>
-                            <li><a href="">UOM</a></li>
-                            <li><a href="">Pricebook</a></li>
-                            <li><a href="">Set Category Price</a></li>
+                            <li><a href="product-cat.html">Category</a></li>
+                            <li><a href="product.html">Products</a></li>
+                        </ul><strong>Setup</strong>
+                        <ul>
+                            <li><a href="Measurement-List.html">Measurement</a></li>
+                            <li><a href="UOM-List.html">UOM</a></li>
+                            <li><a href="Pricebook-List.html">Pricebook</a></li>
+                            <li><a href="MarkUpPrice.html">Set Category Price</a></li>
                         </ul><strong>Print</strong>
                         <ul>
-                            <li><a href="" target="_blank">Product Barcode</a></li>
+                            <li><a href="PrintBarcode.html" target="_blank">Product Barcode</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="tabContent">
-                <div class="search_filter_box" buttonid="btnFilter">
-                    <div class="clearfix">
-                        <div class="search_filter">
-                            <a>More Filter</a>
-                            <div class="filter dropdown">
-                                <div class="column">
-                                    <strong>Category</strong>
-                                    <a id="ctl00_ctl00_content_content_pcFilter_linkProductCategory" class="picker" dialogid="ctl00_ctl00_content_content_pcFilter_dialogProductCategory">Choose..</a>
-                                    <input id="ctl00_ctl00_content_content_pcFilter_hfProductCategory" title="* Required" type="hidden">
-                                </div>
-                                <div class="column">
-                                    <strong>Released Date</strong>
-                                    <div class="radio">
-                                        <ul class="float">
-                                            <li>
-                                                <input id="predefined" name="nameReleased" value="radBtnByPredefined" checked="checked" type="radio">
-                                                <label for="predefined">Predefined</label>
-                                            </li>
-                                            <li>
-                                                <input id="range" name="nameReleased" value="radBtnByRange" type="radio">
-                                                <label for="range">Range</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div style="display: block;" class="option">
-                                        <strong>Period</strong>
-                                        <div>
-                                            <select name="" class="chzn-select" style="width: 170px; display: none;">
-                                                <option selected="selected" value="0">All</option>
-                                                <option value="1">Last 3 Months</option>
-                                                <option value="2">4 - 6 Months</option>
-                                                <option value="3">7 - 12 Months</option>
-                                            </select>   
-                                        </div>
-                                    </div>
-                                    <div style="display: none;" class="option">
-                                        <strong>From / To</strong>
-                                        <div>
-                                            <input name="" id="predefined" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-
-                                            <input name="" id="range" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="search_input">
-                            <input name="" class="txt" placeholder="Type a product name or code..." type="text">
-                        </div>
-                        <div class="update_button">
-                            <input name="" value="" id="btnUpdate" type="submit">
+                <div class="row_section clearfix">
+                    <div class="section_info">
+                        <strong>File</strong>
+                        <i>.csv format</i>
+                    </div>
+                    <div class="section_content">
+                        <div class="section_full clearfix">
+                            <input name="" class="file required" type="file">
                         </div>
                     </div>
                 </div>
-                <div class="row-fluid">
-                    <div class="span12">
-                        <div class="box">
-                            <div class="title">
-                                <h4>
-                                    <span class="icon16 icomoon-icon-equalizer-2"></span>
-                                    <span>Products</span>
-                                </h4>
-                                <a href="#" class="minimize">Minimize</a>
-                            </div>
-                            <div class="content noPad">
-                                <table cellpadding="0" cellspacing="0" border="0" class="responsive dynamicTable display table table-bordered zebra" width="100%">
-                                    <thead>
-                                        <tr class="header">
-                                            <th scope="col" id="no-sort" style="width:14px;"><input type="checkbox"></th>
-                                            <th scope="col" style="width:300px;">Product</th>
-                                            <th scope="col" id="no-sort" style="width:100px;">Code</th>
-                                            <th scope="col" style="width:90px;">Category</th>
-                                            <th scope="col">Variants</th>
-                                            <th class="number" scope="col" style="width:120px;">Price</th>
-                                            <th scope="col" style="width:60px;">Released</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                            <td><input name="" type="checkbox"></td>
-                                            <td>
-                                                <a class="thumb" href="">
-                                                    <img src="images/product/ImageGen_002.jpg">
-                                                </a>
-                                                <div class="text">
-                                                    <a href="product-info.html">php book</a>
-                                                </div>
-                                            </td>
-                                            <td>123456</td>
-                                            <td>BAGS</td>
-                                            <td>
-                                                <ul class="float">
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Default</a>
-                                                        <small>123456</small>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                            <td class="number">
-                                                <span>550</span>
-                                            </td>
-                                            <td>Jul 2015</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input name="" type="checkbox"></td>
-                                            <td>
-                                                <a class="thumb" href="">
-                                                    <img src="images/product/ImageGen_002.jpg">
-                                                </a>
-                                                <div class="text">
-                                                    <a href="product-info.html">php book</a>
-                                                </div>
-                                            </td>
-                                            <td>123456</td>
-                                            <td>BAGS</td>
-                                            <td>
-                                                <ul class="float">
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Default</a>
-                                                        <small>2013</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Large</a>
-                                                        <small>2017</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Regular</a>
-                                                        <small>2016</small>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                            <td class="number">
-                                                <span>25</span>
-                                            </td>
-                                            <td>Sep 2014</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input name="" type="checkbox"></td>
-                                            <td>
-                                                <a class="thumb" href="">
-                                                    <img src="images/product/ImageGen_002.jpg">
-                                                </a>
-                                                <div class="text">
-                                                    <a href="product-info.html">php book</a>
-                                                </div>
-                                            </td>
-                                            <td>123456</td>
-                                            <td>BAGS</td>
-                                            <td>
-                                                <ul class="float">
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Default</a>
-                                                        <small>2013</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Large</a>
-                                                        <small>2017</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Regular</a>
-                                                        <small>2016</small>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                            <td class="number">
-                                                <span>25</span>
-                                            </td>
-                                            <td>Sep 2014</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
 
-                        </div><!-- End .box -->
-
-                    </div><!-- End .span6 -->
-                </div><!-- End .row-fluid -->
-                <div>
+                <div class="row_section clearfix">
+                    <div class="section_info">
+                        <strong>Inventory</strong>
+                        <i>import options</i>
+                    </div>
+                    <div class="section_content">
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong class="no-block">Update</strong><span class="note">replace existing inventory count</span>
+                                <ul class="float box inventory">
+                                    <li>
+                                        <input id="InventoryY" name="nameInventoryY" value="true" type="radio"><label for="InventoryY">Yes</label>
+                                    </li>
+                                    <li>
+                                        <input id="InventoryN" name="nameInventoryY" value="false" checked="checked" type="radio">
+                                        <label for="InventoryN">No</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="display: none;" class="section_right inventory_date">
+                                <strong>Inventory Date</strong>
+                                <input name="" value="30 Jul 2015" id="" class="datepicker hasDatepicker" readonly="readonly" type="text">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="row_section clearfix" style="display: none">
+                    <div class="section_info">
+                        <strong>Advanced</strong>
+                        <i>more options</i>
+                    </div>
+                    <div class="section_content">
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong class="no-block">Category</strong><span class="note">import destination</span>
+                                <a id="ctl00_ctl00_content_content_ProductCategoryPicker1_linkProductCategory" class="picker" dialogid="ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory">Choose..</a>
+                                <input name="" id="ctl00_ctl00_content_content_ProductCategoryPicker1_hfProductCategory" title="* Required" type="hidden">
+                            </div>
+                            <div class="section_right">
+                                <strong class="no-block">Import Row Range</strong><span class="note">import subset rows for huge dataset</span>
+                                <div>
+                                    <input name="" value="1" id="" class="txtQty" type="text">
+                                    <span>-</span>
+                                    <input name="" class="txtQty" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong class="no-block">Allow Duplicate SKU</strong>
+                                <span class="note">File may contain duplicate SKU</span>
+                                <ul class="float box">
+                                    <li>
+                                        <input id="DuplicateY" name="DuplicateY" value="true" type="radio">
+                                        <label for="DuplicateY">Yes</label>
+                                    </li>
+                                    <li>
+                                        <input id="DuplicateN" name="DuplicateY" value="false" checked="checked" type="radio">
+                                        <label for="DuplicateN">No</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="more">More Options</a>
+            </div>
         </div>
-        <div style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
-        <div id="ctl00_ctl00_content_content_pcFilter_dialogProductCategory" class="dialog maxDialogHeight ui-dialog-content ui-widget-content" >
-            <div role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_pcFilter_linkProductCategory" hfid="ctl00_ctl00_content_content_pcFilter_hfProductCategory">
-                <ul class="jstree-container-ul jstree-children">
-                    <li class="jstree-node  jstree-open jstree-last"  data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
-                    <a>Home</a>
+
+        <div aria-labelledby="ui-id-1" aria-describedby="ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory" role="dialog" tabindex="-1" style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
+        <div id="ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory" class="dialog maxDialogHeight ui-dialog-content ui-widget-content">
+    
+        <div role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_ProductCategoryPicker1_linkProductCategory" hfid="ctl00_ctl00_content_content_ProductCategoryPicker1_hfProductCategory">
+            <ul class="jstree-container-ul jstree-children">
+            <li class="jstree-node  jstree-open jstree-last" id="undefined" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem"><a href="#" class="jstree-anchor">Home</a>
                     <ul class="jstree-children" role="group">
                     <li class="jstree-node  jstree-open"><a>BABY ACCESSORIES</a></li>
                     <li class="jstree-node jstree-leaf"></i><a>BABY CARE</a></li>
@@ -564,9 +451,8 @@
                     </li>
                 </ul>
             </li>
-    </ul>
-</div>
-</div>
+        </ul>
+    </div>   
 </div>
 </body>
 </html>

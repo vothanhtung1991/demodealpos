@@ -27,7 +27,6 @@
 <link href="css/home_dashboard.css" rel="stylesheet" type="text/css"/>
 <link href="css/jquery-ui-app.css" rel="stylesheet" type="text/css"/>
 <link href="css/jquery-ui-1.css" rel="stylesheet" type="text/css"/>
-<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
 <!-- Plugin stylesheets -->
 <link href="plugins/misc/qtip/jquery.qtip.css" rel="stylesheet" type="text/css" />
 <link href="plugins/forms/uniform/uniform.default.css" type="text/css" rel="stylesheet" />        
@@ -45,6 +44,7 @@
 <link href="css/chosen.css" rel="stylesheet" type="text/css">
 <link href="css/form.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
 <script src="js/chosen.js" type="text/javascript"></script>
 <script src="js/chosen_002.js" type="text/javascript"></script> 
 <script src="js/jquery-ui-1.js" type="text/javascript"></script>  
@@ -281,17 +281,17 @@
                     <div class="section_content">
                          <div class="section_full clearfix">
                             <strong>Name</strong>
-                            <input name="ctl00$ctl00$content$content$txtName" id="ctl00_ctl00_content_content_txtName" class="txt required" autofocus="" placeholder="e.g. Account..." type="text">
+                            <input name="" class="txt required" autofocus="" placeholder="e.g. Account..." type="text">
                         </div>
                         <div class="section_full clearfix">
                             <div class="section_left">
                                 <strong>Code</strong>
-                                <input name="ctl00$ctl00$content$content$txtCode" id="ctl00_ctl00_content_content_txtCode" class="txt required" placeholder="e.g. 101" type="text">
+                                <input name="" class="txt required" placeholder="e.g. 101" type="text">
                             </div>
                             <div class="section_right">
                                 <strong>Category</strong>
                                  <a id="ctl00_ctl00_content_content_acFilter_linkAccountCode" class="picker" dialogid="ctl00_ctl00_content_content_acFilter_dialogAccountCode">Choose..</a>
-            <input name="ctl00$ctl00$content$content$acFilter$hfAccountCode" id="ctl00_ctl00_content_content_acFilter_hfAccountCode" class="required" type="hidden">
+                                <input name="" class="required" type="hidden">
                             </div>
                         </div>
                    </div>
@@ -305,7 +305,7 @@
                      <div class="section_content">
                         <div class="section_full clearfix">
                             <strong>Note</strong>
-                            <textarea name="ctl00$ctl00$content$content$txtNote" rows="2" cols="20" id="ctl00_ctl00_content_content_txtNote" class="textarea" placeholder="Enter the description for this account"></textarea>
+                            <textarea name="" rows="2" cols="20"class="textarea" placeholder="Enter the description for this account"></textarea>
                         </div>
                      </div>
                 </div>
@@ -319,11 +319,10 @@
                         <div class="section_full clearfix">
                             <div class="section_left">
                                 <strong>Outlet</strong>
-                                    <select name="ctl00$ctl00$content$content$ddlEntity" id="ctl00_ctl00_content_content_ddlEntity" class="chzn-select-deselect" data-placeholder="Choose an Outlet" style="width: 100%; display: none;">
-                                        <option selected="selected" value="00000000-0000-0000-0000-000000000000"></option>
-                                        <option value="410ba2b7-8eff-4759-b5f1-cf47b33ef1cc">Branch1</option>
-
-                                    </select>
+                                <select name="" class="chzn-select-deselect" data-placeholder="Choose an Outlet" style="width: 100%; display: none;">
+                                    <option selected="selected" value=""></option>
+                                    <option value="">Branch1</option>
+                                </select>
                             </div>
                         </div>
                      </div>
@@ -331,63 +330,38 @@
 
             <div>
         </div>
-        <div  class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
+        <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
             <div id="ctl00_ctl00_content_content_acFilter_dialogAccountCode" class="dialog ui-dialog-content ui-widget-content">
                     <div class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_acFilter_linkAccountCode" hfid="ctl00_ctl00_content_content_acFilter_hfAccountCode">
-
                         <ul class="jstree-container-ul jstree-children">
-                            <li class="jstree-node  jstree-open"><i class="jstree-icon jstree-ocl"></i><a>Home</a>
+                            <li aria-selected="false" class="jstree-node  jstree-open jstree-last" id="undefined" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
+                            <a>Home</a>
                                 <ul class="jstree-children" role="group">
-                                    <li class="jstree-node  jstree-open">
-                                        <i class="jstree-icon jstree-ocl"></i>
-                                        <a>Asset - 1xxx</a>
+                                    <li class="jstree-node  jstree-open"><a>Asset - 1xxx</a>
                                         <ul class="jstree-children" role="group">
-                                            <li>
-                                                <i class="jstree-icon jstree-ocl"></i>
-                                                <a>Fixed Assets</a>
-                                            </li>
-                                            <li>
-                                                <i class="jstree-icon jstree-ocl"></i><a>Current Assets</a>
-                                            </li>
-                                            <li>
-                                                <i class="jstree-icon jstree-ocl"></i>
-                                                <a>Cash &amp; Banks</a>
-                                            </li>
+                                            <li><a>Fixed Assets</a></li>
+                                            <li><a>Current Assets</a></li>
+                                            <li><a>Cash &amp; Banks</a></li>
                                         </ul>
                                     </li>
-                                    <li class="jstree-node  jstree-open">
-                                        <i class="jstree-icon jstree-ocl"></i>
-                                        <a >Liability - 2xxx</a>
+                                    <li class="jstree-node  jstree-open"><a >Liability - 2xxx</a>
                                         <ul class="jstree-children" role="group">
-                                            <li class="jstree-node  jstree-open">
-                                                <i class="jstree-icon jstree-ocl"></i>
-                                                <a>Current Liabilities</a>
+                                            <li class="jstree-node  jstree-open"><a>Current Liabilities</a>
                                                 <ul class="jstree-children" role="group">
                                                     <li class="jstree-node  jstree-leaf jstree-last">
-                                                        <i class="jstree-icon jstree-ocl"></i>
                                                         <a>Rent Payable</a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li class="jstree-node  jstree-leaf jstree-last">
-                                                <i class="jstree-icon jstree-ocl"></i>
                                                 <a>Non-Current Liabilities</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="jstree-node  jstree-leaf">
-                                        <i class="jstree-icon jstree-ocl"></i>
-                                        <a>Equity - 3xxx</a>
-                                    </li>
+                                    <li class="jstree-node  jstree-leaf"><a>Equity - 3xxx</a></li>
                                 </ul>
-                                <li class="jstree-node jstree-leaf">
-                                    <i class="jstree-icon jstree-ocl"></i>
-                                    <a>Revenue - 4xxx</a>
-                                </li>
-                                <li class="jstree-node  jstree-leaf jstree-last">
-                                    <i class="jstree-icon jstree-ocl"></i>
-                                    <a>Expense - 5xxx-8xxx</a>
-                                </li>
+                                <li class="jstree-node jstree-leaf"><a>Revenue - 4xxx</a></li>
+                                <li class="jstree-node  jstree-leaf jstree-last"><a>Expense - 5xxx-8xxx</a></li>
                                 </ul>
                             </li>
                         </ul>

@@ -163,21 +163,14 @@
               </div>
             </div><!-- /navbar-inner -->
           </div><!-- /navbar -->
-          <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Journal Entries</span></h1>
+          <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Journal List Summary</span></h1>
           <div id="ctl00_ctl00_content_divActions" class="page_action">
             <ul style="display: none;" class="table_action">
                 <li>
                     <input value="Delete" id="ctl00_ctl00_content_actions_btnDelete" title="Delete" class="delete" type="submit">
                 </li>
             </ul>
-            <ul class="section">
-            <li>
-                <a href="journal-import.html"  class="import" title="Import">Import</a>
-            </li>
-            <input value="Export" title="Export" class="export" type="submit">
-
-            </ul>
-            <a class="report" title="Summary" href="journal-summary.html">Summary</a>
+            <a class="report" title="Entries" href="Journal-List.html">Entries</a>
             <a title="Record Expense" href="">Record Expense</a>
             <div class="more">
                 <a class="more"></a>
@@ -248,10 +241,14 @@
                 <li class="active"><a href="journal.html">Journal</a></li>
                 <li><a href="dashboard-ac.html">Dashboard</a></li>
             </ul>
-
             <div class="more_menu">
                     <a title="More menu" class=""></a>
-                    <div class="drop_menu">
+                    <div class="drop_menu"><strong>Account</strong>
+                        <ul>
+                            <li><a href="types.html">Account Types</a></li>
+                            <li><a href="accounts.html">Chart of Accounts</a></li>
+                            <li><a href="dashboard-ac.html">Dashboard</a></li>
+                        </ul>
                         <strong>Report</strong>
                         <ul>
                             <li class="arrow"><a>Standard</a>
@@ -302,27 +299,6 @@
                 <div class="column" id="ctl00_ctl00_content_content_phGroup">
                     <strong>Note</strong>
                     <input type="text" class="txt" id="" name="">
-                </div>
-                <div class="column">
-                    <strong>Sort By</strong>
-                   <select style="width: 150px; display: none;" class="chzn-select" name="">
-                        <option value="0" selected="selected">Date</option>
-                        <option value="1">Number</option>
-                        <option value="2">Name</option>
-                    </select>
-                </div>
-                <div class="column">
-                    <strong>Sort</strong>
-                    <ul class="float" id="ctl00_ctl00_content_content_radBtnSortOrder">
-                        <li>
-                            <input type="radio" value="true" name="" >
-                            <label for="ctl00_ctl00_content_content_radBtnSortOrder_0">Asc</label>
-                        </li>
-                        <li>
-                            <input type="radio" checked="checked" value="false" name="">
-                            <label for="ctl00_ctl00_content_content_radBtnSortOrder_1">Desc</label>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>

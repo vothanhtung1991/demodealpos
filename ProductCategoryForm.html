@@ -50,7 +50,11 @@
 <link rel="stylesheet" href="css/jquery-ui-1.css">
 <link rel="stylesheet" href="css/jquery-ui-app.css">
 <link rel="stylesheet" href="css/style.css">
+<link href="css/form_002.css" rel="stylesheet" type="text/css">
+<link href="css/form.css" rel="stylesheet" type="text/css">
+<link href="css/table.css" rel="stylesheet" type="text/css">
 <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+<script src="js/form.js" type="text/javascript"></script>
 <script src="js/jquery-ui-1.js" type="text/javascript"></script>
 <script src="js/dialog.js" type="text/javascript"></script>
 <script src="js/jstree.js" type="text/javascript"></script>
@@ -59,6 +63,7 @@
 
 </head>
 <body>
+<form novalidate="novalidate" name="aspnetForm" method="post" action="" id="aspnetForm">
     <div id="ctl00_ctl00_divContainer">
         <header>
             <div id="header">
@@ -180,41 +185,10 @@
                         </div>
                     </div><!-- /navbar-inner -->
                 </div><!-- /navbar -->
-                <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Products</span></h1>
+                <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Product Category Tree</span></h1>
                 <div id="ctl00_ctl00_content_divActions" class="page_action">
-                    <ul style="display: none;" class="section table_action">
-                        <li>
-                            <input name="" value="Delete" title="Delete" class="delete" type="submit">
-                        </li>
-                        <li><a dialogid="dialogMove" class="move" title="Move">Move</a></li>
-                    </ul>
-                    <ul class="section">
-                        <li><a href="product-import.html" class="import" title="Import">Import</a></li>
-                        <li><input value="Export" title="Export" class="export" type="submit"></li>
-                    </ul>
-                    <div class="more">
-                        <a class="more"></a>
-                        <div class="dropdown">
-                            <ul>
-                                <li>
-                                    <input value="Export With Outlet Price" title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Components" title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Pricebook" title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Parent"  title="Export" class="export" type="submit">
-                                </li>
-                                <li>
-                                    <input value="Export With Inventory" title="Export" class="export" type="submit">
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a class="button" title="Add" href="ProductForm.html">Add Product</a>
+                    <a href="product-cat.html">Cancel</a>
+                    <input name="" value="Save" class="button" type="submit">
                 </div>
             </div><!-- End #header -->
         </header>
@@ -267,10 +241,11 @@
         <div class="content_scroll">
             <div id="page_menu" class="page_menu">
                  <ul>
-                     <li><a href="product-cat.html">Categories</a></li>
-                     <li class="active"><a href="product.html">Products</a></li>
+                     <li class="active"><a href="product-cat.html">Categories</a></li>
+                     <li><a href="product.html">Products</a></li>
                      <li><a href="Variants.html">Variants</a></li>
                  </ul>
+
                 <div class="more_menu">
                     <a title="More menu" class=""></a>
                     <div class="drop_menu"><strong>Setup</strong>
@@ -287,196 +262,105 @@
                 </div>
             </div>
             <div class="tabContent">
-                <div class="search_filter_box" buttonid="btnFilter">
-                    <div class="clearfix">
-                        <div class="search_filter">
-                            <a>More Filter</a>
-                            <div class="filter dropdown">
-                                <div class="column">
-                                    <strong>Category</strong>
-                                    <a id="ctl00_ctl00_content_content_pcFilter_linkProductCategory" class="picker" dialogid="ctl00_ctl00_content_content_pcFilter_dialogProductCategory">Choose..</a>
-                                    <input id="ctl00_ctl00_content_content_pcFilter_hfProductCategory" title="* Required" type="hidden">
-                                </div>
-                                <div class="column">
-                                    <strong>Released Date</strong>
-                                    <div class="radio">
-                                        <ul class="float">
-                                            <li>
-                                                <input id="predefined" name="nameReleased" value="radBtnByPredefined" checked="checked" type="radio">
-                                                <label for="predefined">Predefined</label>
-                                            </li>
-                                            <li>
-                                                <input id="range" name="nameReleased" value="radBtnByRange" type="radio">
-                                                <label for="range">Range</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div style="display: block;" class="option">
-                                        <strong>Period</strong>
-                                        <div>
-                                            <select name="" class="chzn-select" style="width: 170px; display: none;">
-                                                <option selected="selected" value="0">All</option>
-                                                <option value="1">Last 3 Months</option>
-                                                <option value="2">4 - 6 Months</option>
-                                                <option value="3">7 - 12 Months</option>
-                                            </select>   
-                                        </div>
-                                    </div>
-                                    <div style="display: none;" class="option">
-                                        <strong>From / To</strong>
-                                        <div>
-                                            <input name="" id="predefined" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-
-                                            <input name="" id="range" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-
-                                        </div>
-                                    </div>
-                                </div>
+                 <input name="" id="hfItemsJSON" type="hidden">
+                <div class="row_section clearfix">
+                    <div class="section_info">
+                        <strong>Category Details</strong>
+                        <span>Provide name, parent, type</span>
+                    </div>
+                    <div class="section_content">
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong>Name</strong>
+                                <input name="ctl00$ctl00$content$content$txtName" id="ctl00_ctl00_content_content_txtName" class="txt required" autofocus="" type="text">
+                            </div>
+                            <div class="section_right">
+                                <strong>Code</strong>
+                                <input name="ctl00$ctl00$content$content$txtCode" id="ctl00_ctl00_content_content_txtCode" class="txt" type="text">
                             </div>
                         </div>
-                        <div class="search_input">
-                            <input name="" class="txt" placeholder="Type a product name or code..." type="text">
-                        </div>
-                        <div class="update_button">
-                            <input name="" value="" id="btnUpdate" type="submit">
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong>Parent</strong>
+                                <a id="ctl00_ctl00_content_content_ProductCategoryPicker1_linkProductCategory" class="picker" dialogid="ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory">Choose..</a>
+                                <input name="" title="* Required" type="hidden">
+                            </div>
+                            <div class="section_right">
+                                <strong>Type</strong>
+                                <select name="" class="chzn-select-deselect" style="width: 90%; display: none;">
+                                    <option value="-1">Raw</option>
+                                    <option selected="selected" value="0">Normal</option>
+                                    <option value="1">Goods</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row-fluid">
-                    <div class="span12">
-                        <div class="box">
-                            <div class="title">
-                                <h4>
-                                    <span class="icon16 icomoon-icon-equalizer-2"></span>
-                                    <span>Products</span>
-                                </h4>
-                                <a href="#" class="minimize">Minimize</a>
-                            </div>
-                            <div class="content noPad">
-                                <table cellpadding="0" cellspacing="0" border="0" class="responsive dynamicTable display table table-bordered zebra" width="100%">
-                                    <thead>
-                                        <tr class="header">
-                                            <th scope="col" id="no-sort" style="width:14px;"><input type="checkbox"></th>
-                                            <th scope="col" style="width:300px;">Product</th>
-                                            <th scope="col" id="no-sort" style="width:100px;">Code</th>
-                                            <th scope="col" style="width:90px;">Category</th>
-                                            <th scope="col">Variants</th>
-                                            <th class="number" scope="col" style="width:120px;">Price</th>
-                                            <th scope="col" style="width:60px;">Released</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                            <td><input name="" type="checkbox"></td>
-                                            <td>
-                                                <a class="thumb" href="">
-                                                    <img src="images/product/ImageGen_002.jpg">
-                                                </a>
-                                                <div class="text">
-                                                    <a href="product-info.html">php book</a>
-                                                </div>
-                                            </td>
-                                            <td>123456</td>
-                                            <td>BAGS</td>
-                                            <td>
-                                                <ul class="float">
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Default</a>
-                                                        <small>123456</small>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                            <td class="number">
-                                                <span>550</span>
-                                            </td>
-                                            <td>Jul 2015</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input name="" type="checkbox"></td>
-                                            <td>
-                                                <a class="thumb" href="">
-                                                    <img src="images/product/ImageGen_002.jpg">
-                                                </a>
-                                                <div class="text">
-                                                    <a href="product-info.html">php book</a>
-                                                </div>
-                                            </td>
-                                            <td>123456</td>
-                                            <td>BAGS</td>
-                                            <td>
-                                                <ul class="float">
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Default</a>
-                                                        <small>2013</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Large</a>
-                                                        <small>2017</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Regular</a>
-                                                        <small>2016</small>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                            <td class="number">
-                                                <span>25</span>
-                                            </td>
-                                            <td>Sep 2014</td>
-                                        </tr>
-                                        <tr>
-                                            <td><input name="" type="checkbox"></td>
-                                            <td>
-                                                <a class="thumb" href="">
-                                                    <img src="images/product/ImageGen_002.jpg">
-                                                </a>
-                                                <div class="text">
-                                                    <a href="product-info.html">php book</a>
-                                                </div>
-                                            </td>
-                                            <td>123456</td>
-                                            <td>BAGS</td>
-                                            <td>
-                                                <ul class="float">
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Default</a>
-                                                        <small>2013</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Large</a>
-                                                        <small>2017</small>
-                                                    </li>
-                                                    <li>
-                                                        <a href="VariantsInfo.html">Regular</a>
-                                                        <small>2016</small>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                            <td class="number">
-                                                <span>25</span>
-                                            </td>
-                                            <td>Sep 2014</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                        </div><!-- End .box -->
-
-                    </div><!-- End .span6 -->
-                </div><!-- End .row-fluid -->
-                <div>
+                <div class="row_section clearfix">
+                    <div class="section_info">
+                        <strong>Extras</strong>
+                    </div>
+                    <div class="section_content">
+                        <div class="section_full clearfix">
+                            <strong>Description</strong>
+                            <textarea name="" rows="2" cols="20" ></textarea>
+                        </div>
+                    </div>
                 </div>
+                <div class="row_section clearfix">
+                    <div class="section_info">
+                        <strong>Measurement</strong>
+                    </div>
+                    <div class="section_content">
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong>UOM</strong>
+                                <select name="" class="chzn-select-deselect" style="width: 90%; display: none;">
+                                    <option selected="selected" value=""></option>
+                                    <option value="1b91ce37-8de6-4a30-a4fc-cfd71352a5e9">H?p</option>
+                                    <option value="b7f973ec-6f92-4432-b393-b2c373a61a6a">pcs</option>
+                                    <option value="d61b8430-6392-49d9-b2f4-286589db1d25">Roll</option>
+                                    <option value="81b22aec-5056-4d42-8444-c713f92c4d54">V?</option>
+                                    <option value="027cdd67-8241-4f8d-93c4-c1dbb3a14bea">Viên</option>
+
+                                </select>
+                            </div>
+                            <div class="section_right">
+                                <strong>Measurement</strong>
+                                <select name="" class="chzn-select-deselect" style="width: 90%; display: none;">
+                                    <option selected="selected" value=""></option>
+                                    <option value="3e135053-0408-4bf0-b327-0bee350ef778">Length</option>
+                                    <option value="0df132c9-9ea5-4dfb-a9aa-9e106ba3b78c">Volume</option>
+                                    <option value="4c168e09-edd1-4f8d-8083-c4e60d525492">Weight</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="section_full clearfix">
+                            <div class="section_left">
+                                <strong>UOMQ</strong>
+                                <select name="" class="chzn-select-deselect" style="width: 90%; display: none;">
+                                    <option selected="selected" value=""></option>
+                                    <option value="">H?p</option>
+                                    <option value="">pcs</option>
+                                    <option value="">Roll</option>
+                                    <option value="">V?</option>
+                                    <option value="">Viên</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
-        <div id="ctl00_ctl00_content_content_pcFilter_dialogProductCategory" class="dialog maxDialogHeight ui-dialog-content ui-widget-content" >
-            <div role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_pcFilter_linkProductCategory" hfid="ctl00_ctl00_content_content_pcFilter_hfProductCategory">
-                <ul class="jstree-container-ul jstree-children">
-                    <li class="jstree-node  jstree-open jstree-last"  data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
-                    <a>Home</a>
-                    <ul class="jstree-children" role="group">
+        </div>
+    <div style="display: none; " class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
+    <div id="ctl00_ctl00_content_content_ProductCategoryPicker1_dialogProductCategory" class="dialog maxDialogHeight ui-dialog-content ui-widget-content" >
+    <div aria-activedescendant="d7800baa-7a63-4e6f-baad-5d5513af4655" role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_ProductCategoryPicker1_linkProductCategory" hfid="ctl00_ctl00_content_content_ProductCategoryPicker1_hfProductCategory">
+    <ul class="jstree-container-ul jstree-children">
+    <li class="jstree-node  jstree-open jstree-last"  data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
+        <a>Home</a>
+        <ul class="jstree-children" role="group">
                     <li class="jstree-node  jstree-open"><a>BABY ACCESSORIES</a></li>
                     <li class="jstree-node jstree-leaf"></i><a>BABY CARE</a></li>
                     <li class="jstree-node  jstree-leaf"><a >BAGS</a></li>
@@ -563,10 +447,10 @@
                         </ul>
                     </li>
                 </ul>
-            </li>
-    </ul>
+    </li></ul>
+    </div>
 </div>
 </div>
-</div>
+</form>
 </body>
 </html>
