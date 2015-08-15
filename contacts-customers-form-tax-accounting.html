@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="ctl00_ctl00_html" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>
+    Demo DealPOS POS | Dashboard
+</title>
+<link href="css/css_002.css" rel="stylesheet" type="text/css"/>
+<link href="css/css.css" rel="stylesheet" type="text/css"/>
+<script src="css/jquery-1.js" type="text/javascript"></script>
+
+<link href="css/core_002.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.css" rel="stylesheet" type="text/css"/>
+
+<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="css/jquery.js"></script>
+<script src="css/jquery_002.js" type="text/javascript"></script>
+<script type="text/javascript" src="css/core.js"></script>
+<script src="css/jquery_003.js" type="text/javascript"></script>
+
+<link href="css/core.css" rel="stylesheet" type="text/css"/>
+<link href="css/icons.css" rel="stylesheet" type="text/css"/>
+<link href="css/home_dashboard.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery-ui-app.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery-ui-1.css" rel="stylesheet" type="text/css"/>
+
+<!-- Plugin stylesheets -->
+<link href="plugins/misc/qtip/jquery.qtip.css" rel="stylesheet" type="text/css" />
+<link href="plugins/forms/uniform/uniform.default.css" type="text/css" rel="stylesheet" />        
+<link href="plugins/tables/dataTables/jquery.dataTables.css" type="text/css" rel="stylesheet" />
+<script src="css/highcharts.js" type="text/javascript"></script>
+<!--<script src="css/LineHome.js" type="text/javascript"></script>-->
+<script src="css/jquery-ui-1.js" type="text/javascript"></script>
+<script src="css/dialog.js" type="text/javascript"></script>
+
+<!-- Important plugins put in all pages -->
+<script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>  
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<!-- Table plugins -->
+<script type="text/javascript" src="plugins/tables/dataTables/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="plugins/tables/responsive-tables/responsive-tables.js"></script><!-- Make tables responsive -->
+<script type="text/javascript" src="js/datatable.js"></script><!-- Init plugins only for page -->
+<link href="css/chosen.css" rel="stylesheet" type="text/css">
+<script src="js/chosen.js" type="text/javascript"></script>
+<script src="js/chosen_002.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/jquery-ui-1.css">
+<link rel="stylesheet" href="css/jquery-ui-app.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/quocanh.css">
+
+<script src="js/jquery-ui-1.js" type="text/javascript"></script>
+<script src="js/dialog.js" type="text/javascript"></script>
+<script src="js/jstree.js" type="text/javascript"></script>
+<script src="js/initAccountsTree.js" type="text/javascript"></script>
+<script src="js/productCategory.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="ctl00_ctl00_divContainer">
+        <header>
+            <div id="header">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
+                            <div class="nav-no-collapse">
+                                <ul class="nav">
+                                    <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-cog"></span> Settings
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul>
+                                                    <li>                                              
+                                                        <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
+                                                    </li>
+                                                    <li>                                                
+                                                        <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul class="messages">    
+                                                    <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
+                                                    <li>
+                                                        <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
+                                                        <span class="msg">I have question about new function ...</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
+                                                        <span class="msg">I need to meet you urgent please call me ...</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
+                                                        <span class="msg">I send you my suggestion, please look and ...</span>
+                                                    </li>
+                                                    <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul class="nav pull-right usernav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul class="notif">
+                                                    <li class="header"><strong>Notifications</strong> (3) items</li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                            <span class="event">1 User is registred</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
+                                                            <span class="event">Jony add 1 comment</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
+                                                            <span class="event">admin Julia added post with a long description</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+                                            <img src="images/avatar.jpg" alt="" class="image" /> 
+                                            <span class="txt">admin@supr.com</span>
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
+                                </ul>
+                            </div><!-- /.nav-collapse -->
+                        </div>
+                    </div><!-- /navbar-inner -->
+                </div><!-- /navbar -->
+                <h1 class="contacts" id="ctl00_ctl00_content_pageHeaderTitle"><i></i><span>Contact</span></h1>
+                <div class="page_action" id="ctl00_ctl00_content_divActions">
+            
+    <a href="Customers.aspx">Cancel</a>
+    <input type="submit" class="button" id="ctl00_ctl00_content_actions_btnSubmit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$content$actions$btnSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" value="Save" name="ctl00$ctl00$content$actions$btnSubmit">
+
+            
+        </div>
+            </div><!-- End #header -->
+        </header>
+        <nav class="mCustomScrollbar _mCS_1">
+            <div class="mCustomScrollBox mCS-dark" id="mCSB_1" >
+                <div class="mCSB_container mCS_no_scrollbar" >
+                    <ul>
+                        <li class="selected">
+                            <a class="dashboard" href=""><i></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                    </ul><strong>Point of Sale</strong>
+                    <ul>
+                        <li>
+                            <a class="products" href=""><i></i><span>Products</span></a>
+                        </li>
+                        <li>
+                            <a class="sell" href=""><i></i><span>Sell</span></a>
+                        </li>
+                        <li>
+                            <a class="reports" href=""><i></i><span>Reports</span></a>
+                        </li>
+                    </ul><strong>Database</strong>
+                    <ul>
+                        <li><a class="contacts" href="contacts-customers.html"><i></i><span>Contacts</span></a></li>
+                        <li><a class="orders" href="order-customer-invoice.html"><i></i><span>Orders</span></a></li>
+                        <li><a class="payment" href="payment-purchases-daily.html"><i></i><span>Payment</span></a></li>
+                        <li><a class="debt" href="debt-receiveable.html"><i></i><span>Debt</span></a></li>
+                    </ul><strong>Warehouse</strong>
+                    <ul>
+                        <li><a class="inventory" href="inventory_detail.html"><i></i><span>Inventory</span></a></li>
+                        <li><a class="adjustment" href=" "><i></i><span>Adjustment</span></a></li>
+                        <li><a class="buy" href=" "><i></i><span>Buy</span></a></li>
+                        <li><a class="delivery" href=""><i></i><span>Delivery</span></a></li>
+                    </ul><strong>Add-ons</strong>
+                    <ul>
+                        <li><a class="accounting" href="accounts.html"><i></i><span>Accounting</span></a></li>
+                    </ul>
+                </div>
+                <div class="mCSB_scrollTools" style="position: absolute; display: none;">
+                    <div class="mCSB_draggerContainer">
+                        <div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;">
+                            <div class="mCSB_dragger_bar" style="position:relative;"></div>
+                        </div>
+                        <div class="mCSB_draggerRail"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content_scroll">
+        <div class="page_menu" id="page_menu">
+            <ul><li class="active"><a href="/Authenticated/Contacts/Contact/Contact/Customers.aspx">Customers</a></li><li><a href="/Authenticated/Contacts/Contact/Contact/Suppliers.aspx">Suppliers</a></li><li><a href="/Authenticated/Contacts/Sales/Sales/List.aspx">Sales Person</a></li></ul>
+
+            <div class="more_menu"> <a class="" title="More menu"></a> <div class="drop_menu"><strong>Contact</strong><ul><li><a href="/Authenticated/Contacts/Contact/Contact/Suppliers.aspx">Suppliers</a></li><li><a href="/Authenticated/Contacts/Sales/Sales/List.aspx">Sales Person</a></li></ul><strong>Group</strong><ul><li><a href="/Authenticated/Contacts/Contact/Group/List.aspx">Customer</a></li><li><a href="/Authenticated/Contacts/Sales/Group/List.aspx">Sales</a></li></ul><strong>Option Values</strong><ul><li><a href="/Authenticated/Contacts/Setup/Location/Country/List.aspx">Country</a></li><li><a href="/Authenticated/Contacts/Setup/Location/City/List.aspx">City</a></li><li><a href="/Authenticated/Contacts/Setup/Location/Nationality/List.aspx">Nationality</a></li><li><a href="/Authenticated/Contacts/Setup/Location/Race/List.aspx">Race</a></li><li><a href="/Authenticated/Contacts/Setup/Location/AcqusitionMedia/List.aspx">Acqusition Media</a></li></ul></div> </div>
+        </div>
+        <div class="tabContent">
+            
+    
+
+    <div class="clearfix moderntabs ui-tabs ui-widget ui-widget-content ui-corner-all" id="tabs">
+        <ul class="tabs ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="false" aria-expanded="false"><a href="#tabs-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1"><span>General</span></a></li>
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a href="#tabs-2" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2"><span>Details</span></a></li>
+            <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-3" aria-labelledby="ui-id-3" aria-selected="true" aria-expanded="true"><a href="#tabs-3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3"><span>Tax &amp; Accounting</span></a></li>
+        </ul>
+        
+        <div id="tabs-1" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true" style="display: none;">
+            <div class="left_form">
+
+                <div class="cam">
+                    <input type="file" id="ctl00_ctl00_content_content_FuImage" name="ctl00$ctl00$content$content$FuImage">
+                </div>
+                <span class="choosestatus">
+                    <span style="display:inline-block;color:Red;border-style:None;display:none;" class="imageValid" id="ctl00_ctl00_content_content_validImage">Filename must be letters and numbers</span>
+                </span>
+                <div>
+                    <span class="chooseoutlet">
+                        <select style="width: 100%; display: none;" data-placeholder="Choose an Outlet" class="chzn-select-deselect" id="ctl00_ctl00_content_content_ddlEntity" name="ctl00$ctl00$content$content$ddlEntity">
+    <option value="00000000-0000-0000-0000-000000000000"></option>
+    <option value="410ba2b7-8eff-4759-b5f1-cf47b33ef1cc" selected="selected">Branch1</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 179px;" title="" id="ctl00_ctl00_content_content_ddlEntity_chosen"><a tabindex="-1" class="chosen-single chosen-single-with-deselect"><span>Branch1</span><abbr class="search-choice-close"></abbr><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                    </span>
+                    <span class="choosestatus">
+                        <select style="width: 100%; display: none;" class="chzn-select" id="ctl00_ctl00_content_content_ddlStatus" name="ctl00$ctl00$content$content$ddlStatus">
+    <option value="False" selected="selected">Active</option>
+    <option value="True">Suspend</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 179px;" title="" id="ctl00_ctl00_content_content_ddlStatus_chosen"><a tabindex="-1" class="chosen-single"><span>Active</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                    </span>
+                        <span class="loyalpoint">Loyalty Point</span>
+                    <input type="text" style="width:91%;" readonly="readonly" class="loyaltypoint" id="ctl00_ctl00_content_content_decInputPoint_txtInput" value="0" name="ctl00$ctl00$content$content$decInputPoint$txtInput">
+
+                </div>
+            </div>
+            <div class="middle_form">
+                <h2 id="ctl00_ctl00_content_content_h2">General</h2>
+                <div class="body">
+                    <div class="full clearfix">
+                        <input type="text" autofocus="" placeholder="First Name" class="required valid" id="ctl00_ctl00_content_content_txtName" value="Admin" name="ctl00$ctl00$content$content$txtName">
+                    </div>
+                    <div class="full clearfix">
+                        <div class="left">
+                            <input type="text" placeholder="Phone" id="ctl00_ctl00_content_content_txtPhone" name="ctl00$ctl00$content$content$txtPhone">
+                        </div>
+                        <div class="right">
+                            <input type="text" placeholder="Email" class="txt" id="ctl00_ctl00_content_content_txtEmail" name="ctl00$ctl00$content$content$txtEmail">
+                        </div>
+                    </div>
+                    <div class="full clearfix">
+                        <div class="left">
+                            <input type="text" placeholder="National Identification #" id="ctl00_ctl00_content_content_txtMemberIdentification" name="ctl00$ctl00$content$content$txtMemberIdentification">
+                        </div>
+
+                        <div class="right">
+                            <input type="text" readonly="readonly" placeholder="Birthday" class="datepicker hasDatepicker" id="ctl00_ctl00_content_content_BirthDatePicker_txtDate" name="ctl00$ctl00$content$content$BirthDatePicker$txtDate">
+
+                        </div>
+                    </div>
+
+                    <div class="borderline clearfix">
+                        <strong>Address</strong>
+                        <textarea style="border-color:#C8D3DF;height:100px;width:100%;" id="ctl00_ctl00_content_content_txtAddress" cols="20" rows="2" name="ctl00$ctl00$content$content$txtAddress"></textarea>
+                    </div>
+                    <div class="address_info clearfix">
+                        <div class="leftElement">
+                            <select data-placeholder="City" class="chzn-select" id="ctl00_ctl00_content_content_ddlCity" name="ctl00$ctl00$content$content$ddlCity" style="display: none;">
+    <option value=""></option>
+    <option value="3f0bf133-302e-41ba-9fb5-37ae91050319" selected="selected">Jakarta</option>
+    <option value="be07ce30-3fed-41b9-bc39-7a61bf8efe24">Tangerang</option>
+    <option value="48e8cf63-16c4-4504-a109-79b956d91d75">Bandung</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 90px;" title="" id="ctl00_ctl00_content_content_ddlCity_chosen"><a tabindex="-1" class="chosen-single"><span>Jakarta</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                        </div>
+                        <div class="rightElement">
+                            <select data-placeholder="Choose a Nationality" class="chzn-select" id="ctl00_ctl00_content_content_ddlNationality" name="ctl00$ctl00$content$content$ddlNationality" style="display: none;">
+    <option value=""></option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 27px;" title="" id="ctl00_ctl00_content_content_ddlNationality_chosen"><a tabindex="-1" class="chosen-single chosen-default"><span>Choose a Nationality</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                        </div>
+                    </div>
+
+                    <div class="full clearfix">
+                        <strong>Member Code</strong>
+                        <input type="text" id="ctl00_ctl00_content_content_txtCode" name="ctl00$ctl00$content$content$txtCode">
+                    </div>
+                </div>
+            </div>
+            <div class="right_form">
+                <h2 id="personal-info">Personal Information</h2>
+                <div class="body">
+
+                    <div class="full clearfix">
+                        <span>Title/LN</span>
+                        <div class="left">
+                            <input type="text" placeholder="Mr" class="tittle" id="ctl00_ctl00_content_content_txtTitle" name="ctl00$ctl00$content$content$txtTitle">
+                        </div>
+                        <div class="right">
+                            <input type="text" placeholder="Last Name" class="txt lastname" id="ctl00_ctl00_content_content_txtNameExt" name="ctl00$ctl00$content$content$txtNameExt">
+                        </div>
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Gender</span>
+                        <div>
+                            <select style="width: 68%; display: none;" data-placeholder="Choose Gender" class="chzn-select" id="ctl00_ctl00_content_content_ddlGender" name="ctl00$ctl00$content$content$ddlGender">
+    <option value="0" selected="selected">Male</option>
+    <option value="1">Female</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 238px;" title="" id="ctl00_ctl00_content_content_ddlGender_chosen"><a tabindex="-1" class="chosen-single"><span>Male</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                        </div>
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Race</span>
+                        <div>
+                            <select style="width: 68%; display: none;" data-placeholder="Choose a Race" class="chzn-select" id="ctl00_ctl00_content_content_ddlRace" name="ctl00$ctl00$content$content$ddlRace">
+    <option value=""></option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 238px;" title="" id="ctl00_ctl00_content_content_ddlRace_chosen"><a tabindex="-1" class="chosen-single chosen-default"><span>Choose a Race</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                        </div>
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Type</span>
+                        <div>
+                            <select style="width: 68%; display: none;" data-placeholder="Choose a Type" class="chzn-select" id="ctl00_ctl00_content_content_ddlType" name="ctl00$ctl00$content$content$ddlType">
+    <option value="0">SupplierCust</option>
+    <option value="1" selected="selected">Customer</option>
+    <option value="-1">Supplier</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 238px;" title="" id="ctl00_ctl00_content_content_ddlType_chosen"><a tabindex="-1" class="chosen-single"><span>Customer</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="miscellaneous">Miscellaneous</h2>
+                <div class="body">
+
+
+                    <div class="full clearfix">
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Join Date</span>
+                        <input type="text" readonly="readonly" class="datepicker hasDatepicker" id="ctl00_ctl00_content_content_JoinDatePicker_txtDate" value="03 Aug 2015" name="ctl00$ctl00$content$content$JoinDatePicker$txtDate">
+
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Mobile Phone</span>
+                        <input type="text" class="txt" id="ctl00_ctl00_content_content_txtMobile" name="ctl00$ctl00$content$content$txtMobile">
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Fax</span>
+                        <input type="text" class="txt" id="ctl00_ctl00_content_content_txtFax" name="ctl00$ctl00$content$content$txtFax">
+                    </div>
+
+
+                    <div class="full clearfix">
+                        <span>Group</span>
+                        <table border="0" id="ctl00_ctl00_content_content_chkBoxGroups">
+    <tbody><tr>
+        <td><input type="checkbox" name="ctl00$ctl00$content$content$chkBoxGroups$0" id="ctl00_ctl00_content_content_chkBoxGroups_0"><label for="ctl00_ctl00_content_content_chkBoxGroups_0">Group1</label></td>
+    </tr>
+</tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="tabs-2" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" style="display: none;" aria-hidden="true">
+            <div class="middle_form">
+                <h2 id="description">Description</h2>
+                <div class="body">
+
+                    <div>
+                        <span>Description</span>
+                        <textarea style="border-color:#C8D3DF;height:50px;width:62%;" id="ctl00_ctl00_content_content_txtDescription" cols="20" rows="2" name="ctl00$ctl00$content$content$txtDescription"></textarea>
+                    </div>
+
+                    <div>
+                        <span>Description Extra</span>
+                        <textarea style="border-color:#C8D3DF;height:50px;width:62%;" id="ctl00_ctl00_content_content_txtDescription2" cols="20" rows="2" name="ctl00$ctl00$content$content$txtDescription2"></textarea>
+                    </div>
+                </div>
+
+                <h2 id="document">Document</h2>
+                <div class="body">
+                    <div class="full clearfix">
+                        <span>Resouce Url</span>
+                        <input type="text" style="width:60%;" class="txt" id="ctl00_ctl00_content_content_txtResourceUrl" name="ctl00$ctl00$content$content$txtResourceUrl">
+                    </div>
+                </div>
+
+                <h2 id="shippingAddress">Shipping Address</h2>
+                <div class="body">
+                    <div class="full clearfix">
+                        <span>Name</span>
+                        <input type="text" style="width:60%;" id="ctl00_ctl00_content_content_txtShippingName" name="ctl00$ctl00$content$content$txtShippingName">
+                    </div>
+                    <div class="full clearfix">
+                        <span>Phone</span>
+                        <input type="text" style="width:60%;" id="ctl00_ctl00_content_content_txtShippingPhone" name="ctl00$ctl00$content$content$txtShippingPhone">
+                    </div>
+                    <div class="full clearfix">
+                        <span>City</span>
+                        <input type="text" style="width:60%;" id="ctl00_ctl00_content_content_txtShippingCity" name="ctl00$ctl00$content$content$txtShippingCity">
+                    </div>
+                    <div class="full clearfix">
+                        <span>Address</span>
+                        <textarea style="border-color:#C8D3DF;height:100px;width:62%;" id="ctl00_ctl00_content_content_txtShippingAddress" cols="20" rows="2" name="ctl00$ctl00$content$content$txtShippingAddress"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="right_form">
+                <h2 id="salesID">Sales Information</h2>
+                <div class="body">
+
+                    <div class="full clearfix">
+                        <span>Sales</span>
+                        <select style="width: 67%; display: none;" data-placeholder="Choose a Sales" class="chzn-select-deselect" id="ctl00_ctl00_content_content_ddlSales" name="ctl00$ctl00$content$content$ddlSales">
+    <option value="00000000-0000-0000-0000-000000000000" selected="selected"></option>
+    <option value="531ed14f-c5f4-4bff-96ac-9309c2b70aa3">Sales 1</option>
+    <option value="8b9279e8-54b4-4b97-a5d0-148cec063a01">Sales 2</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 302px;" title="" id="ctl00_ctl00_content_content_ddlSales_chosen"><a tabindex="-1" class="chosen-single chosen-default"><span>Choose a Sales</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Person In Charge</span>
+                        <input type="text" id="ctl00_ctl00_content_content_txtContactPerson" name="ctl00$ctl00$content$content$txtContactPerson">
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Pricebook</span>
+                        <select style="width: 67%; display: none;" data-placeholder="Choose an Pricebook" class="chzn-select-deselect" id="ctl00_ctl00_content_content_ddlPricebook" name="ctl00$ctl00$content$content$ddlPricebook">
+    <option value="00000000-0000-0000-0000-000000000000" selected="selected"></option>
+    <option value="3f684e72-739b-436e-9280-4353e503c41a">Wholesale</option>
+    <option value="5a87af49-ce65-48ff-a8e0-7c9aa64ea50d">Master Dealer</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 302px;" title="" id="ctl00_ctl00_content_content_ddlPricebook_chosen"><a tabindex="-1" class="chosen-single chosen-default"><span>Choose an Pricebook</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Acquisition Media</span>
+                        <select style="width: 67%; display: none;" data-placeholder="Acquisition Media" class="chzn-select-deselect" id="ctl00_ctl00_content_content_ddlAcquisitionMedia" name="ctl00$ctl00$content$content$ddlAcquisitionMedia">
+    <option value=""></option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 302px;" title="" id="ctl00_ctl00_content_content_ddlAcquisitionMedia_chosen"><a tabindex="-1" class="chosen-single chosen-default"><span>Acquisition Media</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="tabs-3" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" style="display: block;" aria-hidden="false">
+            <div class="middle_form">
+                <h2 id="taxID">Tax</h2>
+                <div class="body">
+
+                    <div class="full clearfix">
+                        <span>NPWP</span>
+                        <input type="text" style="width:60%;" class="txt" id="ctl00_ctl00_content_content_txtNPWP" name="ctl00$ctl00$content$content$txtNPWP">
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>NPPKP</span>
+                        <input type="text" style="width:60%;" class="txt" id="ctl00_ctl00_content_content_txtNPPKP" name="ctl00$ctl00$content$content$txtNPPKP">
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Tax Add</span>
+                        <textarea style="border-color:#C8D3DF;height:100px;width:62%;" id="ctl00_ctl00_content_content_txtTaxAddress" cols="20" rows="2" name="ctl00$ctl00$content$content$txtTaxAddress"></textarea>
+                    </div>
+                </div>
+                <h2 id="chartofaccountID">Chart of Account</h2>
+                <div class="body">
+
+                    <div class="full clearfix">
+                        <span>Sales</span>
+                        <select style="width: 63%; display: none;" data-placeholder="Choose Acc. Receiveable" class="chzn-select-deselect" id="ctl00_ctl00_content_content_ddlAccountReceiveable" name="ctl00$ctl00$content$content$ddlAccountReceiveable">
+    <option value="00000000-0000-0000-0000-000000000000"></option>
+    <option value="b56fc8f3-20ae-410f-8754-21b09b21cd9e">Bank Account 1 (1900)</option>
+    <option value="e2ae95e9-8be0-4dea-bd94-05762438270e">Bank Account 2 (1901)</option>
+    <option value="e01aae3b-c71c-44f2-9af5-6d249277f405">Sales (200)</option>
+    <option value="4c0c0db6-8029-4660-bd4f-b4b398b84518">Payable 01 (2021)</option>
+    <option value="5f181b5d-6a64-4fec-a262-c057719522a4">Other Revenue (260)</option>
+    <option value="a64ce509-65a5-4706-97a3-f90cbbdc8e8a">Interest Income (270)</option>
+    <option value="86a8b18b-a1c3-4a49-9ac9-220118c2ff25">Advertising (400)</option>
+    <option value="6c42ce8d-c9c2-4586-b222-9e0db2697c44">Bank Fees (404)</option>
+    <option value="781783b6-121c-4cca-947f-1930dd80f5d4">Cleaning (408)</option>
+    <option value="082fa7bd-6851-4eba-9691-d08c8ea070ac">Consulting &amp; Accounting (412)</option>
+    <option value="eea4c5ca-8b10-45c9-be09-8dcd5cd2ba96">Depreciation (416)</option>
+    <option value="4ee186a0-851f-4af7-b848-97a357506d26">Entertainment (420)</option>
+    <option value="bf324565-df95-4510-b6b7-372766421042">Freight &amp; Courier (425)</option>
+    <option value="718fb227-8519-4962-832d-747db173c14b">General Expenses (429)</option>
+    <option value="4de3d701-eca7-48c7-a7b9-719e7f911cb3">Insurance (433)</option>
+    <option value="495eb5a6-ea7a-4a33-ae31-787bf9c9c8be">Interest Expense (437)</option>
+    <option value="b649b541-5e83-487d-8841-38fb437db5a6">Legal expenses (441)</option>
+    <option value="66b0a0c6-6796-4bc9-868c-7de00b499791">Light, Power, Heating (445)</option>
+    <option value="176b9d74-8f4f-446c-be00-d923df46877e">Motor Vehicle Expenses (449)</option>
+    <option value="ac87c617-21b9-42a0-97eb-0e473f7bd622">Office Expenses (453)</option>
+    <option value="3de32104-097c-4e25-a9c6-4d041aac29e3">Printing &amp; Stationery (461)</option>
+    <option value="7f3a4c5a-4db8-45a8-9ad4-3820c9777a96">Rent (469)</option>
+    <option value="1477e195-3e7d-44a0-9dc8-dcc7ac84262c">Repairs and Maintenance (473)</option>
+    <option value="fc72d9af-6206-4879-ba5d-897fd27496e6">Wages and Salaries (477)</option>
+    <option value="457a034c-d5c9-44d7-ae43-20c6fc0c89b6">Superannuation (478)</option>
+    <option value="dda4b03e-f62c-4b59-8734-8be5ae6e48b7">Subscriptions (485)</option>
+    <option value="9a82937f-fd46-49ad-b0fb-3e48ccda874b">Telephone &amp; Internet (489)</option>
+    <option value="a55341a5-00c4-459f-9f67-eacd1ed08fe7">Travel - National (493)</option>
+    <option value="11e36095-bfb8-4830-a6c4-953ee3361ab3">Travel - International (494)</option>
+    <option value="61b24245-45bb-4ec6-8697-7d64f45d2933">Income Tax Expense (505)</option>
+    <option value="5bdb9d61-05f1-4e87-90d4-ab6498b1406f">Phone Bills (5555)</option>
+    <option value="c0021c85-6228-4579-804c-660d9f8e88c8">Accounts Receivable (610)</option>
+    <option value="7ad2273c-f4a6-4450-9d47-2918f797dadf">Prepayments (620)</option>
+    <option value="e6622b2c-a2fc-4022-b856-965955413b02">Office Equipment (710)</option>
+    <option value="f9b20f00-2d63-421e-9441-1f7728c22c41">Less Accumulated Depreciation on Office Equipment (711)</option>
+    <option value="33f19052-29c0-44f6-870c-fc1fdb1adfa1">Computer Equipment (720)</option>
+    <option value="eb3f3633-4f00-4967-bc1c-60b1ee85c4a4">Less Accumulated Depreciation on Computer Equipmen (721)</option>
+    <option value="56e93f1a-80d2-4971-819d-d89cdfd48b7a">Accounts Payable (800)</option>
+    <option value="3d896e6a-f601-4bd3-83b9-70ea9da3798f">Unpaid Expense Claims (801)</option>
+    <option value="51c32d07-39e7-4691-848a-83aa68dae854">Wages Payable (803)</option>
+    <option value="5efd45d2-dee9-4bcb-95c5-df1c5fff8386">Sales Tax (820)</option>
+    <option value="b1da3321-78b8-49d4-b8c3-50d9d53bc50d">Employee Tax Payable (825)</option>
+    <option value="1ce9b4a4-287b-49c9-a2bd-95d29b058a7a">Superannuation Payable (826)</option>
+    <option value="0bfd8705-e89c-4249-ad87-942fcc26097b">Income Tax Payable (830)</option>
+    <option value="f173c334-d0e2-443c-ab4a-bce62d5d3244">Historical Adjustment (840)</option>
+    <option value="b69c8b19-8323-4506-81d7-0fd9851ddabd">Suspense (850)</option>
+    <option value="de7de562-8262-4fdd-872e-0792ce8d7625">Rounding (860)</option>
+    <option value="4e8bd79e-4a2c-4b9c-a270-1a230826e517">Tracking Transfers (877)</option>
+    <option value="a8424b65-ae83-46ab-9f9f-76ecc92077ac">Owner A Drawings (880)</option>
+    <option value="ef6085e8-d571-4f0d-8677-5c72b728e564">Owner A Funds Introduced (881)</option>
+    <option value="a1498b5e-9de8-4c56-866c-db529be272a8">Loan (900)</option>
+    <option value="0a8c64e6-aeb0-4248-bc17-fc2f7ad01967">Retained Earnings (960)</option>
+    <option value="ffe1ed8f-ee09-4b86-b2fd-d83ca102243e">Owner A Share Capital (9700)</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 284px;" title="" id="ctl00_ctl00_content_content_ddlAccountReceiveable_chosen"><a tabindex="-1" class="chosen-single chosen-default"><span>Choose Acc. Receiveable</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Pricebook</span>
+                        <select style="width: 63%; display: none;" data-placeholder="Choose Acc. Payable" class="chzn-select-deselect" id="ctl00_ctl00_content_content_ddlAccountPayable" name="ctl00$ctl00$content$content$ddlAccountPayable">
+    <option value="00000000-0000-0000-0000-000000000000"></option>
+    <option value="b56fc8f3-20ae-410f-8754-21b09b21cd9e">Bank Account 1 (1900)</option>
+    <option value="e2ae95e9-8be0-4dea-bd94-05762438270e">Bank Account 2 (1901)</option>
+    <option value="e01aae3b-c71c-44f2-9af5-6d249277f405">Sales (200)</option>
+    <option value="4c0c0db6-8029-4660-bd4f-b4b398b84518">Payable 01 (2021)</option>
+    <option value="5f181b5d-6a64-4fec-a262-c057719522a4">Other Revenue (260)</option>
+    <option value="a64ce509-65a5-4706-97a3-f90cbbdc8e8a">Interest Income (270)</option>
+    <option value="86a8b18b-a1c3-4a49-9ac9-220118c2ff25">Advertising (400)</option>
+    <option value="6c42ce8d-c9c2-4586-b222-9e0db2697c44">Bank Fees (404)</option>
+    <option value="781783b6-121c-4cca-947f-1930dd80f5d4">Cleaning (408)</option>
+    <option value="082fa7bd-6851-4eba-9691-d08c8ea070ac">Consulting &amp; Accounting (412)</option>
+    <option value="eea4c5ca-8b10-45c9-be09-8dcd5cd2ba96">Depreciation (416)</option>
+    <option value="4ee186a0-851f-4af7-b848-97a357506d26">Entertainment (420)</option>
+    <option value="bf324565-df95-4510-b6b7-372766421042">Freight &amp; Courier (425)</option>
+    <option value="718fb227-8519-4962-832d-747db173c14b">General Expenses (429)</option>
+    <option value="4de3d701-eca7-48c7-a7b9-719e7f911cb3">Insurance (433)</option>
+    <option value="495eb5a6-ea7a-4a33-ae31-787bf9c9c8be">Interest Expense (437)</option>
+    <option value="b649b541-5e83-487d-8841-38fb437db5a6">Legal expenses (441)</option>
+    <option value="66b0a0c6-6796-4bc9-868c-7de00b499791">Light, Power, Heating (445)</option>
+    <option value="176b9d74-8f4f-446c-be00-d923df46877e">Motor Vehicle Expenses (449)</option>
+    <option value="ac87c617-21b9-42a0-97eb-0e473f7bd622">Office Expenses (453)</option>
+    <option value="3de32104-097c-4e25-a9c6-4d041aac29e3">Printing &amp; Stationery (461)</option>
+    <option value="7f3a4c5a-4db8-45a8-9ad4-3820c9777a96">Rent (469)</option>
+    <option value="1477e195-3e7d-44a0-9dc8-dcc7ac84262c">Repairs and Maintenance (473)</option>
+    <option value="fc72d9af-6206-4879-ba5d-897fd27496e6">Wages and Salaries (477)</option>
+    <option value="457a034c-d5c9-44d7-ae43-20c6fc0c89b6">Superannuation (478)</option>
+    <option value="dda4b03e-f62c-4b59-8734-8be5ae6e48b7">Subscriptions (485)</option>
+    <option value="9a82937f-fd46-49ad-b0fb-3e48ccda874b">Telephone &amp; Internet (489)</option>
+    <option value="a55341a5-00c4-459f-9f67-eacd1ed08fe7">Travel - National (493)</option>
+    <option value="11e36095-bfb8-4830-a6c4-953ee3361ab3">Travel - International (494)</option>
+    <option value="61b24245-45bb-4ec6-8697-7d64f45d2933">Income Tax Expense (505)</option>
+    <option value="5bdb9d61-05f1-4e87-90d4-ab6498b1406f">Phone Bills (5555)</option>
+    <option value="c0021c85-6228-4579-804c-660d9f8e88c8">Accounts Receivable (610)</option>
+    <option value="7ad2273c-f4a6-4450-9d47-2918f797dadf">Prepayments (620)</option>
+    <option value="e6622b2c-a2fc-4022-b856-965955413b02">Office Equipment (710)</option>
+    <option value="f9b20f00-2d63-421e-9441-1f7728c22c41">Less Accumulated Depreciation on Office Equipment (711)</option>
+    <option value="33f19052-29c0-44f6-870c-fc1fdb1adfa1">Computer Equipment (720)</option>
+    <option value="eb3f3633-4f00-4967-bc1c-60b1ee85c4a4">Less Accumulated Depreciation on Computer Equipmen (721)</option>
+    <option value="56e93f1a-80d2-4971-819d-d89cdfd48b7a">Accounts Payable (800)</option>
+    <option value="3d896e6a-f601-4bd3-83b9-70ea9da3798f">Unpaid Expense Claims (801)</option>
+    <option value="51c32d07-39e7-4691-848a-83aa68dae854">Wages Payable (803)</option>
+    <option value="5efd45d2-dee9-4bcb-95c5-df1c5fff8386">Sales Tax (820)</option>
+    <option value="b1da3321-78b8-49d4-b8c3-50d9d53bc50d">Employee Tax Payable (825)</option>
+    <option value="1ce9b4a4-287b-49c9-a2bd-95d29b058a7a">Superannuation Payable (826)</option>
+    <option value="0bfd8705-e89c-4249-ad87-942fcc26097b">Income Tax Payable (830)</option>
+    <option value="f173c334-d0e2-443c-ab4a-bce62d5d3244">Historical Adjustment (840)</option>
+    <option value="b69c8b19-8323-4506-81d7-0fd9851ddabd">Suspense (850)</option>
+    <option value="de7de562-8262-4fdd-872e-0792ce8d7625">Rounding (860)</option>
+    <option value="4e8bd79e-4a2c-4b9c-a270-1a230826e517">Tracking Transfers (877)</option>
+    <option value="a8424b65-ae83-46ab-9f9f-76ecc92077ac">Owner A Drawings (880)</option>
+    <option value="ef6085e8-d571-4f0d-8677-5c72b728e564">Owner A Funds Introduced (881)</option>
+    <option value="a1498b5e-9de8-4c56-866c-db529be272a8">Loan (900)</option>
+    <option value="0a8c64e6-aeb0-4248-bc17-fc2f7ad01967">Retained Earnings (960)</option>
+    <option value="ffe1ed8f-ee09-4b86-b2fd-d83ca102243e">Owner A Share Capital (9700)</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 284px;" title="" id="ctl00_ctl00_content_content_ddlAccountPayable_chosen"><a tabindex="-1" class="chosen-single chosen-default"><span>Choose Acc. Payable</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+
+                    </div>
+                </div>
+                <h2 id="debtID">Debt</h2>
+                <div class="body">
+
+                    <div class="full clearfix">
+                        <span>Debt Limit</span>
+                        <input type="text" style="width:60%;" class="txtQty" id="ctl00_ctl00_content_content_txtDebtLimit_txtInput" value="0" name="ctl00$ctl00$content$content$txtDebtLimit$txtInput">
+
+                    </div>
+
+                    <div class="full clearfix">
+                        <span>Def.Due</span>
+                        <input type="text" style="width:20px;" class="txtQty" id="ctl00_ctl00_content_content_decInputDDueDays_txtInput" value="0" name="ctl00$ctl00$content$content$decInputDDueDays$txtInput">
+
+                        Day(s) &amp;
+                        <input type="text" style="width:20px;" class="txtQty" id="ctl00_ctl00_content_content_decInputDDueMonths_txtInput" value="0" name="ctl00$ctl00$content$content$decInputDDueMonths$txtInput">
+
+                        Month(s)
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+        </div>
+    </div></div></form>
+
+
+<ul class="vakata-context"></ul><div style="display: none;" id="jstree-marker">&nbsp;</div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
+    </body>
+</html>

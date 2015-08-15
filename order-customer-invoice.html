@@ -1,0 +1,622 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="ctl00_ctl00_html" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>
+    Demo DealPOS POS | Dashboard
+</title>
+<link href="css/css_002.css" rel="stylesheet" type="text/css"/>
+<link href="css/css.css" rel="stylesheet" type="text/css"/>
+<script src="css/jquery-1.js" type="text/javascript"></script>
+
+<link href="css/core_002.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery.css" rel="stylesheet" type="text/css"/>
+
+<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="css/jquery.js"></script>
+<script src="css/jquery_002.js" type="text/javascript"></script>
+<script type="text/javascript" src="css/core.js"></script>
+<script src="css/jquery_003.js" type="text/javascript"></script>
+
+<link href="css/core.css" rel="stylesheet" type="text/css"/>
+<link href="css/icons.css" rel="stylesheet" type="text/css"/>
+<link href="css/home_dashboard.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery-ui-app.css" rel="stylesheet" type="text/css"/>
+<link href="css/jquery-ui-1.css" rel="stylesheet" type="text/css"/>
+
+<!-- Plugin stylesheets -->
+<link href="plugins/misc/qtip/jquery.qtip.css" rel="stylesheet" type="text/css" />
+<link href="plugins/forms/uniform/uniform.default.css" type="text/css" rel="stylesheet" />        
+<link href="plugins/tables/dataTables/jquery.dataTables.css" type="text/css" rel="stylesheet" />
+<script src="css/highcharts.js" type="text/javascript"></script>
+<!--<script src="css/LineHome.js" type="text/javascript"></script>-->
+<script src="css/jquery-ui-1.js" type="text/javascript"></script>
+<script src="css/dialog.js" type="text/javascript"></script>
+
+<!-- Important plugins put in all pages -->
+<script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>  
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<!-- Table plugins -->
+<script type="text/javascript" src="plugins/tables/dataTables/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="plugins/tables/responsive-tables/responsive-tables.js"></script><!-- Make tables responsive -->
+<script type="text/javascript" src="js/datatable.js"></script><!-- Init plugins only for page -->
+<link href="css/chosen.css" rel="stylesheet" type="text/css">
+<script src="js/chosen.js" type="text/javascript"></script>
+<script src="js/chosen_002.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/jquery-ui-1.css">
+<link rel="stylesheet" href="css/jquery-ui-app.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/quocanh.css">
+
+<script src="js/jquery-ui-1.js" type="text/javascript"></script>
+<script src="js/dialog.js" type="text/javascript"></script>
+<script src="js/jstree.js" type="text/javascript"></script>
+<script src="js/initAccountsTree.js" type="text/javascript"></script>
+<script src="js/productCategory.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="ctl00_ctl00_divContainer">
+        <header>
+            <div id="header">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
+                            <div class="nav-no-collapse">
+                                <ul class="nav">
+                                    <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-cog"></span> Settings
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul>
+                                                    <li>                                              
+                                                        <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
+                                                    </li>
+                                                    <li>                                                
+                                                        <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul class="messages">    
+                                                    <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
+                                                    <li>
+                                                        <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
+                                                        <span class="msg">I have question about new function ...</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
+                                                        <span class="msg">I need to meet you urgent please call me ...</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
+                                                        <span class="msg">I send you my suggestion, please look and ...</span>
+                                                    </li>
+                                                    <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul class="nav pull-right usernav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul class="notif">
+                                                    <li class="header"><strong>Notifications</strong> (3) items</li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                            <span class="event">1 User is registred</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
+                                                            <span class="event">Jony add 1 comment</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
+                                                            <span class="event">admin Julia added post with a long description</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+                                            <img src="images/avatar.jpg" alt="" class="image" /> 
+                                            <span class="txt">admin@supr.com</span>
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
+                                </ul>
+                            </div><!-- /.nav-collapse -->
+                        </div>
+                    </div><!-- /navbar-inner -->
+                </div><!-- /navbar -->
+                <h1 class="orders" id="ctl00_ctl00_content_pageHeaderTitle"><i></i><span>Customer Invoice</span></h1>
+                            <div class="page_action" id="ctl00_ctl00_content_divActions">
+                        
+                <a href="../../../Report/Sales/Summary.aspx?CustomerID=cfebd98d-2165-4e67-8a08-07e1002a2975" class="report" id="ctl00_ctl00_content_actions_linkSalesHistory">Sales History</a>
+
+                <ul class="section">
+                    <li>
+                        <a href="PointLog.aspx?ID=cfebd98d-2165-4e67-8a08-07e1002a2975" id="ctl00_ctl00_content_actions_linkViewPoint">Loyalty Point</a>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+
+                <ul class="section">
+                    <li>
+                        <input type="submit" class="delete" title="Delete" id="ctl00_ctl00_content_actions_btnDelete" value="Delete" name="ctl00$ctl00$content$actions$btnDelete">
+                    </li>
+                    <li>
+                        <a href="Form.aspx?ID=cfebd98d-2165-4e67-8a08-07e1002a2975" class="edit" title="Edit" id="ctl00_ctl00_content_actions_linkEdit">Edit</a>
+                    </li>
+                </ul>
+
+                        
+                    </div>
+            </div><!-- End #header -->
+        </header>
+        <nav class="mCustomScrollbar _mCS_1">
+            <div class="mCustomScrollBox mCS-dark" id="mCSB_1" >
+                <div class="mCSB_container mCS_no_scrollbar" >
+                    <ul>
+                        <li class="selected">
+                            <a class="dashboard" href=""><i></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                    </ul><strong>Point of Sale</strong>
+                    <ul>
+                        <li>
+                            <a class="products" href=""><i></i><span>Products</span></a>
+                        </li>
+                        <li>
+                            <a class="sell" href=""><i></i><span>Sell</span></a>
+                        </li>
+                        <li>
+                            <a class="reports" href=""><i></i><span>Reports</span></a>
+                        </li>
+                    </ul><strong>Database</strong>
+                    <ul>
+                        <li><a class="contacts" href="contacts-customers.html"><i></i><span>Contacts</span></a></li>
+                        <li><a class="orders" href="order-customer-invoice.html"><i></i><span>Orders</span></a></li>
+                        <li><a class="payment" href="payment-purchases-daily.html"><i></i><span>Payment</span></a></li>
+                        <li><a class="debt" href="debt-receiveable.html"><i></i><span>Debt</span></a></li>
+                    </ul><strong>Warehouse</strong>
+                    <ul>
+                        <li><a class="inventory" href="inventory_detail.html"><i></i><span>Inventory</span></a></li>
+                        <li><a class="adjustment" href=" "><i></i><span>Adjustment</span></a></li>
+                        <li><a class="buy" href=" "><i></i><span>Buy</span></a></li>
+                        <li><a class="delivery" href=""><i></i><span>Delivery</span></a></li>
+                    </ul><strong>Add-ons</strong>
+                    <ul>
+                        <li><a class="accounting" href="accounts.html"><i></i><span>Accounting</span></a></li>
+                    </ul>
+                </div>
+                <div class="mCSB_scrollTools" style="position: absolute; display: none;">
+                    <div class="mCSB_draggerContainer">
+                        <div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;">
+                            <div class="mCSB_dragger_bar" style="position:relative;"></div>
+                        </div>
+                        <div class="mCSB_draggerRail"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content_scroll">
+        <div class="page_menu" id="page_menu">
+            <ul><li class="active"><a href="/Authenticated/Transaction/Customer/Invoice.aspx">Customer Invoice</a></li><li><a href="/Authenticated/Transaction/Supplier/SupplierInvoice.aspx">Supplier Bill</a></li></ul>
+
+            <div class="more_menu"> <a class="" title="More menu"></a> <div class="drop_menu"><strong>Order</strong><ul><li><a href="/Authenticated/Transaction/Customer/CustomerPO.aspx">Sales Order</a></li><li><a href="/Authenticated/Transaction/Supplier/SupplierPO.aspx">Purchase Order</a></li></ul><strong>Retur</strong><ul><li><a href="/Authenticated/Transaction/Customer/SalesReturn.aspx">Customer</a></li><li><a href="/Authenticated/Transaction/Supplier/PurchaseReturn.aspx">Supplier</a></li></ul><strong>Recycle Bin</strong><ul><li><a href="/Authenticated/Transaction/Customer/RecycleBin/Invoice.aspx">Voided Invoice(s)</a></li></ul></div> </div>
+        </div>
+        <di<div class="tabContent">
+            
+    <div class="filter clearfix">
+        <div buttonid="btnFilter" class="row_wrapper">
+            <div class="row clearfix">
+                
+                <div class="column">
+                    <strong>Number</strong>
+                    <input type="text" class="txt" id="ctl00_ctl00_content_content_txtNumber" name="ctl00$ctl00$content$content$txtNumber">
+                </div>
+                <div class="column">
+                    <strong>Customer</strong>
+                    <input type="text" hfid="ctl00_ctl00_content_content_acCustomer_hfID" wsmethod="GetCustomerSuggestion" class="autocomplete ui-autocomplete-input" id="ctl00_ctl00_content_content_acCustomer_txtInput" name="ctl00$ctl00$content$content$acCustomer$txtInput" autocomplete="off"><input type="hidden" id="ctl00_ctl00_content_content_acCustomer_hfID" name="ctl00$ctl00$content$content$acCustomer$hfID">
+
+                </div>
+                <div class="column">
+                    <strong>From</strong>
+                    <input type="text" style="width:150px;" readonly="readonly" class="datepicker hasDatepicker" id="ctl00_ctl00_content_content_DatePickerFrom_txtDate" name="ctl00$ctl00$content$content$DatePickerFrom$txtDate">
+
+                </div>
+                <div class="column">
+                    <strong>To</strong>
+                    <input type="text" style="width:150px;" readonly="readonly" class="datepicker hasDatepicker" id="ctl00_ctl00_content_content_DatePickerTo_txtDate" name="ctl00$ctl00$content$content$DatePickerTo$txtDate">
+
+                </div>
+            </div>
+            <div style="display: none;" class="row filter_more">
+                <div class="column">
+                    <strong>Payment</strong>
+                    <select style="width: 150px; display: none;" data-placeholder="Choose..." class="chzn-select-deselect" id="ctl00_ctl00_content_content_ddlPaymentState" name="ctl00$ctl00$content$content$ddlPaymentState">
+    <option value="" selected="selected"></option>
+    <option value="1">Pending</option>
+    <option value="2">Partial</option>
+    <option value="3">Paid</option>
+    <option value="4">Bulk</option>
+    <option value="5">Exceed</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 150px;" title="" id="ctl00_ctl00_content_content_ddlPaymentState_chosen"><a tabindex="-1" class="chosen-single chosen-default"><span>Choose...</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                </div>
+                <div class="column">
+                    <strong>Delivery</strong>
+                    <select style="width: 150px; display: none;" data-placeholder="Choose..." class="chzn-select-deselect" id="ctl00_ctl00_content_content_ddlDeliveryState" name="ctl00$ctl00$content$content$ddlDeliveryState">
+    <option value="" selected="selected"></option>
+    <option value="1">Unsent</option>
+    <option value="2">Partial</option>
+    <option value="3">Sent</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 150px;" title="" id="ctl00_ctl00_content_content_ddlDeliveryState_chosen"><a tabindex="-1" class="chosen-single chosen-default"><span>Choose...</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                </div>
+                <div id="div1" class="column">
+                    <strong>Tax Type</strong>
+                    <select style="width: 150px; display: none;" data-placeholder="Choose..." class="chzn-select-deselect" id="ctl00_ctl00_content_content_ddlPPN" name="ctl00$ctl00$content$content$ddlPPN">
+    <option value="" selected="selected"></option>
+    <option value="6d541afe-a40d-4c44-b735-609ede7a3992">No Tax</option>
+    <option value="c1efc6c6-66a2-47a8-8127-1ba3099e6f0e">Tax 10%</option>
+
+</select><div class="chosen-container chosen-container-single" style="width: 150px;" title="" id="ctl00_ctl00_content_content_ddlPPN_chosen"><a tabindex="-1" class="chosen-single chosen-default"><span>Choose...</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                </div>
+                <div class="column">
+                    <strong>Note</strong>
+                    <input type="text" class="txt" id="ctl00_ctl00_content_content_txtNote" name="ctl00$ctl00$content$content$txtNote">
+                </div>
+                <div class="column">
+                    <strong>Page Size</strong>
+                    <input type="text" class="txtQty" id="ctl00_ctl00_content_content_decPageSize_txtInput" value="20" name="ctl00$ctl00$content$content$decPageSize$txtInput">
+
+                </div>
+            </div>
+        </div>
+        <a class="more">More Filter Options</a>
+        <input type="submit" class="button-update right" id="btnFilter" value="Update" name="ctl00$ctl00$content$content$btnFilter">
+    </div>
+    
+
+    <div>
+    <table cellspacing="0" cellpadding="0" border="0" style="width:100%;border-collapse:collapse;" id="ctl00_ctl00_content_content_gvList" class="zebra">
+        <thead>
+            <tr class="header">
+                <th style="width:120px;" scope="col">Number</th><th scope="col">Customer</th><th style="width:80px;" scope="col">Date</th><th style="width:50px;" scope="col">Due</th><th style="width:60px;" scope="col">Payment</th><th style="width:60px;" scope="col">Delivery</th><th style="width:16px;" scope="col">&nbsp;</th>
+            </tr>
+        </thead><tbody>
+            <tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=896c4e1b-7fae-4005-b03c-3d3c7a61f8e7" id="ctl00_ctl00_content_content_gvList_ctl02_ID">15.08.023</a>
+                </td><td>
+                    
+                </td><td>13 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=896c4e1b-7fae-4005-b03c-3d3c7a61f8e7&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl02_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=84704020-262e-446d-84d9-29d5b86a9e63" id="ctl00_ctl00_content_content_gvList_ctl03_ID">15.08.022</a>
+                </td><td>
+                    
+                </td><td>12 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=84704020-262e-446d-84d9-29d5b86a9e63&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl03_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=737adb11-12a7-41d6-a3c7-7b64b902e5ff" id="ctl00_ctl00_content_content_gvList_ctl04_ID">15.08.021</a>
+                </td><td>
+                    test
+                </td><td>10 Aug 2015</td><td class="pl3 imp">20 Aug</td><td>
+                    Pending
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=737adb11-12a7-41d6-a3c7-7b64b902e5ff&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl04_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=b175cd42-1970-447e-b7a7-87848b110233" id="ctl00_ctl00_content_content_gvList_ctl05_ID">15.08.020</a>
+                </td><td>
+                    
+                </td><td>10 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=b175cd42-1970-447e-b7a7-87848b110233&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl05_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=90eb5316-54bf-4533-bac0-88ff73ba8703" id="ctl00_ctl00_content_content_gvList_ctl06_ID">15.08.019</a>
+                </td><td>
+                    
+                </td><td>10 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=90eb5316-54bf-4533-bac0-88ff73ba8703&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl06_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=08f7817d-0695-4d80-8229-15abf000638c" id="ctl00_ctl00_content_content_gvList_ctl07_ID">15.08.018</a>
+                </td><td>
+                    
+                </td><td>10 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=08f7817d-0695-4d80-8229-15abf000638c&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl07_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=bff7d7b2-2558-4f42-b6bc-1c65184a1a46" id="ctl00_ctl00_content_content_gvList_ctl08_ID">15.08.017</a>
+                </td><td>
+                    
+                </td><td>10 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=bff7d7b2-2558-4f42-b6bc-1c65184a1a46&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl08_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=dafd9413-f9c6-4007-a909-a2cdb3043857" id="ctl00_ctl00_content_content_gvList_ctl09_ID">15.08.016</a>
+                </td><td>
+                    
+                </td><td>10 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=dafd9413-f9c6-4007-a909-a2cdb3043857&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl09_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=7165fb84-a220-472d-8354-35581e81b3f0" id="ctl00_ctl00_content_content_gvList_ctl10_ID">15.08.015</a>
+                </td><td>
+                    Oding
+                </td><td>08 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=7165fb84-a220-472d-8354-35581e81b3f0&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl10_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=279b9ff7-8a46-4b4f-b73c-f59dec960e66" id="ctl00_ctl00_content_content_gvList_ctl11_ID">15.08.013</a>
+                </td><td>
+                    
+                </td><td>07 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=279b9ff7-8a46-4b4f-b73c-f59dec960e66&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl11_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=18078243-7186-47aa-92c2-12b2f4d12857" id="ctl00_ctl00_content_content_gvList_ctl12_ID">15.08.012</a>
+                </td><td>
+                    
+                </td><td>06 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=18078243-7186-47aa-92c2-12b2f4d12857&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl12_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=5fbd5588-1b94-4a68-999d-2d20c59431f8" id="ctl00_ctl00_content_content_gvList_ctl13_ID">15.08.011</a>
+                </td><td>
+                    
+                </td><td>04 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=5fbd5588-1b94-4a68-999d-2d20c59431f8&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl13_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=ca8c444b-89a9-4994-82b9-54d3f2c845db" id="ctl00_ctl00_content_content_gvList_ctl14_ID">15.08.010</a>
+                </td><td>
+                    selvaa
+                </td><td>03 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=ca8c444b-89a9-4994-82b9-54d3f2c845db&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl14_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=eb6c47fc-bcef-4ca2-9951-47e4c00e2289" id="ctl00_ctl00_content_content_gvList_ctl15_ID">15.08.009</a>
+                </td><td>
+                    
+                </td><td>03 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=eb6c47fc-bcef-4ca2-9951-47e4c00e2289&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl15_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=a5fae272-8624-4236-b259-29f71402ec01" id="ctl00_ctl00_content_content_gvList_ctl16_ID">15.08.008</a>
+                </td><td>
+                    
+                </td><td>03 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=a5fae272-8624-4236-b259-29f71402ec01&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl16_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=0d27aab9-1dea-4452-b65c-71e0ede81131" id="ctl00_ctl00_content_content_gvList_ctl17_ID">15.08.007</a>
+                </td><td>
+                    
+                </td><td>03 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=0d27aab9-1dea-4452-b65c-71e0ede81131&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl17_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=2851becd-2d53-4de2-b2ca-30c3e5e1555b" id="ctl00_ctl00_content_content_gvList_ctl18_ID">15.08.006</a>
+                </td><td>
+                    Admin
+                </td><td>03 Aug 2015</td><td class="pl3 imp">13 Aug</td><td>
+                    Pending
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=2851becd-2d53-4de2-b2ca-30c3e5e1555b&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl18_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=902ba6ed-1ff5-4700-be6c-3bb3b5b72172" id="ctl00_ctl00_content_content_gvList_ctl19_ID">15.08.005</a>
+                </td><td>
+                    Admin
+                </td><td>03 Aug 2015</td><td class="pl3 imp">13 Aug</td><td>
+                    Pending
+                </td><td>
+                    Unsent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=902ba6ed-1ff5-4700-be6c-3bb3b5b72172&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl19_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=206385c3-4cad-40df-a9d7-1bd327ded4f4" id="ctl00_ctl00_content_content_gvList_ctl20_ID">15.08.004</a>
+                </td><td>
+                    
+                </td><td>03 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=206385c3-4cad-40df-a9d7-1bd327ded4f4&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl20_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="InvoiceInfo.aspx?ID=2387d29a-269f-4cc5-b9ec-57f3d4259a8e" id="ctl00_ctl00_content_content_gvList_ctl21_ID">15.08.003</a>
+                </td><td>
+                    
+                </td><td>01 Aug 2015</td><td class="pl3 imp">-</td><td>
+                    Paid
+                </td><td>
+                    Sent
+                </td><td>
+                    <a target="_printwindow" href="../../Print/InvoiceMini.aspx?ID=2387d29a-269f-4cc5-b9ec-57f3d4259a8e&amp;Template=1" id="ctl00_ctl00_content_content_gvList_ctl21_linkPrint">
+                    <img align="absmiddle" src="/Images/Icon/Op/Print.png" title="Print"></a>
+                </td>
+            </tr><tr class="pager">
+                <td colspan="7"><table border="0">
+                    <tbody><tr>
+                        <td><span>1</span></td><td><a href="javascript:__doPostBack('ctl00$ctl00$content$content$gvList','Page$2')">2</a></td>
+                    </tr>
+                </tbody></table></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+        </div>
+    </div></div></form>
+
+
+    </body>
+</html>
+
