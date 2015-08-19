@@ -1,166 +1,178 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="ctl00_html" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
-            Demo DealPOS | Login Form
-        </title>
-        <link href="css/css_002.css" rel="stylesheet" type="text/css"/>
-            <link href="css/css.css" rel="stylesheet" type="text/css"/>
-                <script src="css/jquery-1.js" type="text/javascript"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>
+        Demo DealPOS | Login Form
+    </title>
+    <link href="css/css_002.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <script src="css/jquery-1.js" type="text/javascript"></script>
 
-                <link href="css/login.css" rel="stylesheet" type="text/css"/>
-                    <script src="css/cookieschecker.js" type="text/javascript"></script>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                        <style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
-                            /** reset styling **/
-                            .firebugResetStyles {
-                                z-index: 2147483646 !important;
-                                top: 0 !important;
-                                left: 0 !important;
-                                display: block !important;
-                                border: 0 none !important;
-                                margin: 0 !important;
-                                padding: 0 !important;
-                                outline: 0 !important;
-                                min-width: 0 !important;
-                                max-width: none !important;
-                                min-height: 0 !important;
-                                max-height: none !important;
-                                position: fixed !important;
-                                transform: rotate(0deg) !important;
-                                transform-origin: 50% 50% !important;
-                                border-radius: 0 !important;
-                                box-shadow: none !important;
-                                background: transparent none !important;
-                                pointer-events: none !important;
-                                white-space: normal !important;
-                            }
-                            style.firebugResetStyles {
-                                display: none !important;
-                            }
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+    <script src="css/cookieschecker.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style class="firebugResetStyles" type="text/css" charset="utf-8">
+        /* See license.txt for terms of usage */
+        /** reset styling **/
+        
+        .firebugResetStyles {
+            z-index: 2147483646 !important;
+            top: 0 !important;
+            left: 0 !important;
+            display: block !important;
+            border: 0 none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            outline: 0 !important;
+            min-width: 0 !important;
+            max-width: none !important;
+            min-height: 0 !important;
+            max-height: none !important;
+            position: fixed !important;
+            transform: rotate(0deg) !important;
+            transform-origin: 50% 50% !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            background: transparent none !important;
+            pointer-events: none !important;
+            white-space: normal !important;
+        }
+        
+        style.firebugResetStyles {
+            display: none !important;
+        }
+        
+        .firebugBlockBackgroundColor {
+            background-color: transparent !important;
+        }
+        
+        .firebugResetStyles:before,
+        .firebugResetStyles:after {
+            content: "" !important;
+        }
+        /**actual styling to be modified by firebug theme**/
+        
+        .firebugCanvas {
+            display: none !important;
+        }
+        /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+        
+        .firebugLayoutBox {
+            width: auto !important;
+            position: static !important;
+        }
+        
+        .firebugLayoutBoxOffset {
+            opacity: 0.8 !important;
+            position: fixed !important;
+        }
+        
+        .firebugLayoutLine {
+            opacity: 0.4 !important;
+            background-color: #000000 !important;
+        }
+        
+        .firebugLayoutLineLeft,
+        .firebugLayoutLineRight {
+            width: 1px !important;
+            height: 100% !important;
+        }
+        
+        .firebugLayoutLineTop,
+        .firebugLayoutLineBottom {
+            width: 100% !important;
+            height: 1px !important;
+        }
+        
+        .firebugLayoutLineTop {
+            margin-top: -1px !important;
+            border-top: 1px solid #999999 !important;
+        }
+        
+        .firebugLayoutLineRight {
+            border-right: 1px solid #999999 !important;
+        }
+        
+        .firebugLayoutLineBottom {
+            border-bottom: 1px solid #999999 !important;
+        }
+        
+        .firebugLayoutLineLeft {
+            margin-left: -1px !important;
+            border-left: 1px solid #999999 !important;
+        }
+        /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+        
+        .firebugLayoutBoxParent {
+            border-top: 0 none !important;
+            border-right: 1px dashed #E00 !important;
+            border-bottom: 1px dashed #E00 !important;
+            border-left: 0 none !important;
+            position: fixed !important;
+            width: auto !important;
+        }
+        
+        .firebugRuler {
+            position: absolute !important;
+        }
+        
+        .overflowRulerX > .firebugRulerV {
+            left: 0 !important;
+        }
+        
+        .overflowRulerY > .firebugRulerH {
+            top: 0 !important;
+        }
+        /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+        
+        .fbProxyElement {
+            position: fixed !important;
+            pointer-events: auto !important;
+        }
+    </style>
+</head>
 
-                            .firebugBlockBackgroundColor {
-                                background-color: transparent !important;
-                            }
+<body>
+    <form name="aspnetForm" method="post" action="dashboard.html" id="aspnetForm">
+        <div id="ctl00_divContainer" class="container">
 
-                            .firebugResetStyles:before, .firebugResetStyles:after {
-                                content: "" !important;
-                            }
-                            /**actual styling to be modified by firebug theme**/
-                            .firebugCanvas {
-                                display: none !important;
-                            }
-
-                            /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-                            .firebugLayoutBox {
-                                width: auto !important;
-                                position: static !important;
-                            }
-
-                            .firebugLayoutBoxOffset {
-                                opacity: 0.8 !important;
-                                position: fixed !important;
-                            }
-
-                            .firebugLayoutLine {
-                                opacity: 0.4 !important;
-                                background-color: #000000 !important;
-                            }
-
-                            .firebugLayoutLineLeft, .firebugLayoutLineRight {
-                                width: 1px !important;
-                                height: 100% !important;
-                            }
-
-                            .firebugLayoutLineTop, .firebugLayoutLineBottom {
-                                width: 100% !important;
-                                height: 1px !important;
-                            }
-
-                            .firebugLayoutLineTop {
-                                margin-top: -1px !important;
-                                border-top: 1px solid #999999 !important;
-                            }
-
-                            .firebugLayoutLineRight {
-                                border-right: 1px solid #999999 !important;
-                            }
-
-                            .firebugLayoutLineBottom {
-                                border-bottom: 1px solid #999999 !important;
-                            }
-
-                            .firebugLayoutLineLeft {
-                                margin-left: -1px !important;
-                                border-left: 1px solid #999999 !important;
-                            }
-
-                            /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-                            .firebugLayoutBoxParent {
-                                border-top: 0 none !important;
-                                border-right: 1px dashed #E00 !important;
-                                border-bottom: 1px dashed #E00 !important;
-                                border-left: 0 none !important;
-                                position: fixed !important;
-                                width: auto !important;
-                            }
-
-                            .firebugRuler{
-                                position: absolute !important;
-                            }
-
-                            .overflowRulerX > .firebugRulerV {
-                                left: 0 !important;
-                            }
-
-                            .overflowRulerY > .firebugRulerH {
-                                top: 0 !important;
-                            }
-
-                            /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-                            .fbProxyElement {
-                                position: fixed !important;
-                                pointer-events: auto !important;
-                            }
-                        </style>
-                        </head>
-                        <body>
-                            <form name="aspnetForm" method="post" action="dashboard.html" id="aspnetForm">
-                                <div id="ctl00_divContainer" class="container">
-
-                                    <div id="ctl00_divContainer" class="container">
-                                        <h1>
+            <div id="ctl00_divContainer" class="container">
+                <h1>
                                             Demo DealPOS</h1>
-                                        <div id="divError" class="error" style="display: none;">
-                                            <strong>Alert: </strong>
-                                            <span id="lblError"></span>
-                                        </div>
-                                        <div id="ctl00_content_divForm" class="form-block" buttonid="ctl00_content_btnLogin">
-                                            <div class="row">
-                                                <span>Username :</span>
-                                                <input value="demo" name="ctl00$content$txtUserName" id="ctl00_content_txtUserName" class="inputbox" placeholder="Username" autofocus="" type="text">
-                                            </div>
-                                            <div class="row">
-                                                <span>Password :</span>
-                                                <input name="ctl00$content$txtPassword" id="ctl00_content_txtPassword" class="inputbox" placeholder="Password" type="password">
-                                            </div>
-                                            <div class="action">
-                                                <div class="remember">
-                                                    <input id="ctl00_content_chkBoxRememberMe" name="ctl00$content$chkBoxRememberMe" type="checkbox"><label for="ctl00_content_chkBoxRememberMe">Keep me signed in</label>
-                                                </div>
+                <div id="divError" class="error" style="display: none;">
+                    <strong>Alert: </strong>
+                    <span id="lblError"></span>
+                </div>
+                <div id="ctl00_content_divForm" class="form-block" buttonid="ctl00_content_btnLogin">
+                    <div class="row">
+                        <span>Username :</span>
+                        <input value="demo" name="ctl00$content$txtUserName" id="ctl00_content_txtUserName" class="inputbox" placeholder="Username" autofocus="" type="text">
+                    </div>
+                    <div class="row">
+                        <span>Password :</span>
+                        <input name="ctl00$content$txtPassword" id="ctl00_content_txtPassword" class="inputbox" placeholder="Password" type="password">
+                    </div>
+                    <div class="action">
+                        <div class="remember">
+                            <input id="ctl00_content_chkBoxRememberMe" name="ctl00$content$chkBoxRememberMe" type="checkbox">
+                            <label for="ctl00_content_chkBoxRememberMe">Keep me signed in</label>
+                        </div>
 
-                                                <input name="ctl00$content$btnLogin" value="Log In" id="ctl00_content_btnLogin" class="login" type="submit">
-                                            </div>
+                        <input name="ctl00$content$btnLogin" value="Log In" id="ctl00_content_btnLogin" class="login" type="submit">
+                    </div>
 
-                                        </div>
-                                        <a href="http://demo.dealpos.com/ForgotPassword.aspx" id="ctl00_content_linkForgot" class="forgot">Forgot your password?</a>
-                                        <div class="copyright">
-                                            <span>powered by :</span>
-                                            <a title="www.dealpos.com" target="_blank" href="http://www.dealpos.com/"></a>
-                                        </div>
-                                    </div>
+                </div>
+                <a href="http://demo.dealpos.com/ForgotPassword.aspx" id="ctl00_content_linkForgot" class="forgot">Forgot your password?</a>
+                <div class="copyright">
+                    <span>powered by :</span>
+                    <a title="www.dealpos.com" target="_blank" href="http://www.dealpos.com/"></a>
+                </div>
+            </div>
 
-                                </div>
-                            </form>
-                        </body>
-                        </html>
+        </div>
+    </form>
+</body>
+
+</html>

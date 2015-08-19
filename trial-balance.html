@@ -1,22 +1,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="ctl00_ctl00_html" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>
-	Demo DealPOS POS | Dashboard
-</title>
-    <link href="css/css_002.css" rel="stylesheet" type="text/css"/>
-    <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Demo DealPOS POS | Dashboard
+    </title>
+    <link href="css/css_002.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
     <script src="css/jquery-1.js" type="text/javascript"></script>
-    
-    <link href="css/core_002.css" rel="stylesheet" type="text/css"/>
-    <link href="css/jquery.css" rel="stylesheet" type="text/css"/>
-    
+
+    <link href="css/core_002.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.css" rel="stylesheet" type="text/css" />
+
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
     <link href="css/main.css" rel="stylesheet" type="text/css" />
-    
+
     <script type="text/javascript" src="css/jquery.js"></script>
     <script src="css/jquery_002.js" type="text/javascript"></script>
     <script type="text/javascript" src="css/core.js"></script>
@@ -36,10 +37,12 @@
     <link href="plugins/tables/dataTables/jquery.dataTables.css" type="text/css" rel="stylesheet" />
     <!-- Table plugins -->
     <script type="text/javascript" src="plugins/tables/dataTables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="plugins/tables/responsive-tables/responsive-tables.js"></script><!-- Make tables responsive -->
-    <script type="text/javascript" src="js/datatable.js"></script><!-- Init plugins only for page -->
+    <script type="text/javascript" src="plugins/tables/responsive-tables/responsive-tables.js"></script>
+    <!-- Make tables responsive -->
+    <script type="text/javascript" src="js/datatable.js"></script>
+    <!-- Init plugins only for page -->
     <!-- Important plugins put in all pages -->
-    <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>  
+    <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
     <link href="css/chosen.css" rel="stylesheet" type="text/css">
@@ -50,141 +53,146 @@
     <script src="js/initAccountsTree.js" type="text/javascript"></script>
     <script src="js/datepicker.js" type="text/javascript"></script>
 </head>
+
 <body>
-<div id="ctl00_ctl00_divContainer">
-<header>
-    <div id="header">
-        <div class="navbar">
-            <div class="navbar-inner">
-              <div class="container-fluid">
-                <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
-                <div class="nav-no-collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="icon16 icomoon-icon-cog"></span> Settings
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul>
-                                        <li>                                                    
-                                            <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
-                                        </li>
-                                        <li>                                                    
-                                            <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul class="messages">    
-                                        <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
-                                        <li>
-                                           <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
-                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
-                                            <span class="msg">I have question about new function ...</span>
-                                        </li>
-                                        <li>
-                                           <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
-                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
-                                            <span class="msg">I need to meet you urgent please call me ...</span>
-                                        </li>
-                                        <li>
-                                            <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
-                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
-                                            <span class="msg">I send you my suggestion, please look and ...</span>
-                                        </li>
-                                        <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+    <div id="ctl00_ctl00_divContainer">
+        <header>
+            <div id="header">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
+                            <div class="nav-no-collapse">
+                                <ul class="nav">
+                                    <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-cog"></span> Settings
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul class="messages">
+                                                    <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
+                                                    <li>
+                                                        <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
+                                                        <span class="msg">I have question about new function ...</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
+                                                        <span class="msg">I need to meet you urgent please call me ...</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
+                                                        <span class="msg">I send you my suggestion, please look and ...</span>
+                                                    </li>
+                                                    <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul class="nav pull-right usernav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul class="notif">
+                                                    <li class="header"><strong>Notifications</strong> (3) items</li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                            <span class="event">1 User is registred</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
+                                                            <span class="event">Jony add 1 comment</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
+                                                            <span class="event">admin Julia added post with a long description</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+                                            <img src="images/avatar.jpg" alt="" class="image" />
+                                            <span class="txt">admin@supr.com</span>
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.nav-collapse -->
+                        </div>
+                    </div>
+                    <!-- /navbar-inner -->
+                </div>
+                <!-- /navbar -->
+                <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Trial Balance</span></h1>
+                <div id="ctl00_ctl00_content_divActions" class="page_action">
+                    <ul>
+                        <li>
+                            <input name="" value="Export" title="Export" class="export" type="submit">
                         </li>
                     </ul>
-                  
-                    <ul class="nav pull-right usernav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul class="notif">
-                                        <li class="header"><strong>Notifications</strong> (3) items</li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
-                                                <span class="event">1 User is registred</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
-                                                <span class="event">Jony add 1 comment</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
-                                                <span class="event">admin Julia added post with a long description</span>
-                                            </a>
-                                        </li>
-                                        <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
-                                <img src="images/avatar.jpg" alt="" class="image" /> 
-                                <span class="txt">admin@supr.com</span>
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
-                    </ul>
-                </div><!-- /.nav-collapse -->
-              </div>
-            </div><!-- /navbar-inner -->
-          </div><!-- /navbar -->
-          <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>Trial Balance</span></h1>
-          <div id="ctl00_ctl00_content_divActions" class="page_action">
-            <ul>
-                <li>
-                    <input name="" value="Export" title="Export" class="export" type="submit">
-                </li>
-            </ul>
-        </div>
-    </div><!-- End #header -->
-</header>
-    <nav class="mCustomScrollbar _mCS_1">
-            <div class="mCustomScrollBox mCS-dark" id="mCSB_1" >
-                <div class="mCSB_container mCS_no_scrollbar" >
+                </div>
+            </div>
+            <!-- End #header -->
+        </header>
+        <nav class="mCustomScrollbar _mCS_1">
+            <div class="mCustomScrollBox mCS-dark" id="mCSB_1">
+                <div class="mCSB_container mCS_no_scrollbar">
                     <ul>
                         <li class="selected">
                             <a class="dashboard" href=""><i></i><span>Dashboard</span>
@@ -228,161 +236,162 @@
                 </div>
             </div>
         </nav>
-    <div class="content_scroll">
-        <div id="page_menu" class="page_menu">
-            <ul>
-                <li class="active"><a href="trial-balance.html">Trial Balance</a></li>
-                <li><a href="general-ledger.html">General Ledger</a></li>
-                <li><a href="BalanceSheet.html">Balance Sheet</a></li>
-                <li><a href="IncomeStatement.html">Income Statement</a></li>
-            </ul>
-            <div class="more_menu">
-                <a title="More menu" class=""></a>
-                <div style="display: none;" class="drop_menu"><strong>Account</strong>
-                    <ul>
-                        <li><a href="types.html">Account Types</a></li>
-                        <li><a href="accounts.html">Chart of Accounts</a></li>
-                        <li><a href="journal.html">Journal</a></li>
-                        <li><a href="dashboard-ac.html">Dashboard</a></li>
-                    </ul><strong>Report</strong>
-                    <ul>
-                        <li class="arrow"><a>Advanced</a>
-                            <ul>
-                                <li><a href="ComparativeBalance.html">Comparative Bal</a></li>
-                                <li><a href="Worksheet.html">Worksheet</a></li>
-                            </ul>
-                        </li>
-                        <li class="arrow"><a>Outlet</a>
-                            <ul>
-                                <li><a href="OutletExpense.html">Expense</a></li>
-                                <li><a href="OutletExpenseDetail.html">Expense Detail</a></li>
-                            </ul>
-                        </li>
-                    </ul><strong>Fixed Asset</strong>
-                    <ul>
-                        <li><a href="FixedAsset.html">Fixed Asset</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="tabContent">
-            <div class="filter clearfix">
-                <div class="row_wrapper" buttonid="btnFilter">
-                    <div class="row">
-                        <div class="column">
-                            <strong>Category</strong>
-                            <a id="ctl00_ctl00_content_content_AccountCategoryPicker1_linkAccountCode" class="picker" dialogid="ctl00_ctl00_content_content_AccountCategoryPicker1_dialogAccountCode">Choose..</a>
-                            <input name="" class="required" type="hidden">
-                        </div>
-                        <div class="column">
-                            <strong>From</strong>
-                            <input name="" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-                        </div>
-                        <div class="column">
-                            <strong>To</strong>
-                            <input name="" value="03 Aug 2015" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
-                        </div>
-                        <div class="column">
-                            <strong>Show All</strong>
-                            <ul id="ctl00_ctl00_content_content_radBtnListShowAll" class="float box">
-                                <li>
-                                    <input name="showall" value="true" checked="checked" type="radio">
-                                    <label for="ctl00_ctl00_content_content_radBtnListShowAll_0">Yes</label>
-                                </li>
-                                <li>
-                                    <input name="showall" value="false" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$content$content$radBtnListShowAll$1\',\'\')', 0)" type="radio">
-                                    <label for="ctl00_ctl00_content_content_radBtnListShowAll_1">No</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <input name="" value="Update" id="btnFilter" class="button-update right" type="submit">
-            </div>
-            <table cellpadding="0" cellspacing="0" border="0" class="responsive dynamicTable display table table-bordered" width="100%">
-                <thead>
-                    <tr class="header">
-                        <th width="100px">Category
-                        </th>
-                        <th>Account
-                        </th>
-                        <th width="100px">Start
-                        </th>
-                        <th width="100px">Debit
-                        </th>
-                        <th width="100px">Credit
-                        </th>
-                        <th width="100px">Balance
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-            </tbody>
-            </table>
-        <div>
-    </div>
-    </div>
-    <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
-    <div id="ctl00_ctl00_content_content_AccountCategoryPicker1_dialogAccountCode" class="dialog ui-dialog-content ui-widget-content">
-    <div role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_AccountCategoryPicker1_linkAccountCode" hfid="ctl00_ctl00_content_content_AccountCategoryPicker1_hfAccountCode">
-        <ul class="jstree-container-ul jstree-children">
-            <li aria-selected="false" class="jstree-node  jstree-open jstree-last" id="undefined" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
-            <i class="jstree-icon jstree-ocl"></i><a>Home</a>
-                <ul class="jstree-children" role="group">
-                    <li class="jstree-node  jstree-open">
-                        <i class="jstree-icon jstree-ocl"></i>
-                        <a>Asset - 1xxx</a>
-                        <ul class="jstree-children" role="group">
-                            <li>
-                                <i class="jstree-icon jstree-ocl"></i>
-                                <a>Fixed Assets</a>
-                            </li>
-                            <li>
-                                <i class="jstree-icon jstree-ocl"></i><a>Current Assets</a>
-                            </li>
-                            <li>
-                                <i class="jstree-icon jstree-ocl"></i>
-                                <a>Cash &amp; Banks</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="jstree-node  jstree-open">
-                        <i class="jstree-icon jstree-ocl"></i>
-                        <a >Liability - 2xxx</a>
-                        <ul class="jstree-children" role="group">
-                            <li class="jstree-node  jstree-open">
-                                <i class="jstree-icon jstree-ocl"></i>
-                                <a>Current Liabilities</a>
-                                <ul class="jstree-children" role="group">
-                                    <li class="jstree-node  jstree-leaf jstree-last">
-                                        <i class="jstree-icon jstree-ocl"></i>
-                                        <a>Rent Payable</a>
-                                    </li>
+        <div class="content_scroll">
+            <div id="page_menu" class="page_menu">
+                <ul>
+                    <li class="active"><a href="trial-balance.html">Trial Balance</a></li>
+                    <li><a href="general-ledger.html">General Ledger</a></li>
+                    <li><a href="BalanceSheet.html">Balance Sheet</a></li>
+                    <li><a href="IncomeStatement.html">Income Statement</a></li>
+                </ul>
+                <div class="more_menu">
+                    <a title="More menu" class=""></a>
+                    <div style="display: none;" class="drop_menu"><strong>Account</strong>
+                        <ul>
+                            <li><a href="types.html">Account Types</a></li>
+                            <li><a href="accounts.html">Chart of Accounts</a></li>
+                            <li><a href="journal.html">Journal</a></li>
+                            <li><a href="dashboard-ac.html">Dashboard</a></li>
+                        </ul><strong>Report</strong>
+                        <ul>
+                            <li class="arrow"><a>Advanced</a>
+                                <ul>
+                                    <li><a href="ComparativeBalance.html">Comparative Bal</a></li>
+                                    <li><a href="Worksheet.html">Worksheet</a></li>
                                 </ul>
                             </li>
-                            <li class="jstree-node  jstree-leaf jstree-last">
-                                <i class="jstree-icon jstree-ocl"></i>
-                                <a>Non-Current Liabilities</a>
+                            <li class="arrow"><a>Outlet</a>
+                                <ul>
+                                    <li><a href="OutletExpense.html">Expense</a></li>
+                                    <li><a href="OutletExpenseDetail.html">Expense Detail</a></li>
+                                </ul>
                             </li>
+                        </ul><strong>Fixed Asset</strong>
+                        <ul>
+                            <li><a href="FixedAsset.html">Fixed Asset</a></li>
                         </ul>
-                    </li>
-                    <li class="jstree-node  jstree-leaf">
-                        <i class="jstree-icon jstree-ocl"></i>
-                        <a>Equity - 3xxx</a>
-                    </li>
-                </ul>
-                <li class="jstree-node jstree-leaf">
-                    <i class="jstree-icon jstree-ocl"></i>
-                    <a>Revenue - 4xxx</a>
-                </li>
-                <li class="jstree-node  jstree-leaf jstree-last">
-                    <i class="jstree-icon jstree-ocl"></i>
-                    <a>Expense - 5xxx-8xxx</a>
-                </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabContent">
+                <div class="filter clearfix">
+                    <div class="row_wrapper" buttonid="btnFilter">
+                        <div class="row">
+                            <div class="column">
+                                <strong>Category</strong>
+                                <a id="ctl00_ctl00_content_content_AccountCategoryPicker1_linkAccountCode" class="picker" dialogid="ctl00_ctl00_content_content_AccountCategoryPicker1_dialogAccountCode">Choose..</a>
+                                <input name="" class="required" type="hidden">
+                            </div>
+                            <div class="column">
+                                <strong>From</strong>
+                                <input name="" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
+                            </div>
+                            <div class="column">
+                                <strong>To</strong>
+                                <input name="" value="03 Aug 2015" class="datepicker hasDatepicker" readonly="readonly" style="width:150px;" type="text">
+                            </div>
+                            <div class="column">
+                                <strong>Show All</strong>
+                                <ul id="ctl00_ctl00_content_content_radBtnListShowAll" class="float box">
+                                    <li>
+                                        <input name="showall" value="true" checked="checked" type="radio">
+                                        <label for="ctl00_ctl00_content_content_radBtnListShowAll_0">Yes</label>
+                                    </li>
+                                    <li>
+                                        <input name="showall" value="false" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$content$content$radBtnListShowAll$1\',\'\')', 0)" type="radio">
+                                        <label for="ctl00_ctl00_content_content_radBtnListShowAll_1">No</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input name="" value="Update" id="btnFilter" class="button-update right" type="submit">
+                </div>
+                <table cellpadding="0" cellspacing="0" border="0" class="responsive dynamicTable display table table-bordered" width="100%">
+                    <thead>
+                        <tr class="header">
+                            <th width="100px">Category
+                            </th>
+                            <th>Account
+                            </th>
+                            <th width="100px">Start
+                            </th>
+                            <th width="100px">Debit
+                            </th>
+                            <th width="100px">Credit
+                            </th>
+                            <th width="100px">Balance
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div>
+                </div>
+            </div>
+            <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
+                <div id="ctl00_ctl00_content_content_AccountCategoryPicker1_dialogAccountCode" class="dialog ui-dialog-content ui-widget-content">
+                    <div role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_AccountCategoryPicker1_linkAccountCode" hfid="ctl00_ctl00_content_content_AccountCategoryPicker1_hfAccountCode">
+                        <ul class="jstree-container-ul jstree-children">
+                            <li aria-selected="false" class="jstree-node  jstree-open jstree-last" id="undefined" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
+                                <i class="jstree-icon jstree-ocl"></i><a>Home</a>
+                                <ul class="jstree-children" role="group">
+                                    <li class="jstree-node  jstree-open">
+                                        <i class="jstree-icon jstree-ocl"></i>
+                                        <a>Asset - 1xxx</a>
+                                        <ul class="jstree-children" role="group">
+                                            <li>
+                                                <i class="jstree-icon jstree-ocl"></i>
+                                                <a>Fixed Assets</a>
+                                            </li>
+                                            <li>
+                                                <i class="jstree-icon jstree-ocl"></i><a>Current Assets</a>
+                                            </li>
+                                            <li>
+                                                <i class="jstree-icon jstree-ocl"></i>
+                                                <a>Cash &amp; Banks</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="jstree-node  jstree-open">
+                                        <i class="jstree-icon jstree-ocl"></i>
+                                        <a>Liability - 2xxx</a>
+                                        <ul class="jstree-children" role="group">
+                                            <li class="jstree-node  jstree-open">
+                                                <i class="jstree-icon jstree-ocl"></i>
+                                                <a>Current Liabilities</a>
+                                                <ul class="jstree-children" role="group">
+                                                    <li class="jstree-node  jstree-leaf jstree-last">
+                                                        <i class="jstree-icon jstree-ocl"></i>
+                                                        <a>Rent Payable</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="jstree-node  jstree-leaf jstree-last">
+                                                <i class="jstree-icon jstree-ocl"></i>
+                                                <a>Non-Current Liabilities</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="jstree-node  jstree-leaf">
+                                        <i class="jstree-icon jstree-ocl"></i>
+                                        <a>Equity - 3xxx</a>
+                                    </li>
+                                </ul>
+                                <li class="jstree-node jstree-leaf">
+                                    <i class="jstree-icon jstree-ocl"></i>
+                                    <a>Revenue - 4xxx</a>
+                                </li>
+                                <li class="jstree-node  jstree-leaf jstree-last">
+                                    <i class="jstree-icon jstree-ocl"></i>
+                                    <a>Expense - 5xxx-8xxx</a>
+                                </li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
 </body>
+
 </html>

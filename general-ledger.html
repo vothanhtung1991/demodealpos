@@ -1,22 +1,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="ctl00_ctl00_html" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>
-	Demo DealPOS POS | Dashboard
-</title>
-    <link href="css/css_002.css" rel="stylesheet" type="text/css"/>
-    <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Demo DealPOS POS | Dashboard
+    </title>
+    <link href="css/css_002.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
     <script src="css/jquery-1.js" type="text/javascript"></script>
-    
-    <link href="css/core_002.css" rel="stylesheet" type="text/css"/>
-    <link href="css/jquery.css" rel="stylesheet" type="text/css"/>
-    
+
+    <link href="css/core_002.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.css" rel="stylesheet" type="text/css" />
+
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
     <link href="css/main.css" rel="stylesheet" type="text/css" />
-    
+
     <script type="text/javascript" src="css/jquery.js"></script>
     <script src="css/jquery_002.js" type="text/javascript"></script>
     <script type="text/javascript" src="css/core.js"></script>
@@ -36,7 +37,7 @@
     <script src="css/dialog.js" type="text/javascript"></script>
 
     <!-- Important plugins put in all pages -->
-    <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>  
+    <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
     <script src="js/chosen.js" type="text/javascript"></script>
@@ -46,182 +47,187 @@
     <script src="js/initAccountsTree.js" type="text/javascript"></script>
 
 </head>
+
 <body>
-<div id="ctl00_ctl00_divContainer">
-<header>
-    <div id="header">
-        <div class="navbar">
-            <div class="navbar-inner">
-              <div class="container-fluid">
-                <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
-                <div class="nav-no-collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="icon16 icomoon-icon-cog"></span> Settings
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul>
-                                        <li>                                                    
-                                            <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
-                                        </li>
-                                        <li>                                                    
-                                            <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul class="messages">    
-                                        <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
-                                        <li>
-                                           <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
-                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
-                                            <span class="msg">I have question about new function ...</span>
-                                        </li>
-                                        <li>
-                                           <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
-                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
-                                            <span class="msg">I need to meet you urgent please call me ...</span>
-                                        </li>
-                                        <li>
-                                            <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
-                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
-                                            <span class="msg">I send you my suggestion, please look and ...</span>
-                                        </li>
-                                        <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                  
-                    <ul class="nav pull-right usernav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul class="notif">
-                                        <li class="header"><strong>Notifications</strong> (3) items</li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
-                                                <span class="event">1 User is registred</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
-                                                <span class="event">Jony add 1 comment</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
-                                                <span class="event">admin Julia added post with a long description</span>
-                                            </a>
-                                        </li>
-                                        <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
-                                <img src="images/avatar.jpg" alt="" class="image" /> 
-                                <span class="txt">admin@supr.com</span>
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="menu">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
-                    </ul>
-                </div><!-- /.nav-collapse -->
-              </div>
-            </div><!-- /navbar-inner -->
-          </div><!-- /navbar -->
-          <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>General Ledger</span></h1>
-          <div id="ctl00_ctl00_content_divActions" class="page_action">
-                <input name="" value="Export" title="Export" class="export" type="submit">
-                <a class="button" href="accounts.html">Return to Accounts</a>
-          </div>
-        </div>
-    </div><!-- End #header -->
-</header>
-    <nav class="mCustomScrollbar _mCS_1">
-            <div class="mCustomScrollBox mCS-dark" id="mCSB_1" >
-                <div class="mCSB_container mCS_no_scrollbar" >
-                    <ul>
-                        <li class="selected">
-                            <a class="dashboard" href=""><i></i><span>Dashboard</span>
-                            </a>
-                        </li>
-                    </ul><strong>Point of Sale</strong>
-                    <ul>
-                        <li>
-                            <a class="products" href=""><i></i><span>Products</span></a>
-                        </li>
-                        <li>
-                            <a class="sell" href=""><i></i><span>Sell</span></a>
-                        </li>
-                        <li>
-                            <a class="reports" href=""><i></i><span>Reports</span></a>
-                        </li>
-                    </ul><strong>Database</strong>
-                    <ul>
-                        <li><a class="contacts" href="contacts-customers.html"><i></i><span>Contacts</span></a></li>
-                        <li><a class="orders" href="order-customer-invoice.html"><i></i><span>Orders</span></a></li>
-                        <li><a class="payment" href="payment-purchases-daily.html"><i></i><span>Payment</span></a></li>
-                        <li><a class="debt" href="debt-receiveable.html"><i></i><span>Debt</span></a></li>
-                    </ul><strong>Warehouse</strong>
-                    <ul>
-                        <li><a class="inventory" href="inventory_detail.html"><i></i><span>Inventory</span></a></li>
-                        <li><a class="adjustment" href=" "><i></i><span>Adjustment</span></a></li>
-                        <li><a class="buy" href=" "><i></i><span>Buy</span></a></li>
-                        <li><a class="delivery" href=""><i></i><span>Delivery</span></a></li>
-                    </ul><strong>Add-ons</strong>
-                    <ul>
-                        <li><a class="accounting" href="accounts.html"><i></i><span>Accounting</span></a></li>
-                    </ul>
-                </div>
-                <div class="mCSB_scrollTools" style="position: absolute; display: none;">
-                    <div class="mCSB_draggerContainer">
-                        <div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;">
-                            <div class="mCSB_dragger_bar" style="position:relative;"></div>
+    <div id="ctl00_ctl00_divContainer">
+        <header>
+            <div id="header">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
+                            <div class="nav-no-collapse">
+                                <ul class="nav">
+                                    <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-cog"></span> Settings
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul class="messages">
+                                                    <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
+                                                    <li>
+                                                        <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
+                                                        <span class="msg">I have question about new function ...</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
+                                                        <span class="msg">I need to meet you urgent please call me ...</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
+                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
+                                                        <span class="msg">I send you my suggestion, please look and ...</span>
+                                                    </li>
+                                                    <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul class="nav pull-right usernav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul class="notif">
+                                                    <li class="header"><strong>Notifications</strong> (3) items</li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                            <span class="event">1 User is registred</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
+                                                            <span class="event">Jony add 1 comment</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
+                                                            <span class="event">admin Julia added post with a long description</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+                                            <img src="images/avatar.jpg" alt="" class="image" />
+                                            <span class="txt">admin@supr.com</span>
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.nav-collapse -->
                         </div>
-                        <div class="mCSB_draggerRail"></div>
                     </div>
+                    <!-- /navbar-inner -->
+                </div>
+                <!-- /navbar -->
+                <h1 id="ctl00_ctl00_content_pageHeaderTitle" class="accounting"><i></i><span>General Ledger</span></h1>
+                <div id="ctl00_ctl00_content_divActions" class="page_action">
+                    <input name="" value="Export" title="Export" class="export" type="submit">
+                    <a class="button" href="accounts.html">Return to Accounts</a>
                 </div>
             </div>
-        </nav>
+    </div>
+    <!-- End #header -->
+    </header>
+    <nav class="mCustomScrollbar _mCS_1">
+        <div class="mCustomScrollBox mCS-dark" id="mCSB_1">
+            <div class="mCSB_container mCS_no_scrollbar">
+                <ul>
+                    <li class="selected">
+                        <a class="dashboard" href=""><i></i><span>Dashboard</span>
+                            </a>
+                    </li>
+                </ul><strong>Point of Sale</strong>
+                <ul>
+                    <li>
+                        <a class="products" href=""><i></i><span>Products</span></a>
+                    </li>
+                    <li>
+                        <a class="sell" href=""><i></i><span>Sell</span></a>
+                    </li>
+                    <li>
+                        <a class="reports" href=""><i></i><span>Reports</span></a>
+                    </li>
+                </ul><strong>Database</strong>
+                <ul>
+                    <li><a class="contacts" href="contacts-customers.html"><i></i><span>Contacts</span></a></li>
+                    <li><a class="orders" href="order-customer-invoice.html"><i></i><span>Orders</span></a></li>
+                    <li><a class="payment" href="payment-purchases-daily.html"><i></i><span>Payment</span></a></li>
+                    <li><a class="debt" href="debt-receiveable.html"><i></i><span>Debt</span></a></li>
+                </ul><strong>Warehouse</strong>
+                <ul>
+                    <li><a class="inventory" href="inventory_detail.html"><i></i><span>Inventory</span></a></li>
+                    <li><a class="adjustment" href=" "><i></i><span>Adjustment</span></a></li>
+                    <li><a class="buy" href=" "><i></i><span>Buy</span></a></li>
+                    <li><a class="delivery" href=""><i></i><span>Delivery</span></a></li>
+                </ul><strong>Add-ons</strong>
+                <ul>
+                    <li><a class="accounting" href="accounts.html"><i></i><span>Accounting</span></a></li>
+                </ul>
+            </div>
+            <div class="mCSB_scrollTools" style="position: absolute; display: none;">
+                <div class="mCSB_draggerContainer">
+                    <div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;">
+                        <div class="mCSB_dragger_bar" style="position:relative;"></div>
+                    </div>
+                    <div class="mCSB_draggerRail"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="content_scroll">
         <div id="page_menu" class="page_menu">
             <ul>
@@ -276,61 +282,61 @@
                             <strong>Account</strong>
                             <input name="" id="hfAccountJSON" type="hidden">
                             <select size="4" name="" id="listAccount" class="chzn-select-deselect" multiple="multiple" style="width: 500px; display: none;">
-                                    <option value="b56fc8f3-20ae-410f-8754-21b09b21cd9e">Bank Account 1 (1900)</option>
-                                    <option value="e2ae95e9-8be0-4dea-bd94-05762438270e">Bank Account 2 (1901)</option>
-                                    <option value="e01aae3b-c71c-44f2-9af5-6d249277f405">Sales (200)</option>
-                                    <option value="4c0c0db6-8029-4660-bd4f-b4b398b84518">Payable 01 (2021)</option>
-                                    <option value="5f181b5d-6a64-4fec-a262-c057719522a4">Other Revenue (260)</option>
-                                    <option value="a64ce509-65a5-4706-97a3-f90cbbdc8e8a">Interest Income (270)</option>
-                                    <option value="86a8b18b-a1c3-4a49-9ac9-220118c2ff25">Advertising (400)</option>
-                                    <option value="6c42ce8d-c9c2-4586-b222-9e0db2697c44">Bank Fees (404)</option>
-                                    <option value="781783b6-121c-4cca-947f-1930dd80f5d4">Cleaning (408)</option>
-                                    <option value="082fa7bd-6851-4eba-9691-d08c8ea070ac">Consulting &amp; Accounting (412)</option>
-                                    <option value="eea4c5ca-8b10-45c9-be09-8dcd5cd2ba96">Depreciation (416)</option>
-                                    <option value="4ee186a0-851f-4af7-b848-97a357506d26">Entertainment (420)</option>
-                                    <option value="bf324565-df95-4510-b6b7-372766421042">Freight &amp; Courier (425)</option>
-                                    <option value="718fb227-8519-4962-832d-747db173c14b">General Expenses (429)</option>
-                                    <option value="4de3d701-eca7-48c7-a7b9-719e7f911cb3">Insurance (433)</option>
-                                    <option value="495eb5a6-ea7a-4a33-ae31-787bf9c9c8be">Interest Expense (437)</option>
-                                    <option value="b649b541-5e83-487d-8841-38fb437db5a6">Legal expenses (441)</option>
-                                    <option value="66b0a0c6-6796-4bc9-868c-7de00b499791">Light, Power, Heating (445)</option>
-                                    <option value="176b9d74-8f4f-446c-be00-d923df46877e">Motor Vehicle Expenses (449)</option>
-                                    <option value="ac87c617-21b9-42a0-97eb-0e473f7bd622">Office Expenses (453)</option>
-                                    <option value="3de32104-097c-4e25-a9c6-4d041aac29e3">Printing &amp; Stationery (461)</option>
-                                    <option value="7f3a4c5a-4db8-45a8-9ad4-3820c9777a96">Rent (469)</option>
-                                    <option value="1477e195-3e7d-44a0-9dc8-dcc7ac84262c">Repairs and Maintenance (473)</option>
-                                    <option value="fc72d9af-6206-4879-ba5d-897fd27496e6">Wages and Salaries (477)</option>
-                                    <option value="457a034c-d5c9-44d7-ae43-20c6fc0c89b6">Superannuation (478)</option>
-                                    <option value="dda4b03e-f62c-4b59-8734-8be5ae6e48b7">Subscriptions (485)</option>
-                                    <option value="9a82937f-fd46-49ad-b0fb-3e48ccda874b">Telephone &amp; Internet (489)</option>
-                                    <option value="a55341a5-00c4-459f-9f67-eacd1ed08fe7">Travel - National (493)</option>
-                                    <option value="11e36095-bfb8-4830-a6c4-953ee3361ab3">Travel - International (494)</option>
-                                    <option value="61b24245-45bb-4ec6-8697-7d64f45d2933">Income Tax Expense (505)</option>
-                                    <option value="5bdb9d61-05f1-4e87-90d4-ab6498b1406f">Phone Bills (5555)</option>
-                                    <option value="c0021c85-6228-4579-804c-660d9f8e88c8">Accounts Receivable (610)</option>
-                                    <option value="7ad2273c-f4a6-4450-9d47-2918f797dadf">Prepayments (620)</option>
-                                    <option value="e6622b2c-a2fc-4022-b856-965955413b02">Office Equipment (710)</option>
-                                    <option value="f9b20f00-2d63-421e-9441-1f7728c22c41">Less Accumulated Depreciation on Office Equipment (711)</option>
-                                    <option value="33f19052-29c0-44f6-870c-fc1fdb1adfa1">Computer Equipment (720)</option>
-                                    <option value="eb3f3633-4f00-4967-bc1c-60b1ee85c4a4">Less Accumulated Depreciation on Computer Equipmen (721)</option>
-                                    <option value="56e93f1a-80d2-4971-819d-d89cdfd48b7a">Accounts Payable (800)</option>
-                                    <option value="3d896e6a-f601-4bd3-83b9-70ea9da3798f">Unpaid Expense Claims (801)</option>
-                                    <option value="51c32d07-39e7-4691-848a-83aa68dae854">Wages Payable (803)</option>
-                                    <option value="5efd45d2-dee9-4bcb-95c5-df1c5fff8386">Sales Tax (820)</option>
-                                    <option value="b1da3321-78b8-49d4-b8c3-50d9d53bc50d">Employee Tax Payable (825)</option>
-                                    <option value="1ce9b4a4-287b-49c9-a2bd-95d29b058a7a">Superannuation Payable (826)</option>
-                                    <option value="0bfd8705-e89c-4249-ad87-942fcc26097b">Income Tax Payable (830)</option>
-                                    <option value="f173c334-d0e2-443c-ab4a-bce62d5d3244">Historical Adjustment (840)</option>
-                                    <option value="b69c8b19-8323-4506-81d7-0fd9851ddabd">Suspense (850)</option>
-                                    <option value="de7de562-8262-4fdd-872e-0792ce8d7625">Rounding (860)</option>
-                                    <option value="4e8bd79e-4a2c-4b9c-a270-1a230826e517">Tracking Transfers (877)</option>
-                                    <option value="a8424b65-ae83-46ab-9f9f-76ecc92077ac">Owner A Drawings (880)</option>
-                                    <option value="ef6085e8-d571-4f0d-8677-5c72b728e564">Owner A Funds Introduced (881)</option>
-                                    <option value="a1498b5e-9de8-4c56-866c-db529be272a8">Loan (900)</option>
-                                    <option value="0a8c64e6-aeb0-4248-bc17-fc2f7ad01967">Retained Earnings (960)</option>
-                                    <option value="ffe1ed8f-ee09-4b86-b2fd-d83ca102243e">Owner A Share Capital (9700)</option>
+                                <option value="b56fc8f3-20ae-410f-8754-21b09b21cd9e">Bank Account 1 (1900)</option>
+                                <option value="e2ae95e9-8be0-4dea-bd94-05762438270e">Bank Account 2 (1901)</option>
+                                <option value="e01aae3b-c71c-44f2-9af5-6d249277f405">Sales (200)</option>
+                                <option value="4c0c0db6-8029-4660-bd4f-b4b398b84518">Payable 01 (2021)</option>
+                                <option value="5f181b5d-6a64-4fec-a262-c057719522a4">Other Revenue (260)</option>
+                                <option value="a64ce509-65a5-4706-97a3-f90cbbdc8e8a">Interest Income (270)</option>
+                                <option value="86a8b18b-a1c3-4a49-9ac9-220118c2ff25">Advertising (400)</option>
+                                <option value="6c42ce8d-c9c2-4586-b222-9e0db2697c44">Bank Fees (404)</option>
+                                <option value="781783b6-121c-4cca-947f-1930dd80f5d4">Cleaning (408)</option>
+                                <option value="082fa7bd-6851-4eba-9691-d08c8ea070ac">Consulting &amp; Accounting (412)</option>
+                                <option value="eea4c5ca-8b10-45c9-be09-8dcd5cd2ba96">Depreciation (416)</option>
+                                <option value="4ee186a0-851f-4af7-b848-97a357506d26">Entertainment (420)</option>
+                                <option value="bf324565-df95-4510-b6b7-372766421042">Freight &amp; Courier (425)</option>
+                                <option value="718fb227-8519-4962-832d-747db173c14b">General Expenses (429)</option>
+                                <option value="4de3d701-eca7-48c7-a7b9-719e7f911cb3">Insurance (433)</option>
+                                <option value="495eb5a6-ea7a-4a33-ae31-787bf9c9c8be">Interest Expense (437)</option>
+                                <option value="b649b541-5e83-487d-8841-38fb437db5a6">Legal expenses (441)</option>
+                                <option value="66b0a0c6-6796-4bc9-868c-7de00b499791">Light, Power, Heating (445)</option>
+                                <option value="176b9d74-8f4f-446c-be00-d923df46877e">Motor Vehicle Expenses (449)</option>
+                                <option value="ac87c617-21b9-42a0-97eb-0e473f7bd622">Office Expenses (453)</option>
+                                <option value="3de32104-097c-4e25-a9c6-4d041aac29e3">Printing &amp; Stationery (461)</option>
+                                <option value="7f3a4c5a-4db8-45a8-9ad4-3820c9777a96">Rent (469)</option>
+                                <option value="1477e195-3e7d-44a0-9dc8-dcc7ac84262c">Repairs and Maintenance (473)</option>
+                                <option value="fc72d9af-6206-4879-ba5d-897fd27496e6">Wages and Salaries (477)</option>
+                                <option value="457a034c-d5c9-44d7-ae43-20c6fc0c89b6">Superannuation (478)</option>
+                                <option value="dda4b03e-f62c-4b59-8734-8be5ae6e48b7">Subscriptions (485)</option>
+                                <option value="9a82937f-fd46-49ad-b0fb-3e48ccda874b">Telephone &amp; Internet (489)</option>
+                                <option value="a55341a5-00c4-459f-9f67-eacd1ed08fe7">Travel - National (493)</option>
+                                <option value="11e36095-bfb8-4830-a6c4-953ee3361ab3">Travel - International (494)</option>
+                                <option value="61b24245-45bb-4ec6-8697-7d64f45d2933">Income Tax Expense (505)</option>
+                                <option value="5bdb9d61-05f1-4e87-90d4-ab6498b1406f">Phone Bills (5555)</option>
+                                <option value="c0021c85-6228-4579-804c-660d9f8e88c8">Accounts Receivable (610)</option>
+                                <option value="7ad2273c-f4a6-4450-9d47-2918f797dadf">Prepayments (620)</option>
+                                <option value="e6622b2c-a2fc-4022-b856-965955413b02">Office Equipment (710)</option>
+                                <option value="f9b20f00-2d63-421e-9441-1f7728c22c41">Less Accumulated Depreciation on Office Equipment (711)</option>
+                                <option value="33f19052-29c0-44f6-870c-fc1fdb1adfa1">Computer Equipment (720)</option>
+                                <option value="eb3f3633-4f00-4967-bc1c-60b1ee85c4a4">Less Accumulated Depreciation on Computer Equipmen (721)</option>
+                                <option value="56e93f1a-80d2-4971-819d-d89cdfd48b7a">Accounts Payable (800)</option>
+                                <option value="3d896e6a-f601-4bd3-83b9-70ea9da3798f">Unpaid Expense Claims (801)</option>
+                                <option value="51c32d07-39e7-4691-848a-83aa68dae854">Wages Payable (803)</option>
+                                <option value="5efd45d2-dee9-4bcb-95c5-df1c5fff8386">Sales Tax (820)</option>
+                                <option value="b1da3321-78b8-49d4-b8c3-50d9d53bc50d">Employee Tax Payable (825)</option>
+                                <option value="1ce9b4a4-287b-49c9-a2bd-95d29b058a7a">Superannuation Payable (826)</option>
+                                <option value="0bfd8705-e89c-4249-ad87-942fcc26097b">Income Tax Payable (830)</option>
+                                <option value="f173c334-d0e2-443c-ab4a-bce62d5d3244">Historical Adjustment (840)</option>
+                                <option value="b69c8b19-8323-4506-81d7-0fd9851ddabd">Suspense (850)</option>
+                                <option value="de7de562-8262-4fdd-872e-0792ce8d7625">Rounding (860)</option>
+                                <option value="4e8bd79e-4a2c-4b9c-a270-1a230826e517">Tracking Transfers (877)</option>
+                                <option value="a8424b65-ae83-46ab-9f9f-76ecc92077ac">Owner A Drawings (880)</option>
+                                <option value="ef6085e8-d571-4f0d-8677-5c72b728e564">Owner A Funds Introduced (881)</option>
+                                <option value="a1498b5e-9de8-4c56-866c-db529be272a8">Loan (900)</option>
+                                <option value="0a8c64e6-aeb0-4248-bc17-fc2f7ad01967">Retained Earnings (960)</option>
+                                <option value="ffe1ed8f-ee09-4b86-b2fd-d83ca102243e">Owner A Share Capital (9700)</option>
                             </select>
-                    </div>
+                        </div>
                     </div>
                     <div class="row filter_more" style="display: none">
                         <div class="column">
@@ -343,78 +349,79 @@
                 <a class="more">More Filter Options</a>
                 <input name="" value="Update" id="btnFilter" class="button-update right" type="submit">
             </div>
-            </div>
+        </div>
         <div>
-    </div>
+        </div>
     </div>
 
     <div aria-labelledby="ui-id-1" aria-describedby="ctl00_ctl00_content_content_acFilter_dialogAccountCode" role="dialog" tabindex="-1" style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
 
-    <div id="ctl00_ctl00_content_content_acFilter_dialogAccountCode" class="dialog ui-dialog-content ui-widget-content">
-    <div role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_acFilter_linkAccountCode" hfid="ctl00_ctl00_content_content_acFilter_hfAccountCode">
-    <ul class="jstree-container-ul jstree-children">
-        <li class="jstree-node  jstree-open jstree-last" id="undefined" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
-        <i class="jstree-icon jstree-ocl"></i>
-        <a href="#" class="jstree-anchor">
-        <i class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>Home</a>
-            <ul class="jstree-children" role="group">
-                <li class="jstree-node  jstree-open">
-                    <i class="jstree-icon jstree-ocl"></i>
-                    <a>Asset - 1xxx</a>
-                    <ul class="jstree-children" role="group">
-                        <li>
+        <div id="ctl00_ctl00_content_content_acFilter_dialogAccountCode" class="dialog ui-dialog-content ui-widget-content">
+            <div role="tree" class="myTree jstree jstree-1 jstree-default jstree-default-responsive" triggerid="ctl00_ctl00_content_content_acFilter_linkAccountCode" hfid="ctl00_ctl00_content_content_acFilter_hfAccountCode">
+                <ul class="jstree-container-ul jstree-children">
+                    <li class="jstree-node  jstree-open jstree-last" id="undefined" aria-expanded="true" data-jstree="{&quot;icon&quot;:&quot;images/plugin/jstree/icon/home.png&quot;, &quot;opened&quot; : true}" role="treeitem">
+                        <i class="jstree-icon jstree-ocl"></i>
+                        <a href="#" class="jstree-anchor">
+                            <i class="jstree-icon jstree-themeicon jstree-themeicon-custom"></i>Home</a>
+                        <ul class="jstree-children" role="group">
+                            <li class="jstree-node  jstree-open">
+                                <i class="jstree-icon jstree-ocl"></i>
+                                <a>Asset - 1xxx</a>
+                                <ul class="jstree-children" role="group">
+                                    <li>
+                                        <i class="jstree-icon jstree-ocl"></i>
+                                        <a>Fixed Assets</a>
+                                    </li>
+                                    <li>
+                                        <i class="jstree-icon jstree-ocl"></i><a>Current Assets</a>
+                                    </li>
+                                    <li>
+                                        <i class="jstree-icon jstree-ocl"></i>
+                                        <a>Cash &amp; Banks</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="jstree-node  jstree-open">
+                                <i class="jstree-icon jstree-ocl"></i>
+                                <a>Liability - 2xxx</a>
+                                <ul class="jstree-children" role="group">
+                                    <li class="jstree-node  jstree-open">
+                                        <i class="jstree-icon jstree-ocl"></i>
+                                        <a>Current Liabilities</a>
+                                        <ul class="jstree-children" role="group">
+                                            <li class="jstree-node  jstree-leaf jstree-last">
+                                                <i class="jstree-icon jstree-ocl"></i>
+                                                <a>Rent Payable</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="jstree-node  jstree-leaf jstree-last">
+                                        <i class="jstree-icon jstree-ocl"></i>
+                                        <a>Non-Current Liabilities</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="jstree-node  jstree-leaf">
+                                <i class="jstree-icon jstree-ocl"></i>
+                                <a>Equity - 3xxx</a>
+                            </li>
+                        </ul>
+                        <li class="jstree-node jstree-leaf">
                             <i class="jstree-icon jstree-ocl"></i>
-                            <a>Fixed Assets</a>
-                        </li>
-                        <li>
-                            <i class="jstree-icon jstree-ocl"></i><a>Current Assets</a>
-                        </li>
-                        <li>
-                            <i class="jstree-icon jstree-ocl"></i>
-                            <a>Cash &amp; Banks</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="jstree-node  jstree-open">
-                    <i class="jstree-icon jstree-ocl"></i>
-                    <a >Liability - 2xxx</a>
-                    <ul class="jstree-children" role="group">
-                        <li class="jstree-node  jstree-open">
-                            <i class="jstree-icon jstree-ocl"></i>
-                            <a>Current Liabilities</a>
-                            <ul class="jstree-children" role="group">
-                                <li class="jstree-node  jstree-leaf jstree-last">
-                                    <i class="jstree-icon jstree-ocl"></i>
-                                    <a>Rent Payable</a>
-                                </li>
-                            </ul>
+                            <a>Revenue - 4xxx</a>
                         </li>
                         <li class="jstree-node  jstree-leaf jstree-last">
                             <i class="jstree-icon jstree-ocl"></i>
-                            <a>Non-Current Liabilities</a>
+                            <a>Expense - 5xxx-8xxx</a>
                         </li>
-                    </ul>
+                </ul>
                 </li>
-                <li class="jstree-node  jstree-leaf">
-                    <i class="jstree-icon jstree-ocl"></i>
-                    <a>Equity - 3xxx</a>
-                </li>
-            </ul>
-            <li class="jstree-node jstree-leaf">
-                <i class="jstree-icon jstree-ocl"></i>
-                <a>Revenue - 4xxx</a>
-            </li>
-            <li class="jstree-node  jstree-leaf jstree-last">
-                <i class="jstree-icon jstree-ocl"></i>
-                <a>Expense - 5xxx-8xxx</a>
-            </li>
-        </ul>
-    </li>
-    </ul>
-    </div>
-</div>
+                </ul>
+            </div>
+        </div>
 
-</div>
+    </div>
 
 </body>
+
 </html>

@@ -1,786 +1,797 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="ctl00_ctl00_html" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>
-    Demo DealPOS POS | Dashboard
-</title>
-<link href="css/css_002.css" rel="stylesheet" type="text/css"/>
-<link href="css/css.css" rel="stylesheet" type="text/css"/>
-<script src="css/jquery-1.js" type="text/javascript"></script>
 
-<link href="css/core_002.css" rel="stylesheet" type="text/css"/>
-<link href="css/jquery.css" rel="stylesheet" type="text/css"/>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        Demo DealPOS POS | Dashboard
+    </title>
+    <link href="css/css_002.css" rel="stylesheet" type="text/css" />
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <script src="css/jquery-1.js" type="text/javascript"></script>
 
-<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
-<link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/core_002.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="css/jquery.js"></script>
-<script src="css/jquery_002.js" type="text/javascript"></script>
-<script type="text/javascript" src="css/core.js"></script>
-<script src="css/jquery_003.js" type="text/javascript"></script>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
 
-<link href="css/core.css" rel="stylesheet" type="text/css"/>
-<link href="css/icons.css" rel="stylesheet" type="text/css"/>
-<link href="css/home_dashboard.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="css/jquery.js"></script>
+    <script src="css/jquery_002.js" type="text/javascript"></script>
+    <script type="text/javascript" src="css/core.js"></script>
+    <script src="css/jquery_003.js" type="text/javascript"></script>
 
-<!-- Plugin stylesheets -->
-<link href="plugins/misc/qtip/jquery.qtip.css" rel="stylesheet" type="text/css" />
-<link href="plugins/forms/uniform/uniform.default.css" type="text/css" rel="stylesheet" />        
-<link href="plugins/tables/dataTables/jquery.dataTables.css" type="text/css" rel="stylesheet" />
-<script src="css/highcharts.js" type="text/javascript"></script>
-<!--<script src="css/LineHome.js" type="text/javascript"></script>-->
-<script src="css/jquery-ui-1.js" type="text/javascript"></script>
-<script src="css/dialog.js" type="text/javascript"></script>
+    <link href="css/core.css" rel="stylesheet" type="text/css" />
+    <link href="css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/home_dashboard.css" rel="stylesheet" type="text/css" />
 
-<!-- Important plugins put in all pages -->
-<script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>  
-<script type="text/javascript" src="js/jquery.cookie.js"></script>
-<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-<!-- Table plugins -->
-<script type="text/javascript" src="plugins/tables/dataTables/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="plugins/tables/responsive-tables/responsive-tables.js"></script><!-- Make tables responsive -->
-<link href="css/detail.css" rel="stylesheet" type="text/css">
-<script src="js/option.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/jquery-ui-1.css">
-<link rel="stylesheet" href="css/jquery-ui-app.css">
-<link rel="stylesheet" href="css/style.css">
-<link href="css/form.css" rel="stylesheet" type="text/css">
-<link href="css/app_custom.css" rel="stylesheet" type="text/css">
-<link href="css/chosen.css" rel="stylesheet" type="text/css">
-<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
-<script src="js/jquery-ui-1.js" type="text/javascript"></script>
-<script src="js/chosen.js" type="text/javascript"></script>
-<script src="js/chosen_002.js" type="text/javascript"></script>
-<script src="js/dialog.js" type="text/javascript"></script>
-<script src="js/form.js" type="text/javascript"></script>
-<script src="js/VariantTypeChange.js" type="text/javascript"></script>
-<script src="js/UI-tabs.js" type="text/javascript"></script>
-<script src="js/variant.js" type="text/javascript"></script>
-<script src="js/autocomplete.js" type="text/javascript"></script>
-<script src="js/autoNumeric-1.js" type="text/javascript"></script>
-<script src="js/autoNumericLoader.js" type="text/javascript"></script>
+    <!-- Plugin stylesheets -->
+    <link href="plugins/misc/qtip/jquery.qtip.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/forms/uniform/uniform.default.css" type="text/css" rel="stylesheet" />
+    <link href="plugins/tables/dataTables/jquery.dataTables.css" type="text/css" rel="stylesheet" />
+    <script src="css/highcharts.js" type="text/javascript"></script>
+    <!--<script src="css/LineHome.js" type="text/javascript"></script>-->
+    <script src="css/jquery-ui-1.js" type="text/javascript"></script>
+    <script src="css/dialog.js" type="text/javascript"></script>
+
+    <!-- Important plugins put in all pages -->
+    <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <!-- Table plugins -->
+    <script type="text/javascript" src="plugins/tables/dataTables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="plugins/tables/responsive-tables/responsive-tables.js"></script>
+    <!-- Make tables responsive -->
+    <link href="css/detail.css" rel="stylesheet" type="text/css">
+    <script src="js/option.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/jquery-ui-1.css">
+    <link rel="stylesheet" href="css/jquery-ui-app.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+    <link href="css/app_custom.css" rel="stylesheet" type="text/css">
+    <link href="css/chosen.css" rel="stylesheet" type="text/css">
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-ui-1.js" type="text/javascript"></script>
+    <script src="js/chosen.js" type="text/javascript"></script>
+    <script src="js/chosen_002.js" type="text/javascript"></script>
+    <script src="js/dialog.js" type="text/javascript"></script>
+    <script src="js/form.js" type="text/javascript"></script>
+    <script src="js/VariantTypeChange.js" type="text/javascript"></script>
+    <script src="js/UI-tabs.js" type="text/javascript"></script>
+    <script src="js/variant.js" type="text/javascript"></script>
+    <script src="js/autocomplete.js" type="text/javascript"></script>
+    <script src="js/autoNumeric-1.js" type="text/javascript"></script>
+    <script src="js/autoNumericLoader.js" type="text/javascript"></script>
 </head>
-<body>
-<form novalidate="novalidate" name="aspnetForm" method="post" action="" id="aspnetForm">
-    <div id="ctl00_ctl00_divContainer">
-        <header>
-            <div id="header">
-                <div class="navbar">
-                    <div class="navbar-inner">
-                        <div class="container-fluid">
-                            <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
-                            <div class="nav-no-collapse">
-                                <ul class="nav">
-                                    <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <span class="icon16 icomoon-icon-cog"></span> Settings
-                                            <b class="caret"></b>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="menu">
-                                                <ul>
-                                                    <li>                                              
-                                                        <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
-                                                    </li>
-                                                    <li>                                                
-                                                        <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="menu">
-                                                <ul class="messages">    
-                                                    <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
-                                                    <li>
-                                                        <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
-                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
-                                                        <span class="msg">I have question about new function ...</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
-                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
-                                                        <span class="msg">I need to meet you urgent please call me ...</span>
-                                                    </li>
-                                                    <li>
-                                                        <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
-                                                        <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
-                                                        <span class="msg">I send you my suggestion, please look and ...</span>
-                                                    </li>
-                                                    <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
 
-                                <ul class="nav pull-right usernav">
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="menu">
-                                                <ul class="notif">
-                                                    <li class="header"><strong>Notifications</strong> (3) items</li>
-                                                    <li>
-                                                        <a href="#">
+<body>
+    <form novalidate="novalidate" name="aspnetForm" method="post" action="" id="aspnetForm">
+        <div id="ctl00_ctl00_divContainer">
+            <header>
+                <div id="header">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="container-fluid">
+                                <a class="brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
+                                <div class="nav-no-collapse">
+                                    <ul class="nav">
+                                        <li class="active"><a href="dashboard.html"><span class="icon16 icomoon-icon-screen-2"></span> Dashboard</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                <span class="icon16 icomoon-icon-cog"></span> Settings
+                                                <b class="caret"></b>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="menu">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"><span class="icon16 icomoon-icon-equalizer"></span>Site config</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><span class="icon16 icomoon-icon-wrench"></span>Plugins</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><span class="icon16 icomoon-icon-picture-2"></span>Themes</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                <span class="icon16 icomoon-icon-mail-3"></span>Messages <span class="notification">8</span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="menu">
+                                                    <ul class="messages">
+                                                        <li class="header"><strong>Messages</strong> (10) emails and (2) PM</li>
+                                                        <li>
                                                             <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
-                                                            <span class="event">1 User is registred</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
-                                                            <span class="event">Jony add 1 comment</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
-                                                            <span class="event">admin Julia added post with a long description</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
-                                            <img src="images/avatar.jpg" alt="" class="image" /> 
-                                            <span class="txt">admin@supr.com</span>
-                                            <b class="caret"></b>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="menu">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
-                                </ul>
-                            </div><!-- /.nav-collapse -->
+                                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Sammy Morerira</strong></a><span class="time">35 min ago</span></span>
+                                                            <span class="msg">I have question about new function ...</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="icon avatar"><img src="images/avatar.jpg" alt="" /></span>
+                                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>George Michael</strong></a><span class="time">1 hour ago</span></span>
+                                                            <span class="msg">I need to meet you urgent please call me ...</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="icon"><span class="icon16 icomoon-icon-mail-3"></span></span>
+                                                            <span class="name"><a data-toggle="modal" href="#myModal1"><strong>Ivanovich</strong></a><span class="time">1 day ago</span></span>
+                                                            <span class="msg">I send you my suggestion, please look and ...</span>
+                                                        </li>
+                                                        <li class="view-all"><a href="#">View all messages <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="nav pull-right usernav">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                <span class="icon16 icomoon-icon-bell-2"></span><span class="notification">3</span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="menu">
+                                                    <ul class="notif">
+                                                        <li class="header"><strong>Notifications</strong> (3) items</li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="icon"><span class="icon16 icomoon-icon-user-3"></span></span>
+                                                                <span class="event">1 User is registred</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="icon"><span class="icon16 icomoon-icon-comments-4"></span></span>
+                                                                <span class="event">Jony add 1 comment</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="icon"><span class="icon16 icomoon-icon-new-2"></span></span>
+                                                                <span class="event">admin Julia added post with a long description</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+                                                <img src="images/avatar.jpg" alt="" class="image" />
+                                                <span class="txt">admin@supr.com</span>
+                                                <b class="caret"></b>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="menu">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"><span class="icon16 icomoon-icon-user-3"></span>Edit profile</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><span class="icon16 icomoon-icon-comments-2"></span>Approve comments</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><span class="icon16 icomoon-icon-plus-2"></span>Add user</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span> Logout</a></li>
+                                    </ul>
+                                </div>
+                                <!-- /.nav-collapse -->
+                            </div>
                         </div>
-                    </div><!-- /navbar-inner -->
-                </div><!-- /navbar -->
-                <h1 class="accounting"><i></i><span>Variant Form</span></h1>
-                <div id="ctl00_ctl00_content_divActions" class="page_action">
-                    <input name="" value="Submit" onclick="CopyJSONData();" class="button" type="submit">
-                </div>
-            </div><!-- End #header -->
-        </header>
-        <nav class="mCustomScrollbar _mCS_1">
-            <div class="mCustomScrollBox mCS-dark" id="mCSB_1" >
-                <div class="mCSB_container mCS_no_scrollbar" >
-                    <ul>
-                        <li class="selected">
-                            <a class="dashboard" href=""><i></i><span>Dashboard</span>
-                            </a>
-                        </li>
-                    </ul><strong>Point of Sale</strong>
-                    <ul>
-                        <li>
-                            <a class="products" href=""><i></i><span>Products</span></a>
-                        </li>
-                        <li>
-                            <a class="sell" href=""><i></i><span>Sell</span></a>
-                        </li>
-                        <li>
-                            <a class="reports" href=""><i></i><span>Reports</span></a>
-                        </li>
-                    </ul><strong>Database</strong>
-                    <ul>
-                        <li><a class="contacts" href="contacts-customers.html"><i></i><span>Contacts</span></a></li>
-                        <li><a class="orders" href="order-customer-invoice.html"><i></i><span>Orders</span></a></li>
-                        <li><a class="payment" href="payment-purchases-daily.html"><i></i><span>Payment</span></a></li>
-                        <li><a class="debt" href="debt-receiveable.html"><i></i><span>Debt</span></a></li>
-                    </ul><strong>Warehouse</strong>
-                    <ul>
-                        <li><a class="inventory" href="inventory_detail.html"><i></i><span>Inventory</span></a></li>
-                        <li><a class="adjustment" href=" "><i></i><span>Adjustment</span></a></li>
-                        <li><a class="buy" href=" "><i></i><span>Buy</span></a></li>
-                        <li><a class="delivery" href=""><i></i><span>Delivery</span></a></li>
-                    </ul><strong>Add-ons</strong>
-                    <ul>
-                        <li><a class="accounting" href="accounts.html"><i></i><span>Accounting</span></a></li>
-                    </ul>
-                </div>
-                <div class="mCSB_scrollTools" style="position: absolute; display: none;">
-                    <div class="mCSB_draggerContainer">
-                        <div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;">
-                            <div class="mCSB_dragger_bar" style="position:relative;"></div>
-                        </div>
-                        <div class="mCSB_draggerRail"></div>
+                        <!-- /navbar-inner -->
+                    </div>
+                    <!-- /navbar -->
+                    <h1 class="accounting"><i></i><span>Variant Form</span></h1>
+                    <div id="ctl00_ctl00_content_divActions" class="page_action">
+                        <input name="" value="Submit" onclick="CopyJSONData();" class="button" type="submit">
                     </div>
                 </div>
-            </div>
-        </nav>
-        <div class="content_scroll">
-            <div id="page_menu" class="page_menu">
-                <ul>
-                     <li><a href="product-cat.html">Categories</a></li>
-                     <li><a href="product.html">Products</a></li>
-                     <li class="active"><a href="Variants.html">Variants</a></li>
-                </ul>
-                <div class="more_menu"><a title="More menu" class=""></a>
-                    <div class="drop_menu"><strong>Catalog</strong>
+                <!-- End #header -->
+            </header>
+            <nav class="mCustomScrollbar _mCS_1">
+                <div class="mCustomScrollBox mCS-dark" id="mCSB_1">
+                    <div class="mCSB_container mCS_no_scrollbar">
                         <ul>
-                            <li><a href="product-cat.html">Category</a></li>
-                            <li><a href="product.html">Products</a></li>
-                        </ul><strong>Setup</strong>
+                            <li class="selected">
+                                <a class="dashboard" href=""><i></i><span>Dashboard</span>
+                            </a>
+                            </li>
+                        </ul><strong>Point of Sale</strong>
                         <ul>
-                            <li><a href="measurement.html">Measurement</a></li>
-                            <li><a href="uom.html">UOM</a></li>
-                            <li><a href="pricebook.html">Pricebook</a></li>
-                            <li><a href="set-category-price.html">Set Category Price</a></li>
-                        </ul><strong>Print</strong>
+                            <li>
+                                <a class="products" href=""><i></i><span>Products</span></a>
+                            </li>
+                            <li>
+                                <a class="sell" href=""><i></i><span>Sell</span></a>
+                            </li>
+                            <li>
+                                <a class="reports" href=""><i></i><span>Reports</span></a>
+                            </li>
+                        </ul><strong>Database</strong>
                         <ul>
-                            <li><a href="product-barcode.html" target="_blank">Product Barcode</a></li>
+                            <li><a class="contacts" href="contacts-customers.html"><i></i><span>Contacts</span></a></li>
+                            <li><a class="orders" href="order-customer-invoice.html"><i></i><span>Orders</span></a></li>
+                            <li><a class="payment" href="payment-purchases-daily.html"><i></i><span>Payment</span></a></li>
+                            <li><a class="debt" href="debt-receiveable.html"><i></i><span>Debt</span></a></li>
+                        </ul><strong>Warehouse</strong>
+                        <ul>
+                            <li><a class="inventory" href="inventory_detail.html"><i></i><span>Inventory</span></a></li>
+                            <li><a class="adjustment" href=" "><i></i><span>Adjustment</span></a></li>
+                            <li><a class="buy" href=" "><i></i><span>Buy</span></a></li>
+                            <li><a class="delivery" href=""><i></i><span>Delivery</span></a></li>
+                        </ul><strong>Add-ons</strong>
+                        <ul>
+                            <li><a class="accounting" href="accounts.html"><i></i><span>Accounting</span></a></li>
                         </ul>
                     </div>
+                    <div class="mCSB_scrollTools" style="position: absolute; display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div class="mCSB_dragger" style="position: absolute; top: 0px;" oncontextmenu="return false;">
+                                <div class="mCSB_dragger_bar" style="position:relative;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="tabContent">
-                <input name="" id="hfItemsJSON" type="hidden">
-                <input name="" id="hfitemOutletPriceJSON" type="hidden">
-                <input name="" id="hfitemPriceBookJSON" type="hidden">
-                <div id="tabs" class="clearfix ui-tabs ui-widget ui-widget-content ui-corner-all">
-                    <ul role="tablist" class="tabs ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
-                        <li aria-expanded="true" aria-selected="true" aria-labelledby="ui-id-4" aria-controls="tabs-1" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active ui-state-active">
-                            <a id="ui-id-4" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-1"><span class="general">General</span></a>
-                        </li>
-                        <li aria-expanded="false" aria-selected="false" aria-labelledby="ui-id-5" aria-controls="tabs-2" tabindex="-1" role="tab" class="ui-state-default ui-corner-top">
-                            <a id="ui-id-5" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-2"><span class="advanced">Advanced</span></a>
-                        </li>
-                        <li aria-expanded="false" aria-selected="false" aria-labelledby="ui-id-6" aria-controls="tabs-3" tabindex="-1" role="tab" class="ui-state-default ui-corner-top">
-                            <a id="ui-id-6" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-3"><span class="configuration">Configuration</span></a>
-                        </li>
+            </nav>
+            <div class="content_scroll">
+                <div id="page_menu" class="page_menu">
+                    <ul>
+                        <li><a href="product-cat.html">Categories</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li class="active"><a href="Variants.html">Variants</a></li>
                     </ul>
-                <div aria-hidden="false" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-4" id="tabs-1">
-            <div class="row_section clearfix">
-                <div class="section_info">
-                    <strong>General</strong>
-                </div>
-                <div class="section_content">
-                    <div class="section_full clearfix">
-                        <strong>Name</strong>
-                        <input name="" id="txtName" class="txt required" type="text">
-                    </div>
-                    <div class="section_full clearfix">
-                        <div class="section_left">
-                            <strong>Product</strong>
-                            <input autocomplete="off" name="" id="txtInput" class="autocomplete required ui-autocomplete-input valid txtProduct" wsmethod="GetProductSuggestionByCodeNName" onselecthandler="OnProductSelect" hfid="hfID" callbackarg="RefreshInfo" type="text">
-                            <input name="" id="hfID" type="hidden">
-                        </div>
-                        <div class="section_right">
-                            <div class="section_left">
-                                <strong>Variant</strong>
-                                <input name="" id="txtModel" class="txt required" type="text">
-                            </div>
-                            <div class="section_right">
-                                <strong>Code</strong>
-                                <input name="" id="txtCode" class="txt" type="text">
-                            </div>
+                    <div class="more_menu">
+                        <a title="More menu" class=""></a>
+                        <div class="drop_menu"><strong>Catalog</strong>
+                            <ul>
+                                <li><a href="product-cat.html">Category</a></li>
+                                <li><a href="product.html">Products</a></li>
+                            </ul><strong>Setup</strong>
+                            <ul>
+                                <li><a href="measurement.html">Measurement</a></li>
+                                <li><a href="uom.html">UOM</a></li>
+                                <li><a href="pricebook.html">Pricebook</a></li>
+                                <li><a href="set-category-price.html">Set Category Price</a></li>
+                            </ul><strong>Print</strong>
+                            <ul>
+                                <li><a href="product-barcode.html" target="_blank">Product Barcode</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="tabContent">
+                    <input name="" id="hfItemsJSON" type="hidden">
+                    <input name="" id="hfitemOutletPriceJSON" type="hidden">
+                    <input name="" id="hfitemPriceBookJSON" type="hidden">
+                    <div id="tabs" class="clearfix ui-tabs ui-widget ui-widget-content ui-corner-all">
+                        <ul role="tablist" class="tabs ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+                            <li aria-expanded="true" aria-selected="true" aria-labelledby="ui-id-4" aria-controls="tabs-1" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active ui-state-active">
+                                <a id="ui-id-4" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-1"><span class="general">General</span></a>
+                            </li>
+                            <li aria-expanded="false" aria-selected="false" aria-labelledby="ui-id-5" aria-controls="tabs-2" tabindex="-1" role="tab" class="ui-state-default ui-corner-top">
+                                <a id="ui-id-5" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-2"><span class="advanced">Advanced</span></a>
+                            </li>
+                            <li aria-expanded="false" aria-selected="false" aria-labelledby="ui-id-6" aria-controls="tabs-3" tabindex="-1" role="tab" class="ui-state-default ui-corner-top">
+                                <a id="ui-id-6" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-3"><span class="configuration">Configuration</span></a>
+                            </li>
+                        </ul>
+                        <div aria-hidden="false" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-4" id="tabs-1">
+                            <div class="row_section clearfix">
+                                <div class="section_info">
+                                    <strong>General</strong>
+                                </div>
+                                <div class="section_content">
+                                    <div class="section_full clearfix">
+                                        <strong>Name</strong>
+                                        <input name="" id="txtName" class="txt required" type="text">
+                                    </div>
+                                    <div class="section_full clearfix">
+                                        <div class="section_left">
+                                            <strong>Product</strong>
+                                            <input autocomplete="off" name="" id="txtInput" class="autocomplete required ui-autocomplete-input valid txtProduct" wsmethod="GetProductSuggestionByCodeNName" onselecthandler="OnProductSelect" hfid="hfID" callbackarg="RefreshInfo" type="text">
+                                            <input name="" id="hfID" type="hidden">
+                                        </div>
+                                        <div class="section_right">
+                                            <div class="section_left">
+                                                <strong>Variant</strong>
+                                                <input name="" id="txtModel" class="txt required" type="text">
+                                            </div>
+                                            <div class="section_right">
+                                                <strong>Code</strong>
+                                                <input name="" id="txtCode" class="txt" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div class="row_section clearfix">
-                <div class="section_info">
-                    <strong>Pricing and Types</strong>
-                </div>
-                <div class="section_content">
-                    <div class="section_full clearfix">
-                        <div class="section_left">
-                            <strong class="no-block">Cost</strong><span class="note"> cost of goods sold</span>
-                            <input name="" class="partialWidth txtUnitCost txtPrice" type="text">
-                            <select style="display: none;" name="" class="chzn-select-deselect currency">
-                                <option selected="selected" value="1">$</option>
-                                <option value="2">E</option>
-                            </select>
+                            <div class="row_section clearfix">
+                                <div class="section_info">
+                                    <strong>Pricing and Types</strong>
+                                </div>
+                                <div class="section_content">
+                                    <div class="section_full clearfix">
+                                        <div class="section_left">
+                                            <strong class="no-block">Cost</strong><span class="note"> cost of goods sold</span>
+                                            <input name="" class="partialWidth txtUnitCost txtPrice" type="text">
+                                            <select style="display: none;" name="" class="chzn-select-deselect currency">
+                                                <option selected="selected" value="1">$</option>
+                                                <option value="2">E</option>
+                                            </select>
+                                        </div>
+                                        <div class="section_right">
+                                            <strong class="no-block">Price</strong><span class="note">price to sell to customer</span>
+                                            <input name="" class="partialWidth txtPrice" type="text">
+                                            <select style="display: none;" name="" id="ddlPriceCurrency" class="chzn-select-deselect currency">
+                                                <option selected="selected" value="1">$</option>
+                                                <option value="2">E</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="section_full clearfix">
+                                        <div class="section_left">
+                                            <strong>Type</strong>
+                                            <select name="" id="ddlType" class="chzn-select" style="width: 100%; display: none;">
+                                                <option selected="selected" value="1">Standard</option>
+                                                <option value="2">Non-Inventory</option>
+                                                <option value="3">Composite</option>
+                                                <option value="4">Serialized</option>
+                                                <option value="5">Manufactured</option>
+                                                <option value="6">Complementary</option>
+                                                <option value="7">Standard With Parent</option>
+                                            </select>
+                                        </div>
+                                        <div class="section_right">
+                                            <strong>UOM</strong>
+                                            <select name="" class="chzn-select-deselect" style="width: 100%; display: none;">
+                                                <option selected="selected" value=""></option>
+                                                <option value="1b91ce37-8de6-4a30-a4fc-cfd71352a5e9">H?p</option>
+                                                <option value="b7f973ec-6f92-4432-b393-b2c373a61a6a">pcs</option>
+                                                <option value="d61b8430-6392-49d9-b2f4-286589db1d25">Roll</option>
+                                                <option value="81b22aec-5056-4d42-8444-c713f92c4d54">V?</option>
+                                                <option value="027cdd67-8241-4f8d-93c4-c1dbb3a14bea">Viên</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_section clearfix">
+                                <div class="section_info">
+                                    <strong>Inventory</strong>
+                                </div>
+                                <div id="ctl00_ctl00_content_content_divStockContent" class="section_content">
+                                    <div class="body">
+                                        <table class="plain">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 100%">Outlet
+                                                    </th>
+                                                    <th style="width: 10px"></th>
+                                                    <th style="width: 200px">Inventory</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 80px">
+                                                        Branch1
+                                                    </td>
+                                                    <td class="sep">:
+                                                    </td>
+                                                    <td>
+                                                        <input name="" value="" type="hidden">
+                                                        <input name="" id="" class="txtPrice" type="text">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_section clearfix">
+                                <div class="section_info">
+                                    <strong>Miscellaneous</strong>
+                                </div>
+                                <div class="section_content">
+                                    <div class="section_full clearfix">
+                                        <div class="section_left">
+                                            <strong>Supplier</strong>
+                                            <input autocomplete="off" name="" class="autocomplete contact ui-autocomplete-input" wsmethod="GetSupplierSuggestion" hfid="ctl00_ctl00_content_content_acSupplier_hfID" type="text">
+                                            <input name="ctl00$ctl00$content$content$acSupplier$hfID" id="ctl00_ctl00_content_content_acSupplier_hfID" type="hidden">
+                                        </div>
+                                        <div class="section_right">
+                                            <strong>Discontinued</strong>
+                                            <ul class="float box">
+                                                <li>
+                                                    <input id="DiscontinuedY" name="nameDiscontinued" value="true" type="radio">
+                                                    <label for="DiscontinuedY">Yes</label>
+                                                </li>
+                                                <li>
+                                                    <input id="DiscontinuedN" name="nameDiscontinued" value="false" type="radio">
+                                                    <label for="DiscontinuedN">No</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="section_full clearfix">
+                                        <strong>Description</strong>
+                                        <textarea name="" rows="2" cols="20" id=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="section_right">
-                            <strong class="no-block">Price</strong><span class="note">price to sell to customer</span>
-                            <input name="" class="partialWidth txtPrice" type="text">
-                            <select style="display: none;" name="" id="ddlPriceCurrency" class="chzn-select-deselect currency">
-                                <option selected="selected" value="1">$</option>
-                                <option value="2">E</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="section_full clearfix">
-                        <div class="section_left">
-                            <strong>Type</strong>
-                            <select name="" id="ddlType" class="chzn-select" style="width: 100%; display: none;">
-                                <option selected="selected" value="1">Standard</option>
-                                <option value="2">Non-Inventory</option>
-                                <option value="3">Composite</option>
-                                <option value="4">Serialized</option>
-                                <option value="5">Manufactured</option>
-                                <option value="6">Complementary</option>
-                                <option value="7">Standard With Parent</option>
-                            </select>
-                        </div>
-                        <div class="section_right">
-                            <strong>UOM</strong>
-                            <select name="" class="chzn-select-deselect" style="width: 100%; display: none;">
-                                <option selected="selected" value=""></option>
-                                <option value="1b91ce37-8de6-4a30-a4fc-cfd71352a5e9">H?p</option>
-                                <option value="b7f973ec-6f92-4432-b393-b2c373a61a6a">pcs</option>
-                                <option value="d61b8430-6392-49d9-b2f4-286589db1d25">Roll</option>
-                                <option value="81b22aec-5056-4d42-8444-c713f92c4d54">V?</option>
-                                <option value="027cdd67-8241-4f8d-93c4-c1dbb3a14bea">Viên</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row_section clearfix">
-                <div class="section_info">
-                    <strong>Inventory</strong>
-                </div>
-                <div id="ctl00_ctl00_content_content_divStockContent" class="section_content">
-                    <div class="body">
-                        <table class="plain">
-                            <thead>
-                                <tr>
-                                    <th style="width: 100%">Outlet
-                                    </th>
-                                    <th style="width: 10px"></th>
-                                    <th style="width: 200px">Inventory</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="width: 80px">
-                                        Branch1
-                                    </td>
-                                    <td class="sep">:
-                                    </td>
-                                    <td>
-                                        <input name="" value="" type="hidden">
-                                        <input name="" id="" class="txtPrice" type="text">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row_section clearfix">
-                <div class="section_info">
-                    <strong>Miscellaneous</strong>
-                </div>
-                <div class="section_content">
-                    <div class="section_full clearfix">
-                        <div class="section_left">
-                            <strong>Supplier</strong>
-                            <input autocomplete="off" name="" class="autocomplete contact ui-autocomplete-input" wsmethod="GetSupplierSuggestion" hfid="ctl00_ctl00_content_content_acSupplier_hfID" type="text">
-                            <input name="ctl00$ctl00$content$content$acSupplier$hfID" id="ctl00_ctl00_content_content_acSupplier_hfID" type="hidden">
-                        </div>
-                        <div class="section_right">
-                            <strong>Discontinued</strong>
-                            <ul class="float box">
-                                <li>
-                                    <input id="DiscontinuedY" name="nameDiscontinued" value="true" type="radio">
-                                    <label for="DiscontinuedY">Yes</label>
-                                </li>
-                                <li>
-                                    <input id="DiscontinuedN" name="nameDiscontinued" value="false" type="radio">
-                                    <label for="DiscontinuedN">No</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section_full clearfix">
-                        <strong>Description</strong>
-                        <textarea name="" rows="2" cols="20" id=""></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div aria-hidden="true" style="display: none;" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-5" id="tabs-2">
-            <div class="row_section clearfix">
-                <div class="section_info">
-                    <strong>Calculation</strong>
-                </div>
-                <div class="section_content">
-                    <div class="section_full clearfix">
-                        <div class="section_left">
-                            <strong>Enabled Loyalty Point</strong>
-                            <ul class="float box">
-                                <li>
-                                    <input id="LoyaltyY" name="nameLoyalty" value="true" type="radio">
-                                    <label for="LoyaltyY">Yes</label>
-                                </li>
-                                <li>
-                                    <input id="LoyaltyN" name="nameLoyalty" value="false" type="radio">
-                                    <label for="LoyaltyN">No</label>
-                                </li>
-                            </ul>
+                        <div aria-hidden="true" style="display: none;" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-5" id="tabs-2">
+                            <div class="row_section clearfix">
+                                <div class="section_info">
+                                    <strong>Calculation</strong>
+                                </div>
+                                <div class="section_content">
+                                    <div class="section_full clearfix">
+                                        <div class="section_left">
+                                            <strong>Enabled Loyalty Point</strong>
+                                            <ul class="float box">
+                                                <li>
+                                                    <input id="LoyaltyY" name="nameLoyalty" value="true" type="radio">
+                                                    <label for="LoyaltyY">Yes</label>
+                                                </li>
+                                                <li>
+                                                    <input id="LoyaltyN" name="nameLoyalty" value="false" type="radio">
+                                                    <label for="LoyaltyN">No</label>
+                                                </li>
+                                            </ul>
 
-                        </div>
-                        <div class="section_right">
-                            <strong>Taxable</strong>
-                            <ul class="float box">
-                                <li>
-                                    <input id="TaxableY" name="TaxableY" value="true" type="radio">
-                                    <label for="TaxableY">Yes</label>
-                                </li>
-                                <li>
-                                    <input id="TaxableN" name="TaxableY" value="false" type="radio">
-                                    <label for="TaxableN">No</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row_section clearfix">
-                <div class="section_info">
-                    <strong>Unit of Measurement</strong>
-                </div>
-                <div class="section_content">
-                    <div class="section_full clearfix">
-                        <div class="section_left">
-                            <strong>UOM SUB QUANTITY</strong>
-                            <select name="" id="" class="chzn-select-deselect" style="width: 100%; display: none;">
-                                <option selected="selected" value=""></option>
-                                <option value="1b91ce37-8de6-4a30-a4fc-cfd71352a5e9">H?p</option>
-                                <option value="b7f973ec-6f92-4432-b393-b2c373a61a6a">pcs</option>
-                                <option value="d61b8430-6392-49d9-b2f4-286589db1d25">Roll</option>
-                                <option value="81b22aec-5056-4d42-8444-c713f92c4d54">V?</option>
-                                <option value="027cdd67-8241-4f8d-93c4-c1dbb3a14bea">Viên</option>
-                            </select>
-                        </div>
-                        <div class="section_right">
-                            <strong>UOM</strong>
-                            <select name="" class="chzn-select-deselect" style="width: 100%; display: none;">
-                                <option selected="selected" value=""></option>
-                                <option value="3e135053-0408-4bf0-b327-0bee350ef778">Length</option>
-                                <option value="0df132c9-9ea5-4dfb-a9aa-9e106ba3b78c">Volume</option>
-                                <option value="4c168e09-edd1-4f8d-8083-c4e60d525492">Weight</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row_section clearfix">
-                <div class="section_info">
-                    <strong>Discount</strong>
-                </div>
-                <div class="section_content">
-                    <div class="section_full clearfix">
-                        <div class="section_left">
-                            <div>
-                                <strong class="no-block">Supplier Discount</strong><span class="note">Discount given by Supplier</span>
+                                        </div>
+                                        <div class="section_right">
+                                            <strong>Taxable</strong>
+                                            <ul class="float box">
+                                                <li>
+                                                    <input id="TaxableY" name="TaxableY" value="true" type="radio">
+                                                    <label for="TaxableY">Yes</label>
+                                                </li>
+                                                <li>
+                                                    <input id="TaxableN" name="TaxableY" value="false" type="radio">
+                                                    <label for="TaxableN">No</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <input name="" value="0" id="" class="txtPcg" type="text">%
-                        </div>
-                        <div class="section_right">
-                            <div>
-                                <strong class="no-block">Customer Discount</strong><span class="note">Discount received by Customer</span>
+                            <div class="row_section clearfix">
+                                <div class="section_info">
+                                    <strong>Unit of Measurement</strong>
+                                </div>
+                                <div class="section_content">
+                                    <div class="section_full clearfix">
+                                        <div class="section_left">
+                                            <strong>UOM SUB QUANTITY</strong>
+                                            <select name="" id="" class="chzn-select-deselect" style="width: 100%; display: none;">
+                                                <option selected="selected" value=""></option>
+                                                <option value="1b91ce37-8de6-4a30-a4fc-cfd71352a5e9">H?p</option>
+                                                <option value="b7f973ec-6f92-4432-b393-b2c373a61a6a">pcs</option>
+                                                <option value="d61b8430-6392-49d9-b2f4-286589db1d25">Roll</option>
+                                                <option value="81b22aec-5056-4d42-8444-c713f92c4d54">V?</option>
+                                                <option value="027cdd67-8241-4f8d-93c4-c1dbb3a14bea">Viên</option>
+                                            </select>
+                                        </div>
+                                        <div class="section_right">
+                                            <strong>UOM</strong>
+                                            <select name="" class="chzn-select-deselect" style="width: 100%; display: none;">
+                                                <option selected="selected" value=""></option>
+                                                <option value="3e135053-0408-4bf0-b327-0bee350ef778">Length</option>
+                                                <option value="0df132c9-9ea5-4dfb-a9aa-9e106ba3b78c">Volume</option>
+                                                <option value="4c168e09-edd1-4f8d-8083-c4e60d525492">Weight</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <input name="" value="0" id="" class="txtPcg" type="text">%
+                            <div class="row_section clearfix">
+                                <div class="section_info">
+                                    <strong>Discount</strong>
+                                </div>
+                                <div class="section_content">
+                                    <div class="section_full clearfix">
+                                        <div class="section_left">
+                                            <div>
+                                                <strong class="no-block">Supplier Discount</strong><span class="note">Discount given by Supplier</span>
+                                            </div>
+                                            <input name="" value="0" id="" class="txtPcg" type="text">%
+                                        </div>
+                                        <div class="section_right">
+                                            <div>
+                                                <strong class="no-block">Customer Discount</strong><span class="note">Discount received by Customer</span>
+                                            </div>
+                                            <input name="" value="0" id="" class="txtPcg" type="text">%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_section clearfix">
+                                <div class="section_info">
+                                    <strong>Pricing and Commission</strong>
+                                </div>
+                                <div class="section_content">
+                                    <div class="section_full clearfix">
+                                        <div class="section_left">
+                                            <strong>Commission</strong>
+                                            <input name="" class="txtPrice" type="text">
+                                        </div>
+                                        <div class="section_right">
+                                            <strong class="no-block">Supplier Discount Detail</strong>
+                                            <span class="note">Sequence Discount Format: dd/dd/dd</span>
+                                            <input name="" class="txt" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="section_full clearfix">
+                                        <div class="section_left">
+                                            <strong>Re-order Point</strong>
+                                            <input name="" value="0" id="" class="txtQty" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_section clearfix">
+                                <div class="section_info">
+                                    <strong>Miscellaneous</strong>
+                                </div>
+                                <div class="section_content">
+                                    <div class="section_full clearfix">
+                                        <div class="section_left">
+                                            <strong>Content</strong>
+                                            <input name="" value="1" id="" class="txtQty" style="width:50px;" type="text"> / unit
+                                        </div>
+                                        <div class="section_right">
+                                            <strong>Index</strong>
+                                            <input name="" class="decS" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div aria-hidden="true" style="display: none;" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-6" id="tabs-3">
+                            <div class="clearfix">
+                                <div id="divComponentsaaa">
+                                    <div class="row_section clearfix">
+                                        <div class="section_info">
+                                            <strong>Components</strong>
+                                            <a id="ctl00_ctl00_content_content_btnAddVariant" dialogid="dialogVariantComponent" class="button-gray button-variant" title="Acc Components">Add</a>
+                                        </div>
+                                        <div class="section_content">
+                                            <table class="plain component" id="tblComponents" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th width="15px"></th>
+                                                        <th>Name</th>
+                                                        <th width="100px">Code</th>
+                                                        <th class="number" width="40px">Qty</th>
+                                                        <th class="UOMWidth"></th>
+                                                        <th class="number" width="100px">Unit Cost</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ctl00_ctl00_content_content_divEntityPrice" class="row_section clearfix">
+                                    <div class="section_info">
+                                        <strong>Outlet Price</strong>
+                                        <a id="ctl00_ctl00_content_content_btnAddOutletPrice" dialogid="dialogOutletPrice" class="button-gray button-variant" title="Acc Outlet Price">Add</a>
+                                    </div>
+                                    <div class="section_content">
+                                        <table class="plain outletprice" id="tblOutletPrice" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th width="15px"></th>
+                                                    <th>Outlet</th>
+                                                    <th class="number" width="100px">Cost</th>
+                                                    <th class="number" width="100px">Price</th>
+                                                    <th class="txtPcg" width="50px">Disc.</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="ctl00_ctl00_content_content_divCustomPrice" class="row_section clearfix">
+                                    <div class="section_info">
+                                        <strong>Pricebook</strong>
+                                        <a id="ctl00_ctl00_content_content_btnAddPricebook" dialogid="dialogPricebook" class="button-gray button-variant" title="Acc Outlet Price">Add</a>
+                                    </div>
+                                    <div class="section_content">
+                                        <table class="plain pricebook" id="tblPricebook" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th width="15px"></th>
+                                                    <th>Name</th>
+                                                    <th class="number" width="100px">Price</th>
+                                                    <th class="txtPcg" width="50px">Disc.</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div style="display: none;" id="divPoint">
+                                    <div class="row_section clearfix">
+                                        <div class="section_info">
+                                            <strong>Point with Expiration</strong>
+                                            <i>Configurations for variant with above type</i>
+                                        </div>
+                                        <div class="section_content">
+                                            <div class="section_full clearfix">
+                                                <div class="section_left">
+                                                    <strong>Point</strong>
+                                                    <input name="" class="txtQty" style="width:100%;" type="text">
+                                                </div>
+                                                <div class="section_right">
+                                                    <strong>Expiration</strong>
+                                                    <input name="" class="txtsmall txtQty" type="text"> Day(s) +
+                                                    <input name="" class="txtsmall" type="text"> Month(s)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: none;" id="divParent">
+                                    <div class="row_section clearfix">
+                                        <div class="section_info">
+                                            <strong>Standard with Parent</strong>
+                                            <i>Configurations for variant with above type</i>
+                                        </div>
+                                        <div class="section_content">
+                                            <div class="section_full clearfix">
+                                                <div class="section_left">
+                                                    <strong>Parent</strong>
+                                                    <input autocomplete="off" name="" class="autocomplete variantParent ui-autocomplete-input" placeholder="Search product by Name / Code" wsmethod="GetVariantSuggestionByCodeNName" autofocus="" hfid="ctl00_ctl00_content_content_txtVariantParent_hfID" type="text">
+                                                    <input name="" id="ctl00_ctl00_content_content_txtVariantParent_hfID" type="hidden">
+                                                </div>
+                                                <div class="section_right">
+                                                    <strong>Ratio</strong>
+                                                    <input name="" id="ctl00_ctl00_content_content_decInputRatio_txtInput" class="txtPrice" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!--End content-->
                 </div>
             </div>
-            <div class="row_section clearfix">
-                <div class="section_info">
-                    <strong>Pricing and Commission</strong>
+            <div aria-labelledby="ui-id-1" aria-describedby="dialogVariantComponent" role="dialog" tabindex="-1" style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
+                <div id="dialogVariantComponent" class="dialog ui-dialog-content ui-widget-content" onokhandler="OnComponentOK">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Name</th>
+                                <td>:</td>
+                                <td>
+                                    <input autocomplete="off" name="" class="autocomplete variant ui-autocomplete-input" placeholder="Search product by Name / Code" wsmethod="GetVariantSuggestionByCodeNName" autofocus="" onselecthandler="OnVariantSelect" hfid="ctl00_ctl00_extras_extras_txtVariantCode_hfID" style="width:320px;" type="text">
+                                    <input name="" id="ctl00_ctl00_extras_extras_txtVariantCode_hfID" type="hidden">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Qty </th>
+                                <td>:</td>
+                                <td>
+                                    <input id="txtQty" class="txtPrice dialogQty" type="text">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="section_content">
-                    <div class="section_full clearfix">
-                        <div class="section_left">
-                            <strong>Commission</strong>
-                            <input name="" class="txtPrice" type="text">
-                        </div>
-                        <div class="section_right">
-                            <strong class="no-block">Supplier Discount Detail</strong>
-                            <span class="note">Sequence Discount Format: dd/dd/dd</span>
-                            <input name="" class="txt" type="text">
-                        </div>
-                    </div>
-                    <div class="section_full clearfix">
-                        <div class="section_left">
-                            <strong>Re-order Point</strong>
-                            <input name="" value="0" id="" class="txtQty" type="text">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row_section clearfix">
-                <div class="section_info">
-                    <strong>Miscellaneous</strong>
-                </div>
-                <div class="section_content">
-                    <div class="section_full clearfix">
-                        <div class="section_left">
-                            <strong>Content</strong>
-                            <input name="" value="1" id="" class="txtQty" style="width:50px;" type="text">
-                            / unit
-                        </div>
-                        <div class="section_right">
-                            <strong>Index</strong>
-                            <input name="" class="decS" type="text">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div aria-hidden="true" style="display: none;" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-6" id="tabs-3">
-            <div class="clearfix">
-                <div id="divComponentsaaa">
-                    <div class="row_section clearfix">
-                        <div class="section_info">
-                            <strong>Components</strong>
-                            <a id="ctl00_ctl00_content_content_btnAddVariant" dialogid="dialogVariantComponent" class="button-gray button-variant" title="Acc Components">Add</a>
-                        </div>
-                        <div class="section_content">
-                            <table class="plain component" id="tblComponents" width="100%">
-                                <thead>
-                                    <tr>
-                                        <th width="15px"></th>
-                                        <th>Name</th>
-                                        <th width="100px">Code</th>
-                                        <th class="number" width="40px">Qty</th>
-                                        <th class="UOMWidth"></th>
-                                        <th class="number" width="100px">Unit Cost</th>
-                                    </tr>
-                                </thead>
+                <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                    <div aria-labelledby="ui-id-2" aria-describedby="dialogOutletPrice" role="dialog" tabindex="-1" style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
+                        <div id="dialogOutletPrice" class="dialog ui-dialog-content ui-widget-content" onokhandler="OnOutletPriceOK">
+                            <table class="form">
                                 <tbody>
+                                    <tr>
+                                        <th>Outlet
+                                        </th>
+                                        <td class="sep">:
+                                        </td>
+                                        <td>
+                                            <select name="" id="ddlEntity" class="chzn-select" style="width: 175px; display: none;">
+                                                <option selected="selected" value="">Branch1</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Cost
+                                        </th>
+                                        <td class="sep">:
+                                        </td>
+                                        <td>
+                                            <select style="display: none;" name="" id="ddlCostCurrencyDialog" class="chzn-select currency">
+                                                <option selected="selected" value="1">$</option>
+                                                <option value="2">E</option>
+                                            </select>
+                                            <input id="decInputUnitCost" class="txtQty" style="width: 100px" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Price
+                                        </th>
+                                        <td class="sep">:
+                                        </td>
+                                        <td>
+                                            <select style="display: none;" name="" id="ddlPriceCurrencyDialog" class="chzn-select currency">
+                                                <option selected="selected" value="1">$</option>
+                                                <option value="2">E</option>
+                                            </select>
+                                            <input id="decInputUnitPrice" class="txtQty" style="width: 100px" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Price Disc
+                                        </th>
+                                        <td class="sep">:
+                                        </td>
+                                        <td>
+                                            <input id="decInputDiscPrice" class="txtPcg" type="text">
+                                            <span class="vmid">%</span>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                </div>
-                <div id="ctl00_ctl00_content_content_divEntityPrice" class="row_section clearfix">
-                    <div class="section_info">
-                        <strong>Outlet Price</strong>
-                        <a id="ctl00_ctl00_content_content_btnAddOutletPrice" dialogid="dialogOutletPrice" class="button-gray button-variant" title="Acc Outlet Price">Add</a>
-                    </div>
-                    <div class="section_content">
-                        <table class="plain outletprice" id="tblOutletPrice" width="100%">
-                            <thead>
-                                <tr>
-                                    <th width="15px"></th>
-                                    <th>Outlet</th>
-                                    <th class="number" width="100px">Cost</th>
-                                    <th class="number" width="100px">Price</th>
-                                    <th class="txtPcg" width="50px">Disc.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div id="ctl00_ctl00_content_content_divCustomPrice" class="row_section clearfix">
-                    <div class="section_info">
-                        <strong>Pricebook</strong>
-                        <a id="ctl00_ctl00_content_content_btnAddPricebook" dialogid="dialogPricebook" class="button-gray button-variant" title="Acc Outlet Price">Add</a>
-                    </div>
-                    <div class="section_content">
-                        <table class="plain pricebook" id="tblPricebook" width="100%">
-                            <thead>
-                                <tr>
-                                    <th width="15px"></th>
-                                    <th>Name</th>
-                                    <th class="number" width="100px">Price</th>
-                                    <th class="txtPcg" width="50px">Disc.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div style="display: none;" id="divPoint">
-                    <div class="row_section clearfix">
-                        <div class="section_info">
-                            <strong>Point with Expiration</strong>
-                            <i>Configurations for variant with above type</i>
-                        </div>
-                        <div class="section_content">
-                            <div class="section_full clearfix">
-                                <div class="section_left">
-                                    <strong>Point</strong>
-                                    <input name="" class="txtQty" style="width:100%;" type="text">
-                                </div>
-                                <div class="section_right">
-                                    <strong>Expiration</strong>
-                                    <input name="" class="txtsmall txtQty" type="text">
-                                    Day(s) +
-                                    <input name="" class="txtsmall" type="text">
-                                    Month(s)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="display: none;" id="divParent">
-                    <div class="row_section clearfix">
-                        <div class="section_info">
-                            <strong>Standard with Parent</strong>
-                            <i>Configurations for variant with above type</i>
-                        </div>
-                        <div class="section_content">
-                            <div class="section_full clearfix">
-                                <div class="section_left">
-                                    <strong>Parent</strong>
-                                    <input autocomplete="off" name="" class="autocomplete variantParent ui-autocomplete-input" placeholder="Search product by Name / Code" wsmethod="GetVariantSuggestionByCodeNName" autofocus="" hfid="ctl00_ctl00_content_content_txtVariantParent_hfID" type="text">
-                                    <input name="" id="ctl00_ctl00_content_content_txtVariantParent_hfID" type="hidden">
-                                </div>
-                                <div class="section_right">
-                                    <strong>Ratio</strong>
-                                    <input name="" id="ctl00_ctl00_content_content_decInputRatio_txtInput" class="txtPrice" type="text">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--End content-->
-    </div>  
-</div>
-<div aria-labelledby="ui-id-1" aria-describedby="dialogVariantComponent" role="dialog" tabindex="-1" style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
-<div id="dialogVariantComponent" class="dialog ui-dialog-content ui-widget-content" onokhandler="OnComponentOK">
-        <table>
-            <tbody>
-                <tr>
-                    <th>Name</th>
-                    <td>:</td>
-                    <td>
-                        <input autocomplete="off" name="" class="autocomplete variant ui-autocomplete-input" placeholder="Search product by Name / Code" wsmethod="GetVariantSuggestionByCodeNName" autofocus="" onselecthandler="OnVariantSelect" hfid="ctl00_ctl00_extras_extras_txtVariantCode_hfID" style="width:320px;" type="text">
-                        <input name="" id="ctl00_ctl00_extras_extras_txtVariantCode_hfID" type="hidden">
-                    </td>
-                </tr>
-                <tr>
-                    <th>Qty </th>
-                    <td>:</td>
-                    <td>
-                        <input id="txtQty" class="txtPrice dialogQty" type="text">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
-    <div aria-labelledby="ui-id-2" aria-describedby="dialogOutletPrice" role="dialog" tabindex="-1" style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons"><div id="dialogOutletPrice" class="dialog ui-dialog-content ui-widget-content" onokhandler="OnOutletPriceOK">
-        <table class="form">
-            <tbody><tr>
-                <th>Outlet
-                </th>
-                <td class="sep">:
-                </td>
-                <td>
-                    <select name="" id="ddlEntity" class="chzn-select" style="width: 175px; display: none;">
-                        <option selected="selected" value="">Branch1</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <th>Cost
-                </th>
-                <td class="sep">:
-                </td>
-                <td>
-                    <select style="display: none;" name="" id="ddlCostCurrencyDialog" class="chzn-select currency">
-                        <option selected="selected" value="1">$</option>
-                        <option value="2">E</option>
-                    </select>
-                    <input id="decInputUnitCost" class="txtQty" style="width: 100px" type="text">
-                </td>
-            </tr>
-            <tr>
-                <th>Price
-                </th>
-                <td class="sep">:
-                </td>
-                <td>
-                    <select style="display: none;" name="" id="ddlPriceCurrencyDialog" class="chzn-select currency">
-                        <option selected="selected" value="1">$</option>
-                        <option value="2">E</option>
-                    </select>
-                    <input id="decInputUnitPrice" class="txtQty" style="width: 100px" type="text">
-                </td>
-            </tr>
-            <tr>
-                <th>Price Disc
-                </th>
-                <td class="sep">:
-                </td>
-                <td>
-                    <input id="decInputDiscPrice" class="txtPcg" type="text">
-                    <span class="vmid">%</span>
-                </td>
-            </tr>
-        </tbody>
-        </table>
-    </div>
 
-    <div aria-labelledby="ui-id-3" aria-describedby="dialogPricebook" role="dialog" tabindex="-1" style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons"><div id="dialogPricebook" class="dialog ui-dialog-content ui-widget-content" onokhandler="OnPricebookOK">
-        <table class="form">
-            <tbody><tr>
-                <th>Pricebook
-                </th>
-                <td class="sep">:
-                </td>
-                <td>
-                    <select name="" id="ddlPricebook" class="chzn-select" style="width: 150px; display: none;">
-                        <option selected="selected" value="">Wholesale</option>
-                        <option value="">Master Dealer</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <th>Unit Price
-                </th>
-                <td class="sep">:
-                </td>
-                <td>
-                    <input id="txtUnitPricePricebook" class="txtQty" style="width: 137px" type="text">
-                </td>
-            </tr>
-            <tr>
-                <th>Price Disc
-                </th>
-                <td class="sep">:
-                </td>
-                <td>
-                    <input id="txtDiscPricebook" class="txtPcg" type="text">
-                    <span class="vmid">%</span>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
-</form>
+                        <div aria-labelledby="ui-id-3" aria-describedby="dialogPricebook" role="dialog" tabindex="-1" style="display: none;" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons">
+                            <div id="dialogPricebook" class="dialog ui-dialog-content ui-widget-content" onokhandler="OnPricebookOK">
+                                <table class="form">
+                                    <tbody>
+                                        <tr>
+                                            <th>Pricebook
+                                            </th>
+                                            <td class="sep">:
+                                            </td>
+                                            <td>
+                                                <select name="" id="ddlPricebook" class="chzn-select" style="width: 150px; display: none;">
+                                                    <option selected="selected" value="">Wholesale</option>
+                                                    <option value="">Master Dealer</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Unit Price
+                                            </th>
+                                            <td class="sep">:
+                                            </td>
+                                            <td>
+                                                <input id="txtUnitPricePricebook" class="txtQty" style="width: 137px" type="text">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Price Disc
+                                            </th>
+                                            <td class="sep">:
+                                            </td>
+                                            <td>
+                                                <input id="txtDiscPricebook" class="txtPcg" type="text">
+                                                <span class="vmid">%</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+    </form>
 </body>
+
 </html>
